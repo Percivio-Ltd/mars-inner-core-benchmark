@@ -13,8 +13,10 @@ version: "0.6"
 date-released: "2026-08-02"
 license: MIT
 repository-code: "https://github.com/percivio-ltd/mars-inner-core-benchmark"
-# The archived-release DOI (Zenodo) will be added under `identifiers:`
-# when the first release is minted.
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21762439"
+    description: "Zenodo archive of the v0.6 release tarball"
 keywords:
   - Mars
   - InSight

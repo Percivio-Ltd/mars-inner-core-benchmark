@@ -5,7 +5,8 @@ Reproducibility capsule for the manuscript
 > Krohn-Grimberghe, A. (2026). *A registered public-data reproducibility
 > benchmark for the reported PKiKP detection of a Martian inner core.*
 > Draft v0.6 (2026-08-02), prepared for submission to Seismica.
-> Preprint and archived-release DOI: to be added at first release.
+> Archived release: [doi:10.5281/zenodo.21762439](https://doi.org/10.5281/zenodo.21762439)
+> (v0.6 tarball, sha256 `866dec8e…`). Preprint: to be added.
 
 Corresponding author: Artus Krohn-Grimberghe (Percivio Ltd.),
 <artus@percivio.com>.
@@ -159,10 +160,11 @@ requested from the corresponding author.
 
 ## Citing
 
-See `CITATION.cff`. The archived-release DOI (Zenodo) will be added when
-the first release is minted; until the preprint is posted,
-`papers/Paper0/manuscript/DRAFT_seismica.md` is the manuscript source of
-record.
+See `CITATION.cff`. The v0.6 state of this repository is archived at
+[doi:10.5281/zenodo.21762439](https://doi.org/10.5281/zenodo.21762439)
+(deterministic `git archive` of tag `v0.6`, commit `b3752bf2`). Until
+the preprint is posted, `papers/Paper0/manuscript/DRAFT_seismica.md` is
+the manuscript source of record.
 
 ## License
 
