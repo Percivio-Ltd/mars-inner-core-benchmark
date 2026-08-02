@@ -1,0 +1,143 @@
+diff --git a/scripts/02_preprocess/deglitch_mps_ucla.py b/scripts/02_preprocess/deglitch_mps_ucla.py
+index 8c46d6c1..2b22245a 100644
+--- a/scripts/02_preprocess/deglitch_mps_ucla.py
++++ b/scripts/02_preprocess/deglitch_mps_ucla.py
+@@ -26,6 +26,7 @@ logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+ logger = logging.getLogger(__name__)
+ 
+ MPS_STATUS_BLOCKED = "blocked_missing_seisglitch"
++MPS_STATUS_IDENTITY = "identity_passthrough"
+ UCLA_STATUS_BLOCKED = "blocked_missing_ucla_runner"
+ STATUS_SUCCEEDED_MPS_ONLY = "succeeded_mps_only"
+ STATUS_UCLA_UNVERIFIED = "ucla_unverified"
+@@ -493,6 +494,9 @@ def run_deglitch_event(
+     metadata_path = output_path.with_suffix(".deglitch.json")
+     work_event_dir = work_dir / event_id
+     metadata = _metadata_base(event_id, input_path, output_path, metadata_path, work_event_dir)
++    identity_passthrough = seisglitch_command == "identity"
++    if identity_passthrough:
++        metadata["methods_requested"] = ["UCLA"]
+     command_env = _build_command_env(seisglitch_pythonpath)
+     if output_path.resolve() == input_path.resolve():
+         metadata["overall_status"] = "failed"
+@@ -521,6 +525,18 @@ def run_deglitch_event(
+         _write_json(metadata_path, metadata)
+         return metadata
+ 
++    if identity_passthrough:
++        output_path.parent.mkdir(parents=True, exist_ok=True)
++        work_event_dir.mkdir(parents=True, exist_ok=True)
++        shutil.copyfile(input_path, output_path)
++        metadata["mps"] = {"status": MPS_STATUS_IDENTITY}
++        metadata["samples_modified"] = False
++        _run_ucla_if_configured(metadata, ucla_command, output_path, work_event_dir, runner)
++        if output_path.exists():
++            metadata["samples_modified"] = _streams_differ(input_path, output_path)
++        _write_json(metadata_path, metadata)
++        return metadata
++
+     work_event_dir.mkdir(parents=True, exist_ok=True)
+     working_input = work_event_dir / input_path.name
+     if working_input.resolve() != input_path.resolve():
+@@ -629,7 +645,7 @@ def build_arg_parser() -> argparse.ArgumentParser:
+     parser.add_argument(
+         "--seisglitch-command",
+         default="auto",
+-        help="Command for SEISglitch/MPS, or 'auto' to use PATH, or 'none' to write blocked metadata.",
++        help="Command for SEISglitch/MPS, 'identity' for byte-verbatim passthrough, 'auto' to use PATH, or 'none' to write blocked metadata.",
+     )
+     parser.add_argument(
+         "--seisglitch-pythonpath",
+@@ -666,6 +682,7 @@ def run_all(
+     allowed_statuses: set[str] | Sequence[str] | None = None,
+ ) -> int:
+     allowed = validate_deglitch_statuses(allowed_statuses)
++    methods_requested = ["UCLA"] if seisglitch_command == "identity" else list(METHODS_REQUESTED)
+     files = sorted(Path(in_dir).glob("*.mseed"))
+     if not files:
+         raise FileNotFoundError(f"No raw MiniSEED inputs found in {in_dir}")
+@@ -676,7 +693,7 @@ def run_all(
+         {
+             "created_at": _utc_now(),
+             "run_status": "in_progress",
+-            "methods_requested": list(METHODS_REQUESTED),
++            "methods_requested": methods_requested,
+             "allowed_statuses": sorted(allowed),
+             "expected_event_ids": expected_event_ids,
+             "status_counts": {},
+@@ -711,7 +728,7 @@ def run_all(
+     summary = {
+         "created_at": _utc_now(),
+         "run_status": "complete",
+-        "methods_requested": list(METHODS_REQUESTED),
++        "methods_requested": methods_requested,
+         "allowed_statuses": sorted(allowed),
+         "expected_event_ids": expected_event_ids,
+         "status_counts": dict(sorted(status_counts.items())),
+diff --git a/scripts/run_paper0.py b/scripts/run_paper0.py
+index f67e3c8b..30e2d15d 100644
+--- a/scripts/run_paper0.py
++++ b/scripts/run_paper0.py
+@@ -391,6 +391,8 @@ def _bootstrap_command_args(args: argparse.Namespace, *, include_jitter: bool =
+     fidelity_level = str(args.bootstrap_fidelity_level)
+     n_bootstrap = str(n_bootstrap_for_level(fidelity_level))
+     command = [
++        "--table",
++        args.event_table,
+         "--mode",
+         "paperfaith",
+         "--variant",
+@@ -487,6 +489,8 @@ def _command_tokens(command: str | None) -> list[str]:
+ 
+ 
+ def _check_seisglitch_resolution(args: argparse.Namespace, findings: list[dict[str, Any]]) -> None:
++    if args.seisglitch_command == "identity":
++        return
+     if args.seisglitch_pythonpath:
+         pythonpath = Path(args.seisglitch_pythonpath)
+         if not pythonpath.exists():
+@@ -654,6 +658,12 @@ def run_preflight(args: argparse.Namespace) -> dict[str, Any]:
+ def _validation_command(args: argparse.Namespace, label: str, *, incremental_check: str | None = None, aggregate_only: bool = False) -> dict[str, Any]:
+     cmd = [
+         "scripts/07_validation/generate_validation_report.py",
++        "--event-table",
++        args.event_table,
++        "--catalog",
++        args.mqs_catalog,
++        "--raw-dir",
++        args.raw_dir,
+         "--mode",
+         "current-run",
+         "--out-dir",
+@@ -672,6 +682,8 @@ def build_stage_commands(args: argparse.Namespace) -> list[dict[str, Any]]:
+     allowed_deglitch_statuses = validate_deglitch_statuses(args.allow_deglitch_status)
+     deglitch_cmd = [
+         "scripts/02_preprocess/deglitch_mps_ucla.py",
++        "--in-dir",
++        args.raw_dir,
+         "--seisglitch-command",
+         args.seisglitch_command,
+         "--inventory-file",
+@@ -702,13 +714,20 @@ def build_stage_commands(args: argparse.Namespace) -> list[dict[str, Any]]:
+         _command("polarization", "scripts/02_preprocess/polarization_filter.py"),
+         _command("fdpa", "scripts/02_preprocess/fdpa.py"),
+         _command("glitch_flags", "scripts/02_preprocess/glitch_flagging.py"),
+-        _command("align", "scripts/02_preprocess/align_and_cut.py"),
++        _command(
++            "align",
++            "scripts/02_preprocess/align_and_cut.py",
++            "--event-table",
++            args.event_table,
++            "--catalog",
++            args.mqs_catalog,
++        ),
+         _command("normalize", "scripts/02_preprocess/normalize_and_envelope.py"),
+         _validation_command(args, "validation_inventory", incremental_check="inventory"),
+         _validation_command(args, "validation_preprocessing", incremental_check="preprocessing"),
+         _validation_command(args, "validation_alignment", incremental_check="alignment"),
+         _validation_command(args, "validation_model", incremental_check="model"),
+-        _command("vespagrams", "scripts/03_vespagram/run_vespagrams.py"),
++        _command("vespagrams", "scripts/03_vespagram/run_vespagrams.py", "--event-table", args.event_table),
+         _validation_command(args, "validation_benchmark", incremental_check="benchmark"),
+         _command("detect_peaks", *detect_cmd),
+         _command("bootstrap_type1", "scripts/04_bootstrap/bootstrap_type1.py", *_bootstrap_command_args(args)),

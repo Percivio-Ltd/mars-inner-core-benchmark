@@ -1,0 +1,53 @@
+{
+  "commands": [
+    {
+      "args": [
+        "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/scripts/02_preprocess/ucla/run_ucla_octave.sh",
+        "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/calibration/identity_gate_gnuterm/output/S0235b.mseed",
+        "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/calibration/identity_gate_gnuterm/work/S0235b/S0235b_ucla.mseed",
+        "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/calibration/identity_gate_gnuterm/work/S0235b"
+      ],
+      "returncode": 0,
+      "stderr": "octave: no graphical display found\noctave: disabling GUI features\nwarning: function /Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/scripts/02_preprocess/ucla/pause.m shadows a built-in function\nwarning: called from\n    /Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/scripts/02_preprocess/ucla/ucla_driver.m at line 24 column 1\n\nwarning: Invalid UTF-8 byte sequences have been replaced.\nwarning: called from\n    XseedDataFDS at line 4 column 5\n    MAIN2SPS at line 8 column 1\n    /Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/scripts/02_preprocess/ucla/ucla_driver.m at line 41 column 1\n\nwarning: Invalid UTF-8 byte sequences have been replaced.\nwarning: called from\n    XseedDataFDS at line 4 column 5\n    MAIN2SPS at line 8 column 1\n    /Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/scripts/02_preprocess/ucla/ucla_driver.m at line 41 column 1\n\nwarning: using the gnuplot graphics toolkit is discouraged\n\nThe gnuplot graphics toolkit is not actively maintained and has a number\nof limitations that are unlikely to be fixed.  Communication with gnuplot\nuses a one-directional pipe and limited information is passed back to the\nOctave interpreter so most changes made interactively in the plot window\nwill not be reflected in the graphics properties managed by Octave.  For\nexample, if the plot window is closed with a mouse click, Octave will not\nbe notified and will not update its internal list of open figure windows.\nThe qt toolkit is recommended instead.\nwarning: function name 'funcAdjustTimes' does not agree with function filename '/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/calibration/identity_gate_gnuterm/work/S0235b/ucla_runtime/UCLA_v4/funcadjustTimes.m'\nwarning: called from\n    MAIN2SPS at line 33 column 2\n    /Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/scripts/02_preprocess/ucla/ucla_driver.m at line 41 column 1\n\nwarning: matrix singular to machine precision, rcond = 4.04428e-17\nwarning: called from\n    mylsq at line 22 column 1\n    funcPeaker at line 80 column 11\n    MAIN2SPS at line 62 column 2\n    /Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/scripts/02_preprocess/ucla/ucla_driver.m at line 41 column 1\n\nwarning: Invalid UTF-8 byte sequences have been replaced.\nwarning: called from\n    /Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/scripts/02_preprocess/ucla/ucla_driver.m at line 92 column 3\n\nwarning: Invalid UTF-8 byte sequences have been replaced.\nwarning: called from\n    /Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/scripts/02_preprocess/ucla/ucla_driver.m at line 92 column 3\n\n",
+      "stdout": "UCLA-DRIVER: octave=10.3.0 input=/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/calibration/identity_gate_gnuterm/output/S0235b.mseed\nout1 =\n\n    3   15\n\nout =\n\nXB:ELYSE:02:BHU\nXB:ELYSE:02:BHV\nXB:ELYSE:02:BHW\n\nj = 1\nj = 5\nj = 6\nj = 7\nj = 8\nj = 9\nj = 10\nj = 11\nj = 12\nj = 13\nj = 1\nj = 4\nj = 5\nj = 6\nj = 7\nj = 8\nj = 10\nj = 11\nj = 12\nj = 13\nj = 14\nj = 1\nj = 3\nj = 4\nj = 5\nj = 6\nj = 1\nj = 5\nj = 7\nj = 8\nj = 9\nj = 10\nj = 11\nj = 12\nj = 14\nj = 15\nj = 16\nj = 17\nj = 1\nj = 4\nj = 1\nj = 5\nj = 6\nj = 7\nj = 8\nj = 11\nj = 12\nj = 1\nj = 3\nj = 4\nj = 5\nj = 6\nj = 7\nj = 8\nj = 1\nj = 3\nj = 4\nj = 5\nj = 6\nj = 7\nj = 9\nj = 10\nj = 11\nj = 1\nj = 2\nj = 3\nj = 4\nj = 5\njk = 1\njk = 1\nN1 = 8\njk = 2\nN2 = 11\njk = 3\nN3 = 5\nUCLA-DRIVER: aligned samples U/V/W = 51200/51200/51200 at 3.0 s\nkk = 1\nAMP =\n\n  -865.77  -112.56\n\nch = BHU\nkk = 2\nAMP = -141.60\nch = BHU\nkk = 3\nAMP = -96.975\nch = BHU\nkk = 4\nAMP = -598.54\nch = BHU\nkk = 5\nAMP = -124.58\nch = BHU\nkk = 6\nAMP = -1159.2\nch = BHU\nkk = 7\nAMP = -194.83\nch = BHU\nkk = 8\nAMP =\n\n   1105.82    246.48\n\nch = BHV\nkk = 9\nAMP = 186.36\nch = BHV\nkk = 10\nAMP = 122.36\nch = BHV\nkk = 11\nAMP = 189.70\nch = BHV\nkk = 12\nAMP = 728.85\nch = BHV\nkk = 13\nAMP =\n\n   114.28   125.33\n\nch = BHV\nkk = 14\nAMP = 164.85\nch = BHV\nkk = 15\nAMP = -2060.7\nch = BHV\nkk = 16\nAMP = 325.08\nch = BHV\nkk = 17\nAMP = -143.76\nch = BHW\nkk = 18\nAMP = -304.99\nch = BHW\nkk = 19\nAMP = -135.35\nch = BHW\nkk = 20\nAMP = -124.96\nch = BHW\nkk = 21\nAMP = 2338.9\nch = BHW\njk = 1\nN1 = 8\njk = 2\nN2 = 11\njk = 3\nN3 = 5\nMKMSEED: writing file \"/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/calibration/identity_gate_gnuterm/work/S0235b/ucla_mseed_parts/XB.ELYSE.02.BHU.2019.207\"... done.\nMKMSEED: writing file \"/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/calibration/identity_gate_gnuterm/work/S0235b/ucla_mseed_parts/XB.ELYSE.02.BHV.2019.207\"... done.\nMKMSEED: writing file \"/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/calibration/identity_gate_gnuterm/work/S0235b/ucla_mseed_parts/XB.ELYSE.02.BHW.2019.207\"... done.\nUCLA-DRIVER-PASS: rows U/V/W=8/11/5 elapsed=12.3 output=/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/calibration/identity_gate_gnuterm/work/S0235b/S0235b_ucla.mseed\nUCLA-RUNNER-PASS: output=/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/calibration/identity_gate_gnuterm/work/S0235b/S0235b_ucla.mseed sidecar=/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/calibration/identity_gate_gnuterm/work/S0235b/S0235b_ucla.mseed.ucla.json parameters_sha256=e79c60d72e79a86a5235eb73a264ea441e5d74c77ca32571330799db467de37d\n"
+    }
+  ],
+  "created_at": "2026-08-02T10:31:54.171109+00:00",
+  "event_id": "S0235b",
+  "input_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/calibration/identity_gate_gnuterm/input/S0235b.mseed",
+  "metadata_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/calibration/identity_gate_gnuterm/output/S0235b.deglitch.json",
+  "methods_requested": [
+    "UCLA"
+  ],
+  "mps": {
+    "status": "identity_passthrough"
+  },
+  "output_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/calibration/identity_gate_gnuterm/output/S0235b.mseed",
+  "overall_status": "ucla_unverified",
+  "samples_modified": true,
+  "ucla": {
+    "contract_status": "output_file_verified_not_algorithm_equivalence",
+    "final_output_sha256": "e9fe30fb25701c6ce9bd8b94824f94549063bbcc358ac0167e858c1dfc72d4db",
+    "output_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/calibration/identity_gate_gnuterm/work/S0235b/S0235b_ucla.mseed",
+    "samples_modified_ucla": true,
+    "status": "external_ucla_command_wrote_file_unverified",
+    "ucla_command_sha256": "9702d526b64d4e0e3798d1f31dca585c72bc99cf811391a88d2609b5431d4b28",
+    "ucla_input_sha256": "3ecde9902877ddd77cc4ecd4858cf0c85815744af80cf954acc3e85d8ea7ab89",
+    "ucla_output_sha256": "e9fe30fb25701c6ce9bd8b94824f94549063bbcc358ac0167e858c1dfc72d4db",
+    "ucla_runner_args": [
+      "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/scripts/02_preprocess/ucla/run_ucla_octave.sh",
+      "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/calibration/identity_gate_gnuterm/output/S0235b.mseed",
+      "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/calibration/identity_gate_gnuterm/work/S0235b/S0235b_ucla.mseed",
+      "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/calibration/identity_gate_gnuterm/work/S0235b"
+    ],
+    "ucla_sidecar_algorithm": "UCLA_v4 MAIN2SPS+MAIN20SPSJuly26, octave-10.3.0, signal-1.4.7",
+    "ucla_sidecar_missing_verified_evidence": [],
+    "ucla_sidecar_parameters_sha256": "e79c60d72e79a86a5235eb73a264ea441e5d74c77ca32571330799db467de37d",
+    "ucla_sidecar_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/calibration/identity_gate_gnuterm/work/S0235b/S0235b_ucla.mseed.ucla.json",
+    "ucla_sidecar_sha256": "d69a0ae765732b54d202d9a86d1cd139a2bfe2b8473779f3f53d72ae277e9f65",
+    "ucla_sidecar_verification_evidence": "",
+    "ucla_sidecar_verification_evidence_key": "",
+    "ucla_sidecar_verification_status": "ucla_unverified"
+  },
+  "work_dir": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/calibration/identity_gate_gnuterm/work/S0235b"
+}

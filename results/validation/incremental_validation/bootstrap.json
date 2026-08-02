@@ -1,0 +1,125 @@
+{
+  "check": "bootstrap",
+  "summary_fragment": {
+    "bootstrap": {
+      "bootstrap_85": {
+        "pkikp": {
+          "bootstrap_fidelity_level": "methods_robustness_200",
+          "bootstrap_published_equivalent": "False",
+          "bootstrap_type": "type1",
+          "declared_published_n_bootstrap": "10000",
+          "degenerate_fit": "True",
+          "fit_fallback_used": "True",
+          "fit_quality_reasons": "slowness:residual_rms_fraction|tri_estimator_inconsistency",
+          "high_occupancy_component_count": "6",
+          "mean_slowness_sdeg": "-0.00358113047202732",
+          "mean_time_s": "630.3412219882591",
+          "n_bootstrap": "200",
+          "occupancy_argmax_slowness_sdeg": "-3.7373738288879395",
+          "occupancy_argmax_time_s": "664.0",
+          "occupancy_argmax_value": "0.4749999940395355",
+          "occupied_cell_count": "85986",
+          "phase": "pkikp",
+          "sigma_slowness_sdeg": "0.4135851428833738",
+          "sigma_time_s": "43.00446876874065",
+          "slowness_fit_converged": "False",
+          "slowness_fit_residual_rms": "18.85574722290039",
+          "slowness_projection_nonzero_bins": "100",
+          "threshold_pct": "85",
+          "time_fit_converged": "True",
+          "time_fit_residual_rms": "0.42974527984151156",
+          "time_projection_nonzero_bins": "2609",
+          "weighted_median_slowness_sdeg": "-3.535353422164917",
+          "weighted_median_time_s": "638.6"
+        },
+        "pkkp": {
+          "bootstrap_fidelity_level": "methods_robustness_200",
+          "bootstrap_published_equivalent": "False",
+          "bootstrap_type": "type1",
+          "declared_published_n_bootstrap": "10000",
+          "degenerate_fit": "True",
+          "fit_fallback_used": "True",
+          "fit_quality_reasons": "slowness:residual_rms_fraction",
+          "high_occupancy_component_count": "1",
+          "mean_slowness_sdeg": "-6.1471474043085745",
+          "mean_time_s": "1265.2648405213813",
+          "n_bootstrap": "200",
+          "occupancy_argmax_slowness_sdeg": "-5.959596157073975",
+          "occupancy_argmax_time_s": "1234.9",
+          "occupancy_argmax_value": "0.6800000071525574",
+          "occupied_cell_count": "120569",
+          "phase": "pkkp",
+          "sigma_slowness_sdeg": "0.8434567383850019",
+          "sigma_time_s": "49.34652788289295",
+          "slowness_fit_converged": "False",
+          "slowness_fit_residual_rms": "13.41807746887207",
+          "slowness_projection_nonzero_bins": "100",
+          "threshold_pct": "85",
+          "time_fit_converged": "True",
+          "time_fit_residual_rms": "0.6540037986916378",
+          "time_projection_nonzero_bins": "4180",
+          "weighted_median_slowness_sdeg": "-6.161616325378418",
+          "weighted_median_time_s": "1288.9"
+        }
+      },
+      "checks": {
+        "pkikp": {
+          "detail": "85% bootstrap robust estimators vs paper target: occupancy argmax \u0394t=60.00s \u0394s=2.76s/deg; weighted median \u0394t=34.60s \u0394s=2.96s/deg; gaussian fit degenerate_fit=True (slowness:residual_rms_fraction|tri_estimator_inconsistency)",
+          "status": "warn"
+        },
+        "pkkp": {
+          "detail": "85% bootstrap robust estimators vs paper target: occupancy argmax \u0394t=-106.10s \u0394s=1.04s/deg; weighted median \u0394t=-52.10s \u0394s=0.84s/deg; gaussian fit degenerate_fit=True (slowness:residual_rms_fraction)",
+          "status": "warn"
+        }
+      },
+      "fidelity": {
+        "detail": "methods_robustness_200 with N=200; published-equivalent=False",
+        "level": "methods_robustness_200",
+        "n_bootstrap": 200,
+        "phases": {
+          "pkikp": {
+            "level": "methods_robustness_200",
+            "n_bootstrap": 200,
+            "published_equivalent": false,
+            "published_n_bootstrap": 10000
+          },
+          "pkkp": {
+            "level": "methods_robustness_200",
+            "n_bootstrap": 200,
+            "published_equivalent": false,
+            "published_n_bootstrap": 10000
+          }
+        },
+        "published_equivalent": false,
+        "published_n_bootstrap": 10000,
+        "status": "pass"
+      },
+      "figures": {
+        "pkikp": "/Users/artuskg/GitRepos/MarsQuake/results/validation/figures/bootstrap_pkikp_diagnostic.png",
+        "pkkp": "/Users/artuskg/GitRepos/MarsQuake/results/validation/figures/bootstrap_pkkp_diagnostic.png"
+      }
+    },
+    "bootstrap_fidelity": {
+      "detail": "methods_robustness_200 with N=200; published-equivalent=False",
+      "level": "methods_robustness_200",
+      "n_bootstrap": 200,
+      "phases": {
+        "pkikp": {
+          "level": "methods_robustness_200",
+          "n_bootstrap": 200,
+          "published_equivalent": false,
+          "published_n_bootstrap": 10000
+        },
+        "pkkp": {
+          "level": "methods_robustness_200",
+          "n_bootstrap": 200,
+          "published_equivalent": false,
+          "published_n_bootstrap": 10000
+        }
+      },
+      "published_equivalent": false,
+      "published_n_bootstrap": 10000,
+      "status": "pass"
+    }
+  }
+}

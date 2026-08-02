@@ -1,0 +1,33 @@
+{
+  "check": "type2_distance_stratified",
+  "summary_fragment": {
+    "type2_distance_stratified": {
+      "detail": "Type II distance-stratified artifacts are present and structurally valid",
+      "phases": {
+        "pkikp": {
+          "bootstrap_fidelity_level": "methods_robustness_200",
+          "input_type": "envelope",
+          "mode": "paperfaith",
+          "n_bootstrap": 200,
+          "n_events": 23,
+          "path": "/Users/artuskg/GitRepos/MarsQuake/results/bootstrap/type2_pkikp_distance_stratified_occupancy.npz",
+          "published_equivalent": false,
+          "status": "pass",
+          "variant": "A"
+        },
+        "pkkp": {
+          "bootstrap_fidelity_level": "methods_robustness_200",
+          "input_type": "envelope",
+          "mode": "paperfaith",
+          "n_bootstrap": 200,
+          "n_events": 23,
+          "path": "/Users/artuskg/GitRepos/MarsQuake/results/bootstrap/type2_pkkp_distance_stratified_occupancy.npz",
+          "published_equivalent": false,
+          "status": "pass",
+          "variant": "A"
+        }
+      },
+      "status": "pass"
+    }
+  }
+}

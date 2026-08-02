@@ -1,0 +1,43 @@
+{
+  "check": "alignment",
+  "summary_fragment": {
+    "alignment": {
+      "ablation_waveform": {
+        "check": {
+          "detail": "23 events, lengths=[46000]",
+          "status": "pass"
+        },
+        "figure": "/Users/artuskg/GitRepos/MarsQuake/results/validation/figures/alignment_ablation_waveform_C.png",
+        "finite": true,
+        "input_type": "waveform",
+        "mode": "ablation",
+        "n_events": 23,
+        "uniform_length": true
+      },
+      "paperfaith_envelope": {
+        "check": {
+          "detail": "23 events, lengths=[46000]",
+          "status": "pass"
+        },
+        "figure": "/Users/artuskg/GitRepos/MarsQuake/results/validation/figures/alignment_paperfaith_envelope_C.png",
+        "finite": true,
+        "input_type": "envelope",
+        "mode": "paperfaith",
+        "n_events": 23,
+        "uniform_length": true
+      },
+      "paperfaith_waveform": {
+        "check": {
+          "detail": "23 events, lengths=[46000]",
+          "status": "pass"
+        },
+        "figure": "/Users/artuskg/GitRepos/MarsQuake/results/validation/figures/alignment_paperfaith_waveform_C.png",
+        "finite": true,
+        "input_type": "waveform",
+        "mode": "paperfaith",
+        "n_events": 23,
+        "uniform_length": true
+      }
+    }
+  }
+}

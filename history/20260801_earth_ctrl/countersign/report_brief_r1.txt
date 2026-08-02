@@ -1,0 +1,62 @@
+ROLE: Independent scientific reviewer for the MarsQuake P0-EARTH-CTRL card (Earth
+single-station positive control). You review the FINAL REPORT of a preregistered,
+already-executed analysis. You are bounded: review only; no code execution; no file writes;
+cite evidence for every finding.
+
+VERDICT CONTRACT: End your review with exactly one line:
+  VERDICT: COUNTERSIGNED
+or
+  VERDICT: NOT COUNTERSIGNED
+P2-class observations can NEVER withhold a countersign. Only an upheld P0 or P1 can.
+
+REVIEW OBJECT:
+  /Users/artuskg/marsquake_runs/20260801_earth_ctrl/REPORT.md
+  (SHA-256 09d61324ac54c1df0fbc345cb2309ceb5ae2e13d8c4cd3a4439e7e39c0dd325a)
+
+AUTHORITIES (read-only):
+- Preregistration (operative, post-DEV-3):
+  /Users/artuskg/marsquake_runs/20260801_earth_ctrl/PREREG.md
+  (SHA-256 0d342d3a8ec167974c420eca7b3a471a3e75647684f2ba3ee06a35460b0792c5; hash chain in
+  PREREG_SHA256.txt). You countersigned this PREREG in round 2
+  (countersign/prereg_countersign_r2.md) BEFORE data contact. DEV-2026-08-01-2 and -3 were
+  entered AFTER that countersign, at the pilot stage; they are in PREREG.md section 12 and
+  REPORT.md section 5 and are IN SCOPE for this review.
+- Frozen card: /Users/artuskg/GitRepos/MarsQuake/docs/research_pipeline.md section
+  "P0-EARTH-CTRL — Earth single-station positive control".
+- Lunar design precedent:
+  /Users/artuskg/GitRepos/MarsQuake/results/lunar_analog/PREREG_criteria.md (frozen criteria),
+  /Users/artuskg/GitRepos/MarsQuake/results/lunar_analog/code/apply_criteria.py (grade_row
+  semantics), and /Users/artuskg/GitRepos/MarsQuake/docs/lunar_analog_report.md (verdict terms).
+- Evidence tables and artifacts under /Users/artuskg/marsquake_runs/20260801_earth_ctrl/:
+  analysis/{detection_table,n1_detection_table,far_table,verdicts}.csv,
+  analysis/ARTIFACT_SHA256.txt, runs/real/*, runs/nulls/n1/*, catalog/*, data/proc/qc_table.csv,
+  code/* (drivers), code/mars_modules/* (byte-copied originals), code/PORT_DIFF_LOG.md.
+
+REVIEW SCOPE (all five):
+1. Number traceability: every number in REPORT.md must trace to a table/artifact in the run
+   directory. Spot-check at minimum: the three target rows (section 7) against
+   analysis/detection_table.csv; all FAR rows (section 8) against analysis/far_table.csv; the
+   verdict table (section 9) against analysis/verdicts.csv; data counts (section 4) against
+   catalog/event_selection.csv, catalog/data_manifest.csv, data/proc/qc_table.csv.
+2. Frozen-criteria fidelity: grading in code/grade.py must implement PREREG sections 6-9 and
+   the lunar grade_row semantics (G1/G2 bounds, Type-III rider with sigma x1.5 at G1, box-peak
+   gate applied symmetrically to real/N1/N2, per-grade verdict rules with same-phase FAR < 1/3,
+   no cross-grade aggregation). Flag ANY post-hoc criteria change as P0/P1.
+3. Deviations: DEV-2026-08-01-1 (pre-data, your round-1 fixes), -2 and -3 (pilot stage) must be
+   honestly reported, within the card's "fix alignment convention only" boundary for the pilot,
+   and must not touch detection criteria, windows, seeds, or verdict rules.
+4. Verdict validity: NOT-RECOVERED at G1 and G2 must follow mechanically from the frozen rules
+   given the tables. Check the FAR arithmetic (2/25 = 0.08; 1/4 = 0.25; 2/12 = 0.167).
+5. Scope honesty: claims must stay detection-level (no radius inversion), interpretation must
+   be labeled as such, and limitations (section 10) must not be contradicted elsewhere.
+
+SEVERITY RUBRIC (MarsQuake AGENTS.md):
+- P0: demonstrated corruption/contamination or a defect invalidating the result set.
+- P1: concrete, plausible path to materially changing the result/uncertainty/reproducibility —
+  must identify (a) the affected claim, (b) the causal path, (c) reproducible evidence.
+- P2: hardening, prose, telemetry, hypotheticals without demonstrated claim impact.
+Severity ratchet: findings you previously recorded at P2 in prereg rounds cannot be re-raised
+higher on the same evidence.
+
+OUTPUT FORMAT: a short markdown review — (i) what you checked and how, (ii) numbered findings
+each with severity + file/line/cell evidence, (iii) the single VERDICT line.

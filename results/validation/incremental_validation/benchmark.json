@@ -1,0 +1,178 @@
+{
+  "check": "benchmark",
+  "summary_fragment": {
+    "benchmark": {
+      "check": {
+        "detail": "current-run audit does not gate on the historical pre-current-run baseline; published-target replication gates remain separate",
+        "status": "pass"
+      },
+      "current_provenance_status": "current",
+      "deltas_vs_recorded": {
+        "pkikp_ds_sdeg": 0.40363636363636335,
+        "pkikp_dt_s": -2.3500000000000227,
+        "pkkp_target_ds_sdeg": 0.0003030303030300274,
+        "pkkp_target_dt_s": -0.049999999999954525
+      },
+      "figure": "/Users/artuskg/GitRepos/MarsQuake/results/validation/figures/benchmark_vespagram_validation.png",
+      "historical_pre_current_baseline": {
+        "pkikp_global": {
+          "slowness_sdeg": -4.04,
+          "time_s": 666.15
+        },
+        "pkkp_paper_target": {
+          "slowness_sdeg": -6.97,
+          "time_s": 1341.05
+        }
+      },
+      "named_endpoint_rows": [
+        {
+          "display_label": "published_PKIKP_box",
+          "endpoint_label": "published_PKIKP_box",
+          "peak_label": "published_target",
+          "phase": "PKiKP",
+          "power": 0.7736156900239739,
+          "primary_lane_variant": "A",
+          "registered_key": "pkikp_published_target",
+          "role": "published PKiKP target-box maximum",
+          "slowness_sdeg": -6.666666666666666,
+          "time_s": 601.95,
+          "window": "584-624s"
+        },
+        {
+          "display_label": "displaced_ridge",
+          "endpoint_label": "displaced_ridge",
+          "peak_label": "global",
+          "phase": "PKiKP",
+          "power": 0.9326603162534909,
+          "primary_lane_variant": "A",
+          "registered_key": "pkikp_global",
+          "role": "current broad-window PKiKP maximum",
+          "slowness_sdeg": -3.6363636363636367,
+          "time_s": 663.8,
+          "window": "550-700s"
+        },
+        {
+          "display_label": "PKKP_target",
+          "endpoint_label": "PKKP_target",
+          "peak_label": "paper_target",
+          "phase": "PKKP",
+          "power": 0.21425338569020153,
+          "primary_lane_variant": "A",
+          "registered_key": "pkkp_paper_target",
+          "role": "published PKKP target-box maximum",
+          "slowness_sdeg": -6.96969696969697,
+          "time_s": 1341.0,
+          "window": "1320-1360s"
+        }
+      ],
+      "peaks": {
+        "PKKP_target": {
+          "display_label": "PKKP_target",
+          "endpoint_label": "PKKP_target",
+          "peak_label": "paper_target",
+          "phase": "PKKP",
+          "power": 0.21425338569020153,
+          "primary_lane_variant": "A",
+          "registered_key": "pkkp_paper_target",
+          "role": "published PKKP target-box maximum",
+          "slowness_sdeg": -6.96969696969697,
+          "time_s": 1341.0,
+          "window": "1320-1360s"
+        },
+        "_current_provenance_status": "current",
+        "displaced_ridge": {
+          "display_label": "displaced_ridge",
+          "endpoint_label": "displaced_ridge",
+          "peak_label": "global",
+          "phase": "PKiKP",
+          "power": 0.9326603162534909,
+          "primary_lane_variant": "A",
+          "registered_key": "pkikp_global",
+          "role": "current broad-window PKiKP maximum",
+          "slowness_sdeg": -3.6363636363636367,
+          "time_s": 663.8,
+          "window": "550-700s"
+        },
+        "pkikp_global": {
+          "display_label": "displaced_ridge",
+          "endpoint_label": "displaced_ridge",
+          "peak_label": "global",
+          "phase": "PKiKP",
+          "power": 0.9326603162534909,
+          "primary_lane_variant": "A",
+          "registered_key": "pkikp_global",
+          "role": "current broad-window PKiKP maximum",
+          "slowness_sdeg": -3.6363636363636367,
+          "time_s": 663.8,
+          "window": "550-700s"
+        },
+        "pkikp_published_target": {
+          "display_label": "published_PKIKP_box",
+          "endpoint_label": "published_PKIKP_box",
+          "peak_label": "published_target",
+          "phase": "PKiKP",
+          "power": 0.7736156900239739,
+          "primary_lane_variant": "A",
+          "registered_key": "pkikp_published_target",
+          "role": "published PKiKP target-box maximum",
+          "slowness_sdeg": -6.666666666666666,
+          "time_s": 601.95,
+          "window": "584-624s"
+        },
+        "pkkp_paper_target": {
+          "display_label": "PKKP_target",
+          "endpoint_label": "PKKP_target",
+          "peak_label": "paper_target",
+          "phase": "PKKP",
+          "power": 0.21425338569020153,
+          "primary_lane_variant": "A",
+          "registered_key": "pkkp_paper_target",
+          "role": "published PKKP target-box maximum",
+          "slowness_sdeg": -6.96969696969697,
+          "time_s": 1341.0,
+          "window": "1320-1360s"
+        },
+        "pkkp_peak_1": {
+          "display_label": "pkkp_peak_1",
+          "endpoint_label": "",
+          "peak_label": "peak_1",
+          "phase": "PKKP",
+          "power": 0.2776812601080983,
+          "primary_lane_variant": "A",
+          "registered_key": "pkkp_peak_1",
+          "role": "",
+          "slowness_sdeg": -5.959595959595959,
+          "time_s": 1235.35,
+          "window": ""
+        },
+        "pkkp_peak_2": {
+          "display_label": "pkkp_peak_2",
+          "endpoint_label": "",
+          "peak_label": "peak_2",
+          "phase": "PKKP",
+          "power": 0.2432370776291997,
+          "primary_lane_variant": "A",
+          "registered_key": "pkkp_peak_2",
+          "role": "",
+          "slowness_sdeg": -4.747474747474747,
+          "time_s": 1291.7,
+          "window": ""
+        },
+        "published_PKIKP_box": {
+          "display_label": "published_PKIKP_box",
+          "endpoint_label": "published_PKIKP_box",
+          "peak_label": "published_target",
+          "phase": "PKiKP",
+          "power": 0.7736156900239739,
+          "primary_lane_variant": "A",
+          "registered_key": "pkikp_published_target",
+          "role": "published PKiKP target-box maximum",
+          "slowness_sdeg": -6.666666666666666,
+          "time_s": 601.95,
+          "window": "584-624s"
+        }
+      },
+      "validation_mode": "current-run"
+    }
+  }
+}

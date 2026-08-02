@@ -1,0 +1,9 @@
+No P0 findings. Hashes match, and independent TauP recomputation confirms all target values.
+
+- **P1-1 — Null grading is not identical to the lunar frozen design.** The Earth prereg exempts nulls from the non-bootstrap box-peak/local-maximum requirement ([PREREG.md](/Users/artuskg/marsquake_runs/20260801_earth_ctrl/PREREG.md:183)). The lunar design requires that peak and states nulls use the full detection machinery ([PREREG_criteria.md](/Users/artuskg/GitRepos/MarsQuake/results/lunar_analog/PREREG_criteria.md:173)). Consequently, bootstrap-fit nulls lacking a corresponding local maximum can still count toward FAR_N1/FAR_N2, potentially crossing 1/3 and changing RECOVERED to METHOD-FRAGILE.
+
+- **P1-2 — Earth Type-III grading is not executable under the declared adaptations.** E4 parameterizes only Type I while Type III is declared “identical” ([PREREG.md](/Users/artuskg/marsquake_runs/20260801_earth_ctrl/PREREG.md:174)). The frozen Type-III module hard-codes only Mars `pkikp`/`pkkp` windows and reference distance 29° ([bootstrap_type3_alignment_jitter.py](/Users/artuskg/GitRepos/MarsQuake/scripts/04_bootstrap/bootstrap_type3_alignment_jitter.py:33)). It cannot produce frozen-window Type-III statistics for PcP, PKiKP, ScS, or the 12 decoys at 30°. This directly leaves every G1 detection and G1 FAR underdetermined.
+
+- **P2 — Verdict precedence is unstated.** A quiet G1 FAR but high G2 FAR can satisfy RECOVERED-STRONG and METHOD-FRAGILE simultaneously ([PREREG.md](/Users/artuskg/marsquake_runs/20260801_earth_ctrl/PREREG.md:237)). Explicit per-grade reporting would resolve this.
+
+NOT COUNTERSIGNED: 1) null grading omits the frozen non-bootstrap local-maximum requirement; 2) the declared port cannot compute Earth-target Type-III G1 statistics

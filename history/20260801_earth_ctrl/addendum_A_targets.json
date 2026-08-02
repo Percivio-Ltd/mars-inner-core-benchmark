@@ -1,0 +1,192 @@
+{
+  "collision_times_rel_p": {
+    "P": 0.0,
+    "PKiKP": 633.81,
+    "PP": 57.26,
+    "PPP": 65.59,
+    "PS": 306.61,
+    "PcP": 181.67,
+    "PcS": 405.06,
+    "S": 295.76,
+    "SKiKP": 842.69,
+    "SP": 301.48,
+    "SS": 389.1,
+    "ScP": 401.32,
+    "ScS": 636.72,
+    "pP": 9.53,
+    "pPcP": 192.46,
+    "sP": 13.54,
+    "sPcP": 196.19,
+    "sS": 311.5
+  },
+  "decoys": [
+    {
+      "box_p_max": -4.759,
+      "box_p_min": -7.759,
+      "box_t_max": 578.33,
+      "box_t_min": 498.33,
+      "decoy_center_s": 538.33,
+      "phase": "PcP",
+      "shift_s": -300.0,
+      "walk_steps": 4
+    },
+    {
+      "box_p_max": -4.759,
+      "box_p_min": -7.759,
+      "box_t_max": 803.33,
+      "box_t_min": 723.33,
+      "decoy_center_s": 763.33,
+      "phase": "PcP",
+      "shift_s": -150.0,
+      "walk_steps": 9
+    },
+    {
+      "box_p_max": -4.759,
+      "box_p_min": -7.759,
+      "box_t_max": 971.67,
+      "box_t_min": 891.67,
+      "decoy_center_s": 931.67,
+      "phase": "PcP",
+      "shift_s": 150.0,
+      "walk_steps": 8
+    },
+    {
+      "box_p_max": -4.759,
+      "box_p_min": -7.759,
+      "box_t_max": 1121.67,
+      "box_t_min": 1041.67,
+      "decoy_center_s": 1081.67,
+      "phase": "PcP",
+      "shift_s": 300.0,
+      "walk_steps": 8
+    },
+    {
+      "box_p_max": -6.688,
+      "box_p_min": -9.688,
+      "box_t_max": 576.19,
+      "box_t_min": 496.19,
+      "decoy_center_s": 536.19,
+      "phase": "PKiKP",
+      "shift_s": -300.0,
+      "walk_steps": 10
+    },
+    {
+      "box_p_max": -6.688,
+      "box_p_min": -9.688,
+      "box_t_max": 801.19,
+      "box_t_min": 721.19,
+      "decoy_center_s": 761.19,
+      "phase": "PKiKP",
+      "shift_s": -150.0,
+      "walk_steps": 15
+    },
+    {
+      "box_p_max": -6.688,
+      "box_p_min": -9.688,
+      "box_t_max": 973.81,
+      "box_t_min": 893.81,
+      "decoy_center_s": 933.81,
+      "phase": "PKiKP",
+      "shift_s": 150.0,
+      "walk_steps": 2
+    },
+    {
+      "box_p_max": -6.688,
+      "box_p_min": -9.688,
+      "box_t_max": 1123.81,
+      "box_t_min": 1043.81,
+      "decoy_center_s": 1083.81,
+      "phase": "PKiKP",
+      "shift_s": 300.0,
+      "walk_steps": 2
+    },
+    {
+      "box_p_max": -2.564,
+      "box_p_min": -5.564,
+      "box_t_max": 573.28,
+      "box_t_min": 493.28,
+      "decoy_center_s": 533.28,
+      "phase": "ScS",
+      "shift_s": -300.0,
+      "walk_steps": 10
+    },
+    {
+      "box_p_max": -2.564,
+      "box_p_min": -5.564,
+      "box_t_max": 798.28,
+      "box_t_min": 718.28,
+      "decoy_center_s": 758.28,
+      "phase": "ScS",
+      "shift_s": -150.0,
+      "walk_steps": 15
+    },
+    {
+      "box_p_max": -2.564,
+      "box_p_min": -5.564,
+      "box_t_max": 976.72,
+      "box_t_min": 896.72,
+      "decoy_center_s": 936.72,
+      "phase": "ScS",
+      "shift_s": 150.0,
+      "walk_steps": 2
+    },
+    {
+      "box_p_max": -2.564,
+      "box_p_min": -5.564,
+      "box_t_max": 1126.72,
+      "box_t_min": 1046.72,
+      "decoy_center_s": 1086.72,
+      "phase": "ScS",
+      "shift_s": 300.0,
+      "walk_steps": 2
+    }
+  ],
+  "model": "ak135 (obspy built-in)",
+  "reference": {
+    "depth_km": 33.0,
+    "distance_deg": 30.0,
+    "p_slowness_sdeg": 8.845,
+    "t_p_abs_s": 365.5
+  },
+  "targets": [
+    {
+      "box_p_max": -4.759,
+      "box_p_min": -7.759,
+      "box_t_max": 221.67,
+      "box_t_min": 141.67,
+      "diff_slowness_sdeg": -6.259,
+      "diff_time_s": 181.67,
+      "phase": "PcP",
+      "ref_depth_km": 33.0,
+      "ref_distance_deg": 30.0,
+      "t_p_abs_s": 365.5,
+      "t_phase_abs_s": 547.17
+    },
+    {
+      "box_p_max": -6.688,
+      "box_p_min": -9.688,
+      "box_t_max": 673.81,
+      "box_t_min": 593.81,
+      "diff_slowness_sdeg": -8.188,
+      "diff_time_s": 633.81,
+      "phase": "PKiKP",
+      "ref_depth_km": 33.0,
+      "ref_distance_deg": 30.0,
+      "t_p_abs_s": 365.5,
+      "t_phase_abs_s": 999.31
+    },
+    {
+      "box_p_max": -2.564,
+      "box_p_min": -5.564,
+      "box_t_max": 676.72,
+      "box_t_min": 596.72,
+      "diff_slowness_sdeg": -4.064,
+      "diff_time_s": 636.72,
+      "phase": "ScS",
+      "ref_depth_km": 33.0,
+      "ref_distance_deg": 30.0,
+      "t_p_abs_s": 365.5,
+      "t_phase_abs_s": 1002.22
+    }
+  ]
+}

@@ -1,0 +1,362 @@
+COUNTERSIGN REQUEST — P0-MARS-SCRAMBLE research-cycle review
+
+You are the countersigning reviewer for a MarsQuake research-cycle report
+under AGENTS.md § "Delegated cycles": sub-Fable research reports require
+review and sign-off by exact Codex gpt-5.6-sol at xhigh reasoning. Your
+verdict line must be exactly one of:
+
+  VERDICT: COUNTERSIGNED
+  VERDICT: FINDINGS (followed by numbered findings)
+
+Severity rules (binding): a P0 or P1 finding must identify (1) the active
+scientific claim affected, (2) a concrete causal path by which the defect
+alters the result, uncertainty, provenance, or reproducibility, and
+(3) evidence sufficient to reproduce or discriminate that path. P2-class
+observations (hardening, prose, hypotheticals without demonstrated claim
+impact) must be recorded but CANNOT withhold a countersign. Prose ambiguity
+alone is not P1.
+
+Scope: the scramble-null result package in your cwd
+(/Users/artuskg/marsquake_runs/20260801_mars_scramble/). You may run
+READ-ONLY verification commands (recompute hashes, recount rows, re-derive
+the frozen statistics from null_table.csv, inspect scramble_runner.py and
+compare against the repo modules under
+/Users/artuskg/GitRepos/MarsQuake/scripts/03_vespagram/). Write NOTHING
+except your final message; do not create, modify, or delete any file; do
+not re-run the sweep or any stage of the chain.
+
+Key files in cwd: MEMO.md (the report under review), null_table.csv,
+frozen_stats.json, compute_frozen_stats.py, scramble_runner.py,
+peak_comparison_canonical.csv, chain.log, sweep.log,
+DECISION_operator_resolution.md, control_identity.csv,
+control_seed1_runA.csv, control_seed1_runB.csv, ctl*_r00*.npy/csv dumps,
+codex_impl_brief.txt.
+
+What to verify (the claim-bearing spine):
+1. Gate: peak_comparison_canonical.csv contains the canonical PKiKP global
+   row (663.8, -3.6363636363636367, 0.9326603162534909, support 23) and the
+   published_target row power 0.7736156900239739.
+2. Runner fidelity: scramble_runner.py imports the repo stack and
+   detect-peaks functions (no reimplemented math); permutation law is
+   default_rng(20260801 + i), permutation(23), identity rejected by redraw;
+   distances permuted per realization, traces/masks untouched.
+3. Controls: identity row equals the canonical cell; seed-1 differs from
+   identity (effect); seed-1 reruns byte-identical (determinism) — evidence
+   files above.
+4. Frozen statistics: recompute from null_table.csv (excluding realization
+   0) and confirm FAR_ridge=0.755, FAR_target=0.480, p_ridge=152/201,
+   p_target=97/201, and the quoted 5/25/50/75/95% quantiles; thresholds
+   literal 0.9327/0.7736; p uses the real values 0.9326603162534909 and
+   0.7736156900239739.
+5. Hashes: SHA-256 of null_table.csv =
+   12aa226d7e755b9bc691de9d7d1872b25041ee73993f3829c25eb5849fbe06c6 and of
+   peak_comparison_canonical.csv =
+   8df5f5c85473460e19e10021db52c997945f3bee6f4f8aac461251a5a0bf07ce.
+6. The operator resolution (DECISION_operator_resolution.md): assess whether
+   the resolution to run the canonical default operator
+   (montalbetti_kanasewich_1970) is forced by the card's frozen gate cell
+   and thresholds, and that it was recorded pre-outcome and accepted by the
+   lead pre-outcome. The card's chain parenthetical said
+   principal_axis_projection; the memo discloses the deviation.
+7. The interpretation and honesty clause in MEMO.md: same-data calibration,
+   no claim that detections are proven false, matched-null framing.
+
+Below, verbatim: (A) the frozen card text as registered; (B) the
+operator-resolution record; (C) MEMO.md.
+
+================ (A) FROZEN CARD TEXT (docs/research_pipeline.md @ a2163d49) ================
+### P0-MARS-SCRAMBLE — Mars-side event-scramble null (calibration card)
+
+- Question: how often does the Mars 23-event source-array stack produce
+  PKiKP-window peaks of ridge quality or target-box quality when event
+  distances are permuted (moveout coherence destroyed)? This is the lunar
+  N1 null — which fired 75/75 at replication grade on the Moon — never yet
+  run on the Mars data itself; it is the same-data false-alarm calibration
+  of the occupancy/argmax machinery.
+- Criterion: Paper 0 peak-comparison honesty (draft § 4/§ 5); the A1
+  report's central recommendation ("every future single-station stacking
+  claim needs a matched null suite").
+- Artifact: per-realization null table (N = 200) + frozen summary
+  statistics + verdict memo, countersigned.
+- Chain: isolated dir under `/Users/artuskg/marsquake_runs/`; regenerate
+  the canonical lane from `data/processed/*_ZNE.mseed` +
+  `*_ZNE.rotation.json` exactly as the P0-ABL-POLOP-PROV card (bandpass →
+  polarization `principal_axis_projection` → fdpa → align_and_cut →
+  normalize_and_envelope → run_vespagrams → `detect_peaks.py
+  --require-current-provenance`); positive gate before any scramble: the
+  regenerated lane must reproduce the canonical PKiKP global cell
+  (663.80 s, −3.6364 s/deg, power 0.9327, support 23).
+- Scramble (frozen): permute the 23 vespagram-set event distances
+  (identity excluded), `numpy.random.default_rng(20260801 + i)` for
+  realization i = 1…200; per realization re-stack with the registered
+  constants (4th root, slowness −10…0 in 100 steps, 20-s window, min
+  support 2) and record the full-window (550–700 s) supported argmax
+  (t, s, power, support) and the target-box (584–624 s × [−7.1, −5.9]
+  s/deg) maximum power.
+- Frozen statistics (registered before execution; no post-hoc tuning):
+  FAR_ridge = fraction of realizations with full-window supported max
+  power ≥ 0.9327; FAR_target = fraction with target-box max ≥ 0.7736;
+  empirical exceedance p = (1 + #{null ≥ real}) / (N + 1) for both real
+  values; 5/25/50/75/95% quantiles of both null distributions.
+- Positive control: the identity permutation reproduces the canonical
+  argmax cell exactly.
+- Adverse/effect controls: realization seed-1's per-trace shift table must
+  differ from identity's and its vespagram grid must differ (nonzero
+  delta) — guards against a runner that silently ignores permuted
+  distances; seed-1 rerun must be byte-identical (determinism).
+- Registered honesty clause: this is a same-data calibration; the null
+  destroys moveout coherence while keeping envelopes, so it calibrates the
+  machinery's box-occupancy behavior on this noise field, not event-set
+  propagation physics.
+- Structure: Codex implements the scramble runner in the isolated dir
+  (repo read-only); sub-Fable reviews the implementation, executes,
+  writes the memo; Codex `gpt-5.6-sol` `xhigh` countersigns. Lead lands
+  scripts + tables into `history/`.
+- Stop: countersigned memo + tables returned to lead. No occupancy/
+  bootstrap extension, no PKKP-side sweep, no threshold changes.
+- Status: registered 2026-08-01, dispatching.
+
+
+================ (B) OPERATOR-RESOLUTION RECORD ================
+# Pre-registered resolution: canonical-lane polarization operator
+
+Recorded 2026-08-01 BEFORE executing any chain stage in this isolated dir
+(worker for card P0-MARS-SCRAMBLE, frozen at commit a2163d49).
+
+## The contradiction inside the frozen card text
+
+The card's chain recap says "exactly as the P0-ABL-POLOP-PROV card (bandpass →
+polarization `principal_axis_projection` → …)" while its non-negotiable
+positive gate and frozen thresholds are:
+
+- gate cell: PKiKP global supported argmax (663.80 s, −3.6364 s/deg,
+  power 0.9327, support 23);
+- FAR_ridge threshold 0.9327; FAR_target threshold 0.7736.
+
+These two elements cannot both be executed: committed, pre-existing evidence
+shows the `principal_axis_projection` chain cannot produce the gate cell.
+
+## Committed evidence (all pre-dating this run; none generated here)
+
+1. `results/tables/peak_comparison.csv` line 92 (production, provenance
+   `current`): `paperfaith,envelope,A,montalbetti_kanasewich_1970,nth_root,
+   20.0,PKiKP,global,663.8,-3.6363636363636367,0.9326603162534909,23,…`
+   — exactly the gate cell, under the canonical default operator.
+2. Same file, published_target row: power `0.7736156900239739` — exactly the
+   frozen FAR_target threshold 0.7736, same canonical lane.
+3. `history/20260801_ablpolop_prov/peak_comparison_operator_ablation_provenance.csv`
+   (the deterministic P0-ABL-POLOP-PROV rerun): the same lane under
+   `principal_axis_projection` yields `603.25,-3.5353535353535355,
+   0.9332648265013125,23` — not the gate cell; no row of that 240-row table
+   contains (663.80, −3.6364, 0.9327).
+4. `docs/research_pipeline.md`, P0-ABL-POLOP card status: "the envelope-A
+   global argmax is operator-sensitive (flips to 601.9 s/−3.54)" — the
+   operator-sensitivity of exactly this argmax is a registered finding.
+5. `scripts/run_paper0.py` invokes `polarization_filter.py` with no
+   `--operator` flag; the committed default is
+   `montalbetti_kanasewich_1970` (`polarization_filter.py` line 480).
+
+## Resolution (registered before running)
+
+The card's scientific object is "the canonical lane", and every frozen
+numeric anchor (gate cell, 0.9327, 0.7736) is exactly and only the canonical
+default-operator lane value. The parenthetical operator flag is a
+transcription slip carried over from the ablation card's chain recap (that
+card's purpose was the *other* operator). "Exactly as the P0-ABL-POLOP-PROV
+card" is honored for the isolation mechanics: copied `*_ZNE.mseed` +
+`*_ZNE.rotation.json` inputs, isolated dir, identical stage sequence,
+`--require-current-provenance` enforcement.
+
+Therefore the polarization stage in this run is executed with the canonical
+production operator, passed explicitly:
+`--operator montalbetti_kanasewich_1970`.
+
+No frozen statistic, seed, threshold, N, or control is altered. The
+non-negotiable gate stays fully armed: if the regenerated table does not
+contain the gate cell, the worker stops and reports without proceeding.
+This note is written so the countersigner and the lead can adjudicate the
+resolution itself; if the lead rejects it, the run is discarded, not
+reinterpreted.
+
+## Lead adjudication (received 2026-08-01, before any scramble output existed)
+
+ACCEPTED by the lead: "the card's chain recap carried a transcription slip
+from the ablation card; the canonical lane's frozen numeric anchors (gate
+cell 663.80/−3.6364/0.9327/support 23; thresholds 0.9327/0.7736) are
+default-operator (`montalbetti_kanasewich_1970`) values, and
+`scripts/run_paper0.py` passes no --operator flag." The lead is amending the
+registered card text with a dated, outcome-neutral pre-outcome amendment
+citing this decision record. All frozen statistics, seeds, thresholds, N,
+and controls remain unchanged; the gate stays fully armed (stop-and-report
+if the regenerated table lacks the gate cell).
+
+================ (C) MEMO.md ================
+# P0-MARS-SCRAMBLE — Mars-side event-scramble null: verdict memo
+
+Worker memo for the registered card P0-MARS-SCRAMBLE
+(`docs/research_pipeline.md`, frozen at commit a2163d49). Isolated run dir:
+`/Users/artuskg/marsquake_runs/20260801_mars_scramble/`. Repo read-only
+throughout; scientific interpreter `/Users/artuskg/micromamba/envs/mars-ic/bin/python`.
+
+## Question
+
+How often does the Mars 23-event source-array stack produce PKiKP-window
+peaks of ridge quality (canonical supported argmax power 0.9327) or
+target-box quality (published-box max 0.7736) when event distances are
+permuted, destroying moveout coherence? This is the lunar N1 null — which
+fired 75/75 at replication grade on the Moon — run for the first time on the
+Mars data itself: the same-data false-alarm calibration of the
+occupancy/argmax machinery (Paper 0 § 4/§ 5 peak-comparison honesty; A1
+recommendation that every single-station stacking claim carry a matched
+null suite).
+
+## Canonical-lane regeneration and gate (STEP 1)
+
+Chain (one finite observed run, 18:19:54–18:24:59 UTC, `chain.log`): copied
+26 `data/processed/*_ZNE.mseed` + `*_ZNE.rotation.json` into the isolated
+dir, then bandpass → polarization → fdpa → align_and_cut →
+normalize_and_envelope → run_vespagrams → `detect_peaks.py
+--require-current-provenance`, all stages `--in-dir/--out-dir` (or
+`--data-dir/--input-dir/--out-csv`) pointed at the isolated dir.
+
+Operator resolution: the card's chain recap says `principal_axis_projection`,
+which is internally inconsistent with the card's own frozen gate cell and
+thresholds; committed evidence (production `results/tables/peak_comparison.csv`,
+the ablation card's recorded operator-sensitivity finding, and
+`run_paper0.py`'s flagless polarization invocation) pins the canonical lane
+to the default operator `montalbetti_kanasewich_1970`. Resolution was
+recorded in `DECISION_operator_resolution.md` BEFORE the chain ran and was
+ACCEPTED by the lead pre-outcome; the lead is amending the card text with a
+dated amendment. No frozen statistic, seed, threshold, N, or control was
+altered.
+
+GATE OUTCOME: PASS. The regenerated `peak_comparison_canonical.csv`
+(240 rows, all `current_provenance_status=current`) contains the canonical
+PKiKP global supported argmax exactly:
+
+- global: t=663.8 s, s=−3.6363636363636367 s/deg, power=0.9326603162534909,
+  support=23 — bit-identical to the production row;
+- published_target: power=0.7736156900239739 (the frozen 0.7736 threshold
+  source), t=601.95, s=−6.666…, support 23;
+- stronger than required: the entire 240-row regenerated table is
+  line-identical to the production `results/tables/peak_comparison.csv`.
+
+Gate table SHA-256:
+`8df5f5c85473460e19e10021db52c997945f3bee6f4f8aac461251a5a0bf07ce`.
+
+## Scramble runner (STEP 2)
+
+`scramble_runner.py` implemented by Codex `gpt-5.6-sol` at `xhigh`
+(banner verified in `codex_impl_stdout.log`; brief
+`codex_impl_brief.txt`; summary `codex_impl_out.md`). Reviewed line-by-line
+by this worker: genuine import of the repo stack
+(`compute_vespagram.py` → `stacking.py`) and of the detect_peaks argmax/box
+functions; frozen constants asserted against the module authorities
+(min support 2, window (550, 700), box 584–624 × [−7.1, −5.9], ref distance
+29.0, slowness −10…0 in 100 steps, nth-root n=4, 20-s power window);
+permutation law exactly `numpy.random.default_rng(20260801 + i)`,
+`rng.permutation(23)`, identity rejected by redraw from the same rng;
+distances permuted per-realization (`base[permutation]`), traces/masks
+never touched; deterministic .17g CSV output written atomically; np.save-only
+grid dumps. Codex transcript audited: no out-of-scope writes, no execution
+beyond a source-only syntax check.
+
+## Controls (STEP 3, registered order) — ALL PASS
+
+(a) Positive: identity permutation through the runner reproduces the
+    canonical cell with exact float equality on all seven recorded values
+    (argmax t/s/power/support; box power/t/s), and the runner's identity
+    vespagram grid and support-count grid are array-identical (NaN-aware)
+    to the canonical chain NPZ `vesp/paperfaith/envelope/A/nth_root_win20.npz`
+    — the runner IS the canonical stack. Artifacts: `control_identity.csv`,
+    `ctl_r000_vesp.npy`, `ctl_r000_support.npy`.
+(b) Effect: seed-1's per-trace shift table differs from identity's
+    (`ctlA_r001_shifts.csv` vs `ctl_r000_shifts.csv`), and its vespagram
+    grid differs massively: 4,525,248 nonzero |Δ| cells (max |Δ| 1357.7),
+    NaN support-edge pattern shifted — the runner cannot be silently
+    ignoring permuted distances.
+(c) Determinism: seed-1 run twice → byte-identical results CSV, vespagram
+    grid, support grid, and shift table (`control_seed1_runA.csv` vs
+    `control_seed1_runB.csv`, `ctlA_*` vs `ctlB_*`).
+
+## Sweep (STEP 4)
+
+One finite observed run (`sweep.log`, progress line per realization):
+identity + realizations 1–200, all 201 completed, zero errors, zero
+blocked/NaN realizations. Cross-run consistency: the sweep's r0 row is
+byte-identical to the identity-control row and its r1 row byte-identical to
+the seed-1 control row.
+
+## Frozen statistics (registered before execution; computed by the
+pre-registered `compute_frozen_stats.py`, written before any null existed)
+
+N = 200 null realizations; real values from the regenerated canonical lane:
+ridge (global argmax power) 0.9326603162534909, target-box power
+0.7736156900239739.
+
+- FAR_ridge (null argmax power ≥ 0.9327): **0.755** (151/200)
+- FAR_target (null target-box max ≥ 0.7736): **0.480** (96/200)
+- Exceedance p_ridge = (1 + #{null ≥ real})/(N+1) = **0.7562** (152/201)
+- Exceedance p_target = **0.4826** (97/201)
+- Ridge null quantiles (5/25/50/75/95%):
+  0.9192 / 0.9364 / 0.9790 / 1.0429 / 1.1938; null max 1.3327
+- Target-box null quantiles (5/25/50/75/95%):
+  0.6007 / 0.6780 / 0.7667 / 0.8460 / 0.9794; null max 1.0765
+- NaN counts: 0 (ridge), 0 (target)
+
+`frozen_stats.json` records the exact values.
+
+## Interpretation
+
+The Mars 23-event stack reproduces the lunar N1 behavior on its own data:
+destroying moveout coherence leaves the PKiKP-window peak statistics
+essentially unchanged. Three-quarters (75.5%) of distance-scrambled
+realizations produce a full-window supported argmax at or above the
+canonical ridge power, and the real canonical value sits at only the ~24th
+percentile of its own scramble null (p_ridge 0.756, two-sided reading: the
+real ridge is *typical*, not exceptional; the null median 0.979 exceeds
+it). Nearly half (48.0%) of scrambles reach the published-target-box
+quality, and the real target-box maximum lies at the null median (p_target
+0.483). Under the frozen criteria, ridge-quality and target-box-quality
+peaks are the ordinary product of 4th-root stacking of these 23 normalized
+envelopes at ANY distance assignment: the peak-power and box-occupancy
+machinery has no discriminating power against moveout-incoherent
+alternatives on this data set.
+
+Registered honesty clause (carried in substance): this is a same-data
+calibration; the null destroys moveout coherence while keeping envelopes,
+so it calibrates the machinery's box-occupancy behavior on this noise
+field, not event-set propagation physics. It does not prove any detection
+false; it quantifies the false-alarm behavior of the detection criteria
+themselves. For Paper 0 § 4/§ 5 this is the matched null suite the A1
+report demanded: the displaced 663.8-s ridge and the 0.7736 target-box
+maximum are both statistically unremarkable against the scramble null.
+
+## Residual uncertainty
+
+- The null keeps the envelope set fixed; it does not calibrate against
+  alternative event selections, alignment jitter, or amplitude
+  renormalization (those are separate registered lanes: bootstrap
+  types 1–3).
+- Permutations preserve the multiset of the 23 distances; the null is
+  conditional on the observed distance distribution (as registered).
+- 200 realizations bound the exceedance p to ≥ 1/201 ≈ 0.005; irrelevant
+  here since both p values are near the middle of the null.
+- The nth-root stack's power normalization means null powers can exceed 1
+  (median 0.979, max 1.333); thresholds were applied exactly as frozen,
+  with no rescaling.
+
+## Artifact hashes (SHA-256)
+
+- `null_table.csv` (201 rows: identity + 200 nulls):
+  `12aa226d7e755b9bc691de9d7d1872b25041ee73993f3829c25eb5849fbe06c6`
+- `frozen_stats.json`:
+  `0330244276493fa7470ad685feefe0115cf5577ce428ef1eaa3d16124eb134c4`
+- `scramble_runner.py`:
+  `81758d9042453d76f77cb73f525163fad9011ab447d3484194dd4ec71ec2ab11`
+- `peak_comparison_canonical.csv` (gate table):
+  `8df5f5c85473460e19e10021db52c997945f3bee6f4f8aac461251a5a0bf07ce`
+- `control_identity.csv`:
+  `d118cf4ed1fbf10f5a7ce0e158faf51fa0c8604d8cd9f930820fad10f2533f59`
+- `control_seed1_runA.csv`:
+  `02d1a0df85d1f9036f299c4ca685894c5f056a5cb7d3c8da3bca272a1a8c620a`

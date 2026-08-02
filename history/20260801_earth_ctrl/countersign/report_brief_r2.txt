@@ -1,0 +1,64 @@
+ROLE: Final fix-round reviewer for the MarsQuake P0-EARTH-CTRL report. Round 1
+(countersign/report_countersign_r1.md, your review) returned NOT COUNTERSIGNED with two P1
+and three P2 findings. Exactly one fix round has been executed under lead adjudication. This
+review is RESTRICTED to the two P1 fixes and their affected paths. There are no further fix
+rounds after this review.
+
+VERDICT CONTRACT: End with exactly one line:
+  VERDICT: COUNTERSIGNED
+or
+  VERDICT: NOT COUNTERSIGNED
+P2-class observations can NEVER withhold a countersign. The three round-1 P2s are recorded in
+P2_LOG.md with dispositions ("recorded, not fixed in-cycle") per the delegated-cycle policy;
+they are OUT OF SCOPE and cannot block. Severity ratchet: any finding recorded at P2 cannot be
+re-raised at higher severity on the same evidence. Only a NEW P0 — demonstrated corruption or
+a defect invalidating the result set, with the three-part claim-impact test — can withhold at
+this stage; a new P0 returns the item to the lead with the finding.
+
+REVIEW OBJECTS (post-fix):
+- /Users/artuskg/marsquake_runs/20260801_earth_ctrl/REPORT.md
+  (SHA-256 4585f288494a65647db341deb86d83ed5d28395d32167013e5261d9e91745115)
+- /Users/artuskg/marsquake_runs/20260801_earth_ctrl/code/grade.py
+  (SHA-256 7f183bf78cf4a0dc77fc2e2e0fa3b7c5acd4e6b13e1dc02dcddac36b9ddb37b4)
+- /Users/artuskg/marsquake_runs/20260801_earth_ctrl/P2_LOG.md
+  (SHA-256 72bad64be2d618bd84bcc27802d99c09d0572aa33e7df0c630fee67bca9d8623)
+
+FIX 1 — round-1 finding P1-1 (DEV-3 pilot-criterion change). Lead-adjudicated repair was
+honest RE-REPORTING, not a better gate. Verify in REPORT.md:
+(a) Section 5 states plainly that the REGISTERED pilot criterion (argmax) FAILED at +29.25 s.
+(b) DEV-3 is labeled an OUT-OF-BOUNDARY post-hoc deviation (the frozen rule permitted fixing
+    the alignment convention only; the replacement statistic was adopted after observing the
+    registered gate fail).
+(c) The former "no post-hoc criteria changes" claim (old line ~228) is inverted: section 9 now
+    discloses the post-hoc pilot-gate change explicitly.
+(d) Section 9 states the production run's standing under BOTH readings with the STRICT reading
+    governing: strict frozen reading = pilot failure meant STOP, so the production run and
+    verdicts carry EXPLORATORY standing relative to the PREREG (deviation-flagged); as-run
+    reading = with the DEV-3 gate the pilot passes and the verdicts stand as computed.
+(e) The countersign-invalidated late-bias/source-duration interpretation was REMOVED where the
+    rewrite touched it (sections 5, 7, 10.2), not sign-corrected. Remaining sign-narration
+    prose elsewhere is P2-3 territory: recorded in P2_LOG.md, out of scope.
+The production pipeline was NOT rerun or modified for this finding (correct per adjudication).
+
+FIX 2 — round-1 finding P1-2 (unregistered verdict branch). Verify:
+(a) code/grade.py: the residual verdict branch now emits the frozen section-9 verdict
+    INCONCLUSIVE for every residual case; the unregistered NOT-RECOVERED-WITH-ACTIVE-NULLS
+    term is deleted.
+(b) The grader (only) was rerun. Hash-equality evidence:
+    analysis/P1-2_hash_before.txt vs analysis/P1-2_hash_after.txt — all four analysis tables
+    (detection_table, n1_detection_table, far_table, verdicts) are byte-identical before and
+    after; only code/grade.py's hash changed. The two production verdicts
+    (NOT-RECOVERED at G1 and G2) are unchanged.
+
+AFFECTED-PATH CONSISTENCY (in scope only insofar as the fixes touch them):
+- analysis/ARTIFACT_SHA256.txt was regenerated (now 105 artifacts) to include the repaired
+  grade.py, P2_LOG.md, and the hash-equality records; REPORT.md section 11 reflects this.
+- REPORT.md section 11's headline table hashes must still match the actual files (tables were
+  byte-identical, so they should be unchanged).
+
+CONSTRAINTS: read-only; no code execution required (you may recompute hashes with shasum if
+you wish); cite file/line evidence for every finding; do not re-open round-1 scope beyond the
+two fixes and their affected paths.
+
+OUTPUT FORMAT: (i) what you checked, (ii) numbered findings with severity + evidence (empty if
+none), (iii) the single VERDICT line.

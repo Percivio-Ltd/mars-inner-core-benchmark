@@ -1,0 +1,408 @@
+STAGE bandpass start 14:32:44
+/Users/artuskg/micromamba/envs/mars-ic/lib/python3.11/site-packages/obspy/core/util/base.py:26: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0105a_Z_filt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0173a_Z_filt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0189a_Z_filt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0235b_Z_filt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0290b_Z_filt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0325a_Z_filt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0474a_Z_filt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0484b_Z_filt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0784a_Z_filt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0802a_Z_filt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0820a_Z_filt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0864a_Z_filt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0916d_Z_filt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0918a_Z_filt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1012d_Z_filt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1015f_Z_filt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1022a_Z_filt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1039b_Z_filt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1048d_Z_filt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1102a_Z_filt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1133c_Z_filt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1153a_Z_filt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1157a_Z_filt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1197a_Z_filt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1222a_Z_filt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1415a_Z_filt.mseed
+STAGE polfilt start 14:32:44
+/Users/artuskg/micromamba/envs/mars-ic/lib/python3.11/site-packages/obspy/core/util/base.py:26: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0105a_Z_polfilt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0105a_mk_filterbank.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0173a_Z_polfilt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0173a_mk_filterbank.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0189a_Z_polfilt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0189a_mk_filterbank.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0235b_Z_polfilt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0235b_mk_filterbank.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0290b_Z_polfilt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0290b_mk_filterbank.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0325a_Z_polfilt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0325a_mk_filterbank.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0474a_Z_polfilt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0474a_mk_filterbank.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0484b_Z_polfilt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0484b_mk_filterbank.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0784a_Z_polfilt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0784a_mk_filterbank.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0802a_Z_polfilt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0802a_mk_filterbank.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0820a_Z_polfilt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0820a_mk_filterbank.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0864a_Z_polfilt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0864a_mk_filterbank.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0916d_Z_polfilt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0916d_mk_filterbank.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0918a_Z_polfilt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0918a_mk_filterbank.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1012d_Z_polfilt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1012d_mk_filterbank.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1015f_Z_polfilt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1015f_mk_filterbank.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1022a_Z_polfilt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1022a_mk_filterbank.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1039b_Z_polfilt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1039b_mk_filterbank.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1048d_Z_polfilt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1048d_mk_filterbank.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1102a_Z_polfilt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1102a_mk_filterbank.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1133c_Z_polfilt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1133c_mk_filterbank.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1153a_Z_polfilt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1153a_mk_filterbank.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1157a_Z_polfilt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1157a_mk_filterbank.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1197a_Z_polfilt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1197a_mk_filterbank.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1222a_Z_polfilt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1222a_mk_filterbank.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1415a_Z_polfilt.mseed
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1415a_mk_filterbank.npz
+STAGE fdpa start 14:33:42
+/Users/artuskg/micromamba/envs/mars-ic/lib/python3.11/site-packages/obspy/core/util/base.py:26: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0105a_fdpa.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0173a_fdpa.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0189a_fdpa.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0235b_fdpa.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0290b_fdpa.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0325a_fdpa.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0474a_fdpa.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0484b_fdpa.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0784a_fdpa.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0802a_fdpa.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0820a_fdpa.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0864a_fdpa.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0916d_fdpa.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S0918a_fdpa.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1012d_fdpa.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1015f_fdpa.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1022a_fdpa.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1039b_fdpa.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1048d_fdpa.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1102a_fdpa.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1133c_fdpa.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1153a_fdpa.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1157a_fdpa.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1197a_fdpa.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1222a_fdpa.npz
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/S1415a_fdpa.npz
+STAGE align start 14:34:34
+/Users/artuskg/micromamba/envs/mars-ic/lib/python3.11/site-packages/obspy/core/util/base.py:26: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+WARNING: ObsPy read_events failed for /Users/artuskg/GitRepos/MarsQuake/data/raw/mqs_v14_catalog.xml, falling back to XML parser: 'NoneType' object has no attribute 'groups'
+WARNING: Using event-id match for S1015f despite origin-time delta=205.9018919467926s
+INFO: Aligned S1015f (ablation): npts=46000, sr=20.000, P=2021-10-04T04:56:00.605894
+INFO: Aligned S1015f (paperfaith): npts=46000, sr=20.000, P=2021-10-04T04:56:00.605894
+WARNING: Using event-id match for S0918a despite origin-time delta=189.12536025047302s
+INFO: Aligned S0918a (ablation): npts=46000, sr=20.000, P=2021-06-27T05:35:24.641985
+INFO: Aligned S0918a (paperfaith): npts=46000, sr=20.000, P=2021-06-27T05:35:24.641985
+WARNING: Using event-id match for S0235b despite origin-time delta=218.24276208877563s
+INFO: Aligned S0235b (ablation): npts=46000, sr=20.000, P=2019-07-26T12:19:18.032523
+INFO: Aligned S0235b (paperfaith): npts=46000, sr=20.000, P=2019-07-26T12:19:18.032523
+WARNING: Using event-id match for S0864a despite origin-time delta=210.18923211097717s
+INFO: Aligned S0864a (ablation): npts=46000, sr=20.000, P=2021-05-02T01:01:17.223068
+INFO: Aligned S0864a (paperfaith): npts=46000, sr=20.000, P=2021-05-02T01:01:17.223068
+WARNING: Using event-id match for S0474a despite origin-time delta=88.98837876319885s
+INFO: Aligned S0474a (ablation): npts=46000, sr=20.000, P=2020-03-28T00:35:20.557371
+INFO: Aligned S0474a (paperfaith): npts=46000, sr=20.000, P=2020-03-28T00:35:20.557371
+WARNING: Using event-id match for S0916d despite origin-time delta=209.49527883529663s
+INFO: Aligned S0916d (ablation): npts=46000, sr=20.000, P=2021-06-25T05:17:32.429620
+INFO: Aligned S0916d (paperfaith): npts=46000, sr=20.000, P=2021-06-25T05:17:32.429620
+WARNING: Using event-id match for S0802a despite origin-time delta=224.16038012504578s
+INFO: Aligned S0802a (ablation): npts=46000, sr=20.000, P=2021-02-28T06:11:10.703162
+INFO: Aligned S0802a (paperfaith): npts=46000, sr=20.000, P=2021-02-28T06:11:10.703162
+WARNING: Using event-id match for S0173a despite origin-time delta=228.1908187866211s
+INFO: Aligned S0173a (ablation): npts=46000, sr=20.000, P=2019-05-23T02:22:59.069095
+INFO: Aligned S0173a (paperfaith): npts=46000, sr=20.000, P=2019-05-23T02:22:59.069095
+WARNING: Using event-id match for S0820a despite origin-time delta=165.96585202217102s
+INFO: Aligned S0820a (ablation): npts=46000, sr=20.000, P=2021-03-18T14:55:23.391411
+INFO: Aligned S0820a (paperfaith): npts=46000, sr=20.000, P=2021-03-18T14:55:23.391411
+WARNING: Using event-id match for S1048d despite origin-time delta=229.15476202964783s
+INFO: Aligned S1048d (ablation): npts=46000, sr=20.000, P=2021-11-07T22:04:05.355199
+INFO: Aligned S1048d (paperfaith): npts=46000, sr=20.000, P=2021-11-07T22:04:05.355199
+WARNING: Using event-id match for S1133c despite origin-time delta=227.14503073692322s
+INFO: Aligned S1133c (ablation): npts=46000, sr=20.000, P=2022-02-03T08:08:27.938504
+INFO: Aligned S1133c (paperfaith): npts=46000, sr=20.000, P=2022-02-03T08:08:27.938504
+WARNING: Using event-id match for S0290b despite origin-time delta=231.98238110542297s
+INFO: Aligned S0290b (ablation): npts=46000, sr=20.000, P=2019-09-21T03:19:09.490618
+INFO: Aligned S0290b (paperfaith): npts=46000, sr=20.000, P=2019-09-21T03:19:09.490618
+WARNING: Using event-id match for S1039b despite origin-time delta=90.84350371360779s
+INFO: Aligned S1039b (ablation): npts=46000, sr=20.000, P=2021-10-29T16:16:56.477198
+INFO: Aligned S1039b (paperfaith): npts=46000, sr=20.000, P=2021-10-29T16:16:56.477198
+WARNING: Using event-id match for S1022a despite origin-time delta=230.89933896064758s
+INFO: Aligned S1022a (ablation): npts=46000, sr=20.000, P=2021-10-11T23:18:25.025302
+INFO: Aligned S1022a (paperfaith): npts=46000, sr=20.000, P=2021-10-11T23:18:25.025302
+WARNING: Using event-id match for S0484b despite origin-time delta=224.99393892288208s
+INFO: Aligned S0484b (ablation): npts=46000, sr=20.000, P=2020-04-07T08:52:24.077440
+INFO: Aligned S0484b (paperfaith): npts=46000, sr=20.000, P=2020-04-07T08:52:24.077440
+WARNING: Using event-id match for S1197a despite origin-time delta=221.3366801738739s
+INFO: Aligned S1197a (ablation): npts=46000, sr=20.000, P=2022-04-09T22:09:55.523977
+INFO: Aligned S1197a (paperfaith): npts=46000, sr=20.000, P=2022-04-09T22:09:55.523977
+WARNING: Using event-id match for S0105a despite origin-time delta=247.07229208946228s
+INFO: Aligned S0105a (ablation): npts=46000, sr=20.000, P=2019-03-14T21:03:31.110886
+INFO: Aligned S0105a (paperfaith): npts=46000, sr=20.000, P=2019-03-14T21:03:31.110886
+WARNING: Using event-id match for S0189a despite origin-time delta=249.98220586776733s
+INFO: Aligned S0189a (ablation): npts=46000, sr=20.000, P=2019-06-09T05:40:05.564239
+INFO: Aligned S0189a (paperfaith): npts=46000, sr=20.000, P=2019-06-09T05:40:05.564239
+WARNING: Using event-id match for S0784a despite origin-time delta=253.86354207992554s
+INFO: Aligned S0784a (ablation): npts=46000, sr=20.000, P=2021-02-09T12:15:56.546674
+INFO: Aligned S0784a (paperfaith): npts=46000, sr=20.000, P=2021-02-09T12:15:56.546674
+WARNING: Using event-id match for S1157a despite origin-time delta=265.75892877578735s
+INFO: Aligned S1157a (ablation): npts=46000, sr=20.000, P=2022-02-27T01:07:07.386079
+INFO: Aligned S1157a (paperfaith): npts=46000, sr=20.000, P=2022-02-27T01:07:07.386079
+WARNING: Using event-id match for S1222a despite origin-time delta=277.47450613975525s
+INFO: Aligned S1222a (ablation): npts=46000, sr=20.000, P=2022-05-04T23:27:45.836925
+INFO: Aligned S1222a (paperfaith): npts=46000, sr=20.000, P=2022-05-04T23:27:45.836925
+WARNING: Using event-id match for S1012d despite origin-time delta=275.78571820259094s
+INFO: Aligned S1012d (ablation): npts=46000, sr=20.000, P=2021-10-02T00:34:13.600173
+INFO: Aligned S1012d (paperfaith): npts=46000, sr=20.000, P=2021-10-02T00:34:13.600173
+WARNING: Using event-id match for S0325a despite origin-time delta=290.21744203567505s
+INFO: Aligned S0325a (ablation): npts=46000, sr=20.000, P=2019-10-26T06:58:57.000523
+INFO: Aligned S0325a (paperfaith): npts=46000, sr=20.000, P=2019-10-26T06:58:57.000523
+WARNING: Using event-id match for S1102a despite origin-time delta=498.7510108947754s
+INFO: Aligned S1102a (ablation): npts=46000, sr=20.000, P=2022-01-02T04:35:30.847431
+INFO: Aligned S1102a (paperfaith): npts=46000, sr=20.000, P=2022-01-02T04:35:30.847431
+WARNING: Using event-id match for S1153a despite origin-time delta=541.1979939937592s
+INFO: Aligned S1153a (ablation): npts=46000, sr=20.000, P=2022-02-23T21:09:45.253968
+INFO: Aligned S1153a (paperfaith): npts=46000, sr=20.000, P=2022-02-23T21:09:45.253968
+WARNING: Using event-id match for S1415a despite origin-time delta=135.1193459033966s
+INFO: Aligned S1415a (ablation): npts=46000, sr=20.000, P=2022-11-19T21:56:13.594137
+INFO: Aligned S1415a (paperfaith): npts=46000, sr=20.000, P=2022-11-19T21:56:13.594137
+STAGE normalize start 14:34:36
+/Users/artuskg/micromamba/envs/mars-ic/lib/python3.11/site-packages/obspy/core/util/base.py:26: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+INFO: Wrote normalized outputs for S0105a (ablation, A)
+INFO: Wrote normalized outputs for S0105a (ablation, B)
+INFO: Wrote normalized outputs for S0105a (ablation, C)
+INFO: Wrote normalized outputs for S0105a (paperfaith, A)
+INFO: Wrote normalized outputs for S0105a (paperfaith, B)
+INFO: Wrote normalized outputs for S0105a (paperfaith, C)
+INFO: Wrote normalized outputs for S0173a (ablation, A)
+INFO: Wrote normalized outputs for S0173a (ablation, B)
+INFO: Wrote normalized outputs for S0173a (ablation, C)
+INFO: Wrote normalized outputs for S0173a (paperfaith, A)
+INFO: Wrote normalized outputs for S0173a (paperfaith, B)
+INFO: Wrote normalized outputs for S0173a (paperfaith, C)
+INFO: Wrote normalized outputs for S0189a (ablation, A)
+INFO: Wrote normalized outputs for S0189a (ablation, B)
+INFO: Wrote normalized outputs for S0189a (ablation, C)
+INFO: Wrote normalized outputs for S0189a (paperfaith, A)
+INFO: Wrote normalized outputs for S0189a (paperfaith, B)
+INFO: Wrote normalized outputs for S0189a (paperfaith, C)
+INFO: Wrote normalized outputs for S0235b (ablation, A)
+INFO: Wrote normalized outputs for S0235b (ablation, B)
+INFO: Wrote normalized outputs for S0235b (ablation, C)
+INFO: Wrote normalized outputs for S0235b (paperfaith, A)
+INFO: Wrote normalized outputs for S0235b (paperfaith, B)
+INFO: Wrote normalized outputs for S0235b (paperfaith, C)
+INFO: Wrote normalized outputs for S0290b (ablation, A)
+INFO: Wrote normalized outputs for S0290b (ablation, B)
+INFO: Wrote normalized outputs for S0290b (ablation, C)
+INFO: Wrote normalized outputs for S0290b (paperfaith, A)
+INFO: Wrote normalized outputs for S0290b (paperfaith, B)
+INFO: Wrote normalized outputs for S0290b (paperfaith, C)
+INFO: Wrote normalized outputs for S0325a (ablation, A)
+INFO: Wrote normalized outputs for S0325a (ablation, B)
+INFO: Wrote normalized outputs for S0325a (ablation, C)
+INFO: Wrote normalized outputs for S0325a (paperfaith, A)
+INFO: Wrote normalized outputs for S0325a (paperfaith, B)
+INFO: Wrote normalized outputs for S0325a (paperfaith, C)
+INFO: Wrote normalized outputs for S0474a (ablation, A)
+INFO: Wrote normalized outputs for S0474a (ablation, B)
+INFO: Wrote normalized outputs for S0474a (ablation, C)
+INFO: Wrote normalized outputs for S0474a (paperfaith, A)
+INFO: Wrote normalized outputs for S0474a (paperfaith, B)
+INFO: Wrote normalized outputs for S0474a (paperfaith, C)
+INFO: Wrote normalized outputs for S0484b (ablation, A)
+INFO: Wrote normalized outputs for S0484b (ablation, B)
+INFO: Wrote normalized outputs for S0484b (ablation, C)
+INFO: Wrote normalized outputs for S0484b (paperfaith, A)
+INFO: Wrote normalized outputs for S0484b (paperfaith, B)
+INFO: Wrote normalized outputs for S0484b (paperfaith, C)
+INFO: Wrote normalized outputs for S0784a (ablation, A)
+INFO: Wrote normalized outputs for S0784a (ablation, B)
+INFO: Wrote normalized outputs for S0784a (ablation, C)
+INFO: Wrote normalized outputs for S0784a (paperfaith, A)
+INFO: Wrote normalized outputs for S0784a (paperfaith, B)
+INFO: Wrote normalized outputs for S0784a (paperfaith, C)
+INFO: Wrote normalized outputs for S0802a (ablation, A)
+INFO: Wrote normalized outputs for S0802a (ablation, B)
+INFO: Wrote normalized outputs for S0802a (ablation, C)
+INFO: Wrote normalized outputs for S0802a (paperfaith, A)
+INFO: Wrote normalized outputs for S0802a (paperfaith, B)
+INFO: Wrote normalized outputs for S0802a (paperfaith, C)
+INFO: Wrote normalized outputs for S0820a (ablation, A)
+INFO: Wrote normalized outputs for S0820a (ablation, B)
+INFO: Wrote normalized outputs for S0820a (ablation, C)
+INFO: Wrote normalized outputs for S0820a (paperfaith, A)
+INFO: Wrote normalized outputs for S0820a (paperfaith, B)
+INFO: Wrote normalized outputs for S0820a (paperfaith, C)
+INFO: Wrote normalized outputs for S0864a (ablation, A)
+INFO: Wrote normalized outputs for S0864a (ablation, B)
+INFO: Wrote normalized outputs for S0864a (ablation, C)
+INFO: Wrote normalized outputs for S0864a (paperfaith, A)
+INFO: Wrote normalized outputs for S0864a (paperfaith, B)
+INFO: Wrote normalized outputs for S0864a (paperfaith, C)
+INFO: Wrote normalized outputs for S0916d (ablation, A)
+INFO: Wrote normalized outputs for S0916d (ablation, B)
+INFO: Wrote normalized outputs for S0916d (ablation, C)
+INFO: Wrote normalized outputs for S0916d (paperfaith, A)
+INFO: Wrote normalized outputs for S0916d (paperfaith, B)
+INFO: Wrote normalized outputs for S0916d (paperfaith, C)
+INFO: Wrote normalized outputs for S0918a (ablation, A)
+INFO: Wrote normalized outputs for S0918a (ablation, B)
+INFO: Wrote normalized outputs for S0918a (ablation, C)
+INFO: Wrote normalized outputs for S0918a (paperfaith, A)
+INFO: Wrote normalized outputs for S0918a (paperfaith, B)
+INFO: Wrote normalized outputs for S0918a (paperfaith, C)
+INFO: Wrote normalized outputs for S1012d (ablation, A)
+INFO: Wrote normalized outputs for S1012d (ablation, B)
+INFO: Wrote normalized outputs for S1012d (ablation, C)
+INFO: Wrote normalized outputs for S1012d (paperfaith, A)
+INFO: Wrote normalized outputs for S1012d (paperfaith, B)
+INFO: Wrote normalized outputs for S1012d (paperfaith, C)
+INFO: Wrote normalized outputs for S1015f (ablation, A)
+INFO: Wrote normalized outputs for S1015f (ablation, B)
+INFO: Wrote normalized outputs for S1015f (ablation, C)
+INFO: Wrote normalized outputs for S1015f (paperfaith, A)
+INFO: Wrote normalized outputs for S1015f (paperfaith, B)
+INFO: Wrote normalized outputs for S1015f (paperfaith, C)
+INFO: Wrote normalized outputs for S1022a (ablation, A)
+INFO: Wrote normalized outputs for S1022a (ablation, B)
+INFO: Wrote normalized outputs for S1022a (ablation, C)
+INFO: Wrote normalized outputs for S1022a (paperfaith, A)
+INFO: Wrote normalized outputs for S1022a (paperfaith, B)
+INFO: Wrote normalized outputs for S1022a (paperfaith, C)
+INFO: Wrote normalized outputs for S1039b (ablation, A)
+INFO: Wrote normalized outputs for S1039b (ablation, B)
+INFO: Wrote normalized outputs for S1039b (ablation, C)
+INFO: Wrote normalized outputs for S1039b (paperfaith, A)
+INFO: Wrote normalized outputs for S1039b (paperfaith, B)
+INFO: Wrote normalized outputs for S1039b (paperfaith, C)
+INFO: Wrote normalized outputs for S1048d (ablation, A)
+INFO: Wrote normalized outputs for S1048d (ablation, B)
+INFO: Wrote normalized outputs for S1048d (ablation, C)
+INFO: Wrote normalized outputs for S1048d (paperfaith, A)
+INFO: Wrote normalized outputs for S1048d (paperfaith, B)
+INFO: Wrote normalized outputs for S1048d (paperfaith, C)
+INFO: Wrote normalized outputs for S1102a (ablation, A)
+INFO: Wrote normalized outputs for S1102a (ablation, B)
+INFO: Wrote normalized outputs for S1102a (ablation, C)
+INFO: Wrote normalized outputs for S1102a (paperfaith, A)
+INFO: Wrote normalized outputs for S1102a (paperfaith, B)
+INFO: Wrote normalized outputs for S1102a (paperfaith, C)
+INFO: Wrote normalized outputs for S1133c (ablation, A)
+INFO: Wrote normalized outputs for S1133c (ablation, B)
+INFO: Wrote normalized outputs for S1133c (ablation, C)
+INFO: Wrote normalized outputs for S1133c (paperfaith, A)
+INFO: Wrote normalized outputs for S1133c (paperfaith, B)
+INFO: Wrote normalized outputs for S1133c (paperfaith, C)
+INFO: Wrote normalized outputs for S1153a (ablation, A)
+INFO: Wrote normalized outputs for S1153a (ablation, B)
+INFO: Wrote normalized outputs for S1153a (ablation, C)
+INFO: Wrote normalized outputs for S1153a (paperfaith, A)
+INFO: Wrote normalized outputs for S1153a (paperfaith, B)
+INFO: Wrote normalized outputs for S1153a (paperfaith, C)
+INFO: Wrote normalized outputs for S1157a (ablation, A)
+INFO: Wrote normalized outputs for S1157a (ablation, B)
+INFO: Wrote normalized outputs for S1157a (ablation, C)
+INFO: Wrote normalized outputs for S1157a (paperfaith, A)
+INFO: Wrote normalized outputs for S1157a (paperfaith, B)
+INFO: Wrote normalized outputs for S1157a (paperfaith, C)
+INFO: Wrote normalized outputs for S1197a (ablation, A)
+INFO: Wrote normalized outputs for S1197a (ablation, B)
+INFO: Wrote normalized outputs for S1197a (ablation, C)
+INFO: Wrote normalized outputs for S1197a (paperfaith, A)
+INFO: Wrote normalized outputs for S1197a (paperfaith, B)
+INFO: Wrote normalized outputs for S1197a (paperfaith, C)
+INFO: Wrote normalized outputs for S1222a (ablation, A)
+INFO: Wrote normalized outputs for S1222a (ablation, B)
+INFO: Wrote normalized outputs for S1222a (ablation, C)
+INFO: Wrote normalized outputs for S1222a (paperfaith, A)
+INFO: Wrote normalized outputs for S1222a (paperfaith, B)
+INFO: Wrote normalized outputs for S1222a (paperfaith, C)
+INFO: Wrote normalized outputs for S1415a (ablation, A)
+INFO: Wrote normalized outputs for S1415a (ablation, B)
+INFO: Wrote normalized outputs for S1415a (ablation, C)
+INFO: Wrote normalized outputs for S1415a (paperfaith, A)
+INFO: Wrote normalized outputs for S1415a (paperfaith, B)
+INFO: Wrote normalized outputs for S1415a (paperfaith, C)
+STAGE vespagrams start 14:34:38
+/Users/artuskg/micromamba/envs/mars-ic/lib/python3.11/site-packages/obspy/core/util/base.py:26: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+INFO: Saved vespagram combo=paperfaith/envelope/A method=nth_root win=1.0
+INFO: Saved vespagram combo=paperfaith/envelope/A method=nth_root win=5.0
+INFO: Saved vespagram combo=paperfaith/envelope/A method=nth_root win=10.0
+INFO: Saved vespagram combo=paperfaith/envelope/A method=nth_root win=20.0
+INFO: Saved vespagram combo=paperfaith/envelope/A method=pws win=1.0
+INFO: Saved vespagram combo=paperfaith/envelope/A method=pws win=5.0
+INFO: Saved vespagram combo=paperfaith/envelope/A method=pws win=10.0
+INFO: Saved vespagram combo=paperfaith/envelope/A method=pws win=20.0
+INFO: Saved vespagram combo=paperfaith/envelope/B method=nth_root win=1.0
+INFO: Saved vespagram combo=paperfaith/envelope/B method=nth_root win=5.0
+INFO: Saved vespagram combo=paperfaith/envelope/B method=nth_root win=10.0
+INFO: Saved vespagram combo=paperfaith/envelope/B method=nth_root win=20.0
+INFO: Saved vespagram combo=paperfaith/envelope/B method=pws win=1.0
+INFO: Saved vespagram combo=paperfaith/envelope/B method=pws win=5.0
+INFO: Saved vespagram combo=paperfaith/envelope/B method=pws win=10.0
+INFO: Saved vespagram combo=paperfaith/envelope/B method=pws win=20.0
+INFO: Saved vespagram combo=paperfaith/envelope/C method=nth_root win=1.0
+INFO: Saved vespagram combo=paperfaith/envelope/C method=nth_root win=5.0
+INFO: Saved vespagram combo=paperfaith/envelope/C method=nth_root win=10.0
+INFO: Saved vespagram combo=paperfaith/envelope/C method=nth_root win=20.0
+INFO: Saved vespagram combo=paperfaith/envelope/C method=pws win=1.0
+INFO: Saved vespagram combo=paperfaith/envelope/C method=pws win=5.0
+INFO: Saved vespagram combo=paperfaith/envelope/C method=pws win=10.0
+INFO: Saved vespagram combo=paperfaith/envelope/C method=pws win=20.0
+INFO: Saved vespagram combo=paperfaith/waveform/C method=nth_root win=1.0
+INFO: Saved vespagram combo=paperfaith/waveform/C method=nth_root win=5.0
+INFO: Saved vespagram combo=paperfaith/waveform/C method=nth_root win=10.0
+INFO: Saved vespagram combo=paperfaith/waveform/C method=nth_root win=20.0
+INFO: Saved vespagram combo=paperfaith/waveform/C method=pws win=1.0
+INFO: Saved vespagram combo=paperfaith/waveform/C method=pws win=5.0
+INFO: Saved vespagram combo=paperfaith/waveform/C method=pws win=10.0
+INFO: Saved vespagram combo=paperfaith/waveform/C method=pws win=20.0
+INFO: Saved vespagram combo=ablation/envelope/C method=nth_root win=1.0
+INFO: Saved vespagram combo=ablation/envelope/C method=nth_root win=5.0
+INFO: Saved vespagram combo=ablation/envelope/C method=nth_root win=10.0
+INFO: Saved vespagram combo=ablation/envelope/C method=nth_root win=20.0
+INFO: Saved vespagram combo=ablation/envelope/C method=pws win=1.0
+INFO: Saved vespagram combo=ablation/envelope/C method=pws win=5.0
+INFO: Saved vespagram combo=ablation/envelope/C method=pws win=10.0
+INFO: Saved vespagram combo=ablation/envelope/C method=pws win=20.0
+INFO: Saved vespagram combo=ablation/waveform/C method=nth_root win=1.0
+INFO: Saved vespagram combo=ablation/waveform/C method=nth_root win=5.0
+INFO: Saved vespagram combo=ablation/waveform/C method=nth_root win=10.0
+INFO: Saved vespagram combo=ablation/waveform/C method=nth_root win=20.0
+INFO: Saved vespagram combo=ablation/waveform/C method=pws win=1.0
+INFO: Saved vespagram combo=ablation/waveform/C method=pws win=5.0
+INFO: Saved vespagram combo=ablation/waveform/C method=pws win=10.0
+INFO: Saved vespagram combo=ablation/waveform/C method=pws win=20.0
+STAGE detect_peaks start 14:37:35
+INFO: Wrote /Users/artuskg/marsquake_runs/20260801T143200Z_ablpolop_prov/peak_comparison_operator_ablation_provenance.csv (240 rows)
+CHAIN COMPLETE 14:37:44

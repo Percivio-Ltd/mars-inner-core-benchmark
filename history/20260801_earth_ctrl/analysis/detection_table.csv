@@ -1,0 +1,16 @@
+phase,dt_vs_pred_s,dp_vs_pred_sdeg,sigma_time_s,sigma_slowness_sdeg,occupancy_argmax,degenerate_fit,box_peak_local_max,G1,G2,outcome,g2_loc_time,g2_loc_slow,g2_tight_time,g2_tight_slow,g2_occupancy
+PKiKP,32.14,7.702,6.01,3.247,0.99,True,False,False,False,NOT-DETECTED,True,False,True,False,True
+PKiKP_decoy+150,15.47,0.087,21.68,1.316,0.935,True,True,False,True,DETECTED-G2,True,True,True,True,True
+PKiKP_decoy+300,33.28,7.897,5.88,0.597,0.99,True,True,False,False,NOT-DETECTED,True,False,True,True,True
+PKiKP_decoy-150,25.93,2.591,6.76,1.835,0.985,True,True,False,False,NOT-DETECTED,True,False,True,False,True
+PKiKP_decoy-300,12.24,1.517,16.2,0.685,0.98,True,False,False,False,NOT-DETECTED,True,True,True,True,True
+PcP,36.16,3.087,3.48,1.323,0.985,True,False,False,False,NOT-DETECTED,True,False,True,True,True
+PcP_decoy+150,14.45,1.714,22.16,1.323,0.935,True,True,False,True,DETECTED-G2,True,True,True,True,True
+PcP_decoy+300,31.84,5.972,6.72,0.585,0.99,True,True,False,False,NOT-DETECTED,True,False,True,True,True
+PcP_decoy-150,27.98,0.647,6.62,1.858,0.985,True,True,False,False,NOT-DETECTED,True,True,True,False,True
+PcP_decoy-300,10.4,3.438,16.75,0.71,0.98,True,True,False,False,NOT-DETECTED,True,False,True,True,True
+ScS,33.84,3.89,5.05,3.054,0.99,True,True,False,False,NOT-DETECTED,True,False,True,False,True
+ScS_decoy+150,16.43,4.059,21.02,1.446,0.935,True,True,False,False,NOT-DETECTED,True,False,True,True,True
+ScS_decoy+300,33.16,3.77,7.2,0.611,0.99,True,True,False,False,NOT-DETECTED,True,False,True,True,True
+ScS_decoy-150,23.12,1.621,6.99,1.655,0.97,True,True,False,False,NOT-DETECTED,True,True,True,False,True
+ScS_decoy-300,14.71,5.656,15.4,0.661,0.98,True,False,False,False,NOT-DETECTED,True,False,True,True,True

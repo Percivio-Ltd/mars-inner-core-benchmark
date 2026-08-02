@@ -1,0 +1,271 @@
+{
+  "canonical_reference": {
+    "csv_published_target": {
+      "box_peak_background_quantile": 0.7141084208008754,
+      "power": 0.7736156900239739,
+      "slowness_sdeg": -6.666666666666666,
+      "status": "ok",
+      "support_count": 23,
+      "target_box_rank": 6938,
+      "time_s": 601.95
+    },
+    "global_argmax": {
+      "power": 0.9326603162534909,
+      "slowness_sdeg": -3.6363636363636367,
+      "status": "ok",
+      "support_count": 23,
+      "time_s": 663.8
+    },
+    "target_box": {
+      "excluded_reason": "",
+      "power": 0.7736156900239739,
+      "slowness_sdeg": -6.666666666666666,
+      "status": "ok",
+      "support_count": 23,
+      "target_box_rank": 6938,
+      "time_s": 601.95
+    }
+  },
+  "controls": {
+    "canonical_csv_all_provenance_current": {
+      "expected": {
+        "n_noncurrent_rows": 0
+      },
+      "observed": {
+        "n_noncurrent_rows": 0,
+        "n_rows": 240,
+        "noncurrent_row_numbers": []
+      },
+      "passed": true
+    },
+    "canonical_csv_global_gate_cell": {
+      "expected": {
+        "power": 0.9326603162534909,
+        "slowness_sdeg": -3.6363636363636367,
+        "support_count": 23,
+        "time_s": 663.8
+      },
+      "observed": {
+        "power": 0.9326603162534909,
+        "slowness_sdeg": -3.6363636363636367,
+        "support_count": 23,
+        "time_s": 663.8
+      },
+      "passed": true
+    },
+    "canonical_full_set_gate": {
+      "expected": {
+        "branch": "662-family",
+        "canonical_gate": {
+          "applicable": true,
+          "passed": true
+        },
+        "global_argmax": {
+          "power": 0.9326603162534909,
+          "slowness_sdeg": -3.6363636363636367,
+          "support_count": 23,
+          "time_s": 663.8
+        }
+      },
+      "observed": {
+        "branch": "662-family",
+        "canonical_gate": {
+          "applicable": true,
+          "passed": true
+        },
+        "global_argmax": {
+          "power": 0.9326603162534909,
+          "slowness_sdeg": -3.6363636363636367,
+          "support_count": 23,
+          "time_s": 663.8
+        }
+      },
+      "passed": true
+    },
+    "canonical_hold_out_S0105a": {
+      "expected": {
+        "branch": "662-family",
+        "global_argmax": {
+          "power": 1.0123297663708317,
+          "slowness_sdeg": -3.6363636363636367,
+          "support_count": 22,
+          "time_s": 663.75
+        }
+      },
+      "observed": {
+        "branch": "662-family",
+        "global_argmax": {
+          "power": 1.0123297663708317,
+          "slowness_sdeg": -3.6363636363636367,
+          "support_count": 22,
+          "time_s": 663.75
+        }
+      },
+      "passed": true
+    },
+    "canonical_hold_out_S0189a": {
+      "expected": {
+        "branch": "662-family",
+        "global_argmax": {
+          "power": 0.9770995126907189,
+          "slowness_sdeg": 0.0,
+          "support_count": 22,
+          "time_s": 663.4
+        }
+      },
+      "observed": {
+        "branch": "662-family",
+        "global_argmax": {
+          "power": 0.9770995126907189,
+          "slowness_sdeg": 0.0,
+          "support_count": 22,
+          "time_s": 663.4
+        }
+      },
+      "passed": true
+    },
+    "v23_canonical_gate_not_applicable": {
+      "expected": false,
+      "observed": false,
+      "passed": true
+    },
+    "v23_csv_all_provenance_current": {
+      "expected": {
+        "n_noncurrent_rows": 0
+      },
+      "observed": {
+        "n_noncurrent_rows": 0,
+        "n_rows": 240,
+        "noncurrent_row_numbers": []
+      },
+      "passed": true
+    },
+    "v23_subset_csv_consistency": {
+      "expected": {
+        "power": 1.0886853459975248,
+        "slowness_sdeg": -3.6363636363636367,
+        "support_count": 23,
+        "time_s": 663.9
+      },
+      "observed": {
+        "power": 1.0886853459975248,
+        "slowness_sdeg": -3.6363636363636367,
+        "support_count": 23,
+        "time_s": 663.9
+      },
+      "passed": true
+    },
+    "xsel21_csv_all_provenance_current": {
+      "expected": {
+        "n_noncurrent_rows": 0
+      },
+      "observed": {
+        "n_noncurrent_rows": 0,
+        "n_rows": 240,
+        "noncurrent_row_numbers": []
+      },
+      "passed": true
+    },
+    "xsel21_subset_csv_consistency": {
+      "expected": {
+        "power": 1.0598720995065811,
+        "slowness_sdeg": -3.6363636363636367,
+        "support_count": 21,
+        "time_s": 663.95
+      },
+      "observed": {
+        "power": 1.0598720995065811,
+        "slowness_sdeg": -3.6363636363636367,
+        "support_count": 21,
+        "time_s": 663.95
+      },
+      "passed": true
+    }
+  },
+  "inputs": {
+    "/Users/artuskg/marsquake_runs/20260801_xsel_visser/peaks/peak_comparison_canonical.csv": "8df5f5c85473460e19e10021db52c997945f3bee6f4f8aac461251a5a0bf07ce",
+    "/Users/artuskg/marsquake_runs/20260801_xsel_visser/peaks/peak_comparison_v23.csv": "725d5c14ea31d2c324ffe4aae2cc354745017e9ecb2b9c6f531e0bbe75d87940",
+    "/Users/artuskg/marsquake_runs/20260801_xsel_visser/peaks/peak_comparison_xsel21.csv": "e5ccee5c0f922aff16cb0c2829347984c484a75756804143517e4cba7d7b80c7",
+    "/Users/artuskg/marsquake_runs/20260801_xsel_visser/subsets_canonical/full_set.json": "07d7a2741422e9fc0b6af8d2aae527ff73d245f50391938bed3831551f0f5b95",
+    "/Users/artuskg/marsquake_runs/20260801_xsel_visser/subsets_canonical/hold_out_S0105a.json": "7e38800f2968d312225a76c0feb5fe2e7686b329fb1b2e08f20ae69e3d81f3e5",
+    "/Users/artuskg/marsquake_runs/20260801_xsel_visser/subsets_canonical/hold_out_S0105a_S0189a.json": "7ab19386a1a4e354f2f85324e94a6f715a31f0673a36f72c658eb31dedcb862a",
+    "/Users/artuskg/marsquake_runs/20260801_xsel_visser/subsets_canonical/hold_out_S0189a.json": "6d25a85f04e80f92146385c2f4462ed2ac0d26725f88073491049fe21e11e01e",
+    "/Users/artuskg/marsquake_runs/20260801_xsel_visser/subsets_v23/full_set.json": "20a570b509f8c6c4f0d2b4849cc3da856098ff149464ec6aa2f37763c431e0bb"
+  },
+  "readouts": {
+    "v23": {
+      "branch": "662-family",
+      "csv_global": {
+        "box_peak_background_quantile": 0.8445061130843236,
+        "power": 1.0886853459975248,
+        "slowness_sdeg": -3.6363636363636367,
+        "status": "ok",
+        "support_count": 23,
+        "target_box_rank": 1,
+        "time_s": 663.9
+      },
+      "csv_published_target": {
+        "box_peak_background_quantile": 0.7212356402121568,
+        "power": 0.6765041138613289,
+        "slowness_sdeg": -6.565656565656566,
+        "status": "ok",
+        "support_count": 23,
+        "target_box_rank": 25172,
+        "time_s": 602.05
+      },
+      "global_argmax": {
+        "power": 1.0886853459975248,
+        "slowness_sdeg": -3.6363636363636367,
+        "status": "ok",
+        "support_count": 23,
+        "time_s": 663.9
+      },
+      "target_box": {
+        "excluded_reason": "",
+        "power": 0.6765041138613289,
+        "slowness_sdeg": -6.565656565656566,
+        "status": "ok",
+        "support_count": 23,
+        "target_box_rank": 25172,
+        "time_s": 602.05
+      }
+    },
+    "xsel21": {
+      "branch": "662-family",
+      "csv_global": {
+        "box_peak_background_quantile": 0.8337810550272859,
+        "power": 1.0598720995065811,
+        "slowness_sdeg": -3.6363636363636367,
+        "status": "ok",
+        "support_count": 21,
+        "target_box_rank": 1,
+        "time_s": 663.95
+      },
+      "csv_published_target": {
+        "box_peak_background_quantile": 0.7315209687301034,
+        "power": 0.7336002265040527,
+        "slowness_sdeg": -6.666666666666666,
+        "status": "ok",
+        "support_count": 21,
+        "target_box_rank": 15809,
+        "time_s": 602.1
+      },
+      "global_argmax": {
+        "power": 1.0598720995065811,
+        "slowness_sdeg": -3.6363636363636367,
+        "status": "ok",
+        "support_count": 21,
+        "time_s": 663.95
+      },
+      "target_box": {
+        "excluded_reason": "",
+        "power": 0.7336002265040527,
+        "slowness_sdeg": -6.666666666666666,
+        "status": "ok",
+        "support_count": 21,
+        "target_box_rank": 15809,
+        "time_s": 602.1
+      }
+    }
+  }
+}

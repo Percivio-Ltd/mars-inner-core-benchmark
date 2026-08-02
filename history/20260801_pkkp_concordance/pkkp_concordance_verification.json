@@ -1,0 +1,107 @@
+{
+ "purpose": "Manuscript-facing re-verification of the recorded PKKP Type I/II occupancy stable-early concordance (backlog item (a)); discharges the C3-P2-2 vacuous-adverse-control weakness for this use via a shape-preserving time-reversal adverse control.",
+ "recorded_artifact": {
+  "path": "history/20260725_scout_pass3/t2read_pkkp_argmax.json",
+  "sha256": "921d0ba2badf53f4577f3b9a0f7150739434a746c4a3fc61791e44e1e51ec963"
+ },
+ "input_shas": {
+  "results/bootstrap/type1_pkkp_occupancy.npz": "082b1ac394809c9f96d29ccf724250727bbb3fbbdd32c5729ccce301f5efdb86",
+  "results/bootstrap/type2_pkkp_distance_stratified_occupancy.npz": "8c880a24648bb4c1cfb12273d805ea715fa3f089b22df936932de733f88238d7"
+ },
+ "registered": {
+  "dt_tol_s": 5.0,
+  "ds_tol_sdeg": 0.5,
+  "statistic": "fit_gaussian_2d_occupancy_cell_argmax",
+  "reference_features": {
+   "early_G1": [
+    1236.05,
+    -6.0606
+   ],
+   "mid_G2": [
+    1292.0,
+    -4.3434
+   ],
+   "target_T": [
+    1344.7,
+    -7.3737
+   ]
+  }
+ },
+ "statistic_source": "scripts/04_bootstrap/fit_gaussian.py:218-220 (per-threshold occupancy-cell argmax)",
+ "positive_control": "all six recorded cells, dt/ds, concordance flags, and nearest-feature labels reproduced exactly",
+ "adverse_control": "time-reversed occupancy layers (coordinates unchanged) executed cleanly and reproduced 0/6 recorded readings",
+ "adverse_readings": {
+  "type1": {
+   "50": [
+    862.6,
+    -6.565656661987305
+   ],
+   "70": [
+    864.15,
+    -5.959596157073975
+   ],
+   "85": [
+    864.4,
+    -5.959596157073975
+   ]
+  },
+  "type2": {
+   "50": [
+    862.25,
+    -6.666666507720947
+   ],
+   "70": [
+    863.85,
+    -6.161616325378418
+   ],
+   "85": [
+    865.45,
+    -5.858585834503174
+   ]
+  }
+ },
+ "concordance_table": {
+  "50": {
+   "type1": [
+    1236.95,
+    -6.565656661987305
+   ],
+   "type2": [
+    1235.4,
+    -6.666666507720947
+   ],
+   "dt_s": -1.55,
+   "ds_sdeg": -0.101,
+   "concordant": true,
+   "nearest_recorded_feature": "early_G1"
+  },
+  "70": {
+   "type1": [
+    1234.35,
+    -5.959596157073975
+   ],
+   "type2": [
+    1236.0,
+    -6.161616325378418
+   ],
+   "dt_s": 1.65,
+   "ds_sdeg": -0.202,
+   "concordant": true,
+   "nearest_recorded_feature": "early_G1"
+  },
+  "85": {
+   "type1": [
+    1234.9,
+    -5.959596157073975
+   ],
+   "type2": [
+    1234.5,
+    -5.858585834503174
+   ],
+   "dt_s": -0.4,
+   "ds_sdeg": 0.101,
+   "concordant": true,
+   "nearest_recorded_feature": "early_G1"
+  }
+ }
+}

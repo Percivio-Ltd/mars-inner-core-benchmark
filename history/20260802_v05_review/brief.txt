@@ -1,0 +1,117 @@
+BOUNDED DRAFT-ACCURACY REVIEW — Paper 0 draft v0.5 dated additions (ONE round, read-only)
+
+Role: independent accuracy reviewer of the MarsQuake Paper 0 manuscript.
+Repo root: /Users/artuskg/GitRepos/MarsQuake (canonical checkout; verify
+`git rev-parse HEAD` = 93ef6b96... and review that state). READ-ONLY: no
+edits, no git state changes, no writes into the repository. Your only
+output is the deliverable below.
+
+SCOPE (only these; everything else passed earlier reviews and is out of
+scope except where a scoped edit contradicts it):
+- papers/Paper0/manuscript/DRAFT_seismica.md: header version note;
+  abstract calibration sentence; § 3.1 dated UCLA update; § 3.2
+  "four documented control weaknesses" sentence; § 4.2 caveat paragraph;
+  § 5.3 forward hook; § 5.4 ENTIRE section (scramble, injection, decoy,
+  synthesis, cross-selection pointer, Earth paragraphs); § 5.5 UCLA
+  rewrite; § 5.6 entire; § 6 conclusions item (v) + closing sentence;
+  References entries for Garcia (erratum note) and Visser; "Figures and
+  tables" list; S1 preamble; Tables S1e and S1f.
+- papers/Paper0/manuscript/NUMBERS.md (v0.5, incl. the three Earth rows
+  and cautions 5-6).
+- papers/Paper0/manuscript/tables/table3_injection_ladder.md and the new
+  make_figures.py code (load_scramble_null, load_injection_ladder, fig5,
+  write_table3, main wiring, new INPUT_PINS).
+
+AUTHORITIES (ground truth; the draft must match these, never vice versa):
+- history/20260801_mars_scramble/{null_table.csv,frozen_stats.json,MEMO.md,ADJUDICATION.md}
+- history/20260801_inject_recov/{recovery_table.csv,MEMO.md,ADJUDICATION.md,REVIEW_RECORD.md}
+- history/20260801_decoy_fam/{MEMO.md,ADJUDICATION.md,decoy_family_summary.json}
+- history/20260801_xsel_visser/ (MEMO + countersign + variant tables)
+- history/20260801_ucla_feas/ and history/20260801_ucla_equiv/
+- history/20260801_earth_ctrl/{REPORT.md,PREREG.md,P2_LOG.md,LANDING.md,
+  analysis/verdicts.csv,countersign/report_countersign_r1.md,
+  countersign/report_countersign_r2.md}
+- history/20260802_v05_fold/ (worker proposal + lead INTEGRATION.md)
+- history/20260802_ref_verify/ (incl. GARCIA_ERRATUM_ADJUDICATION.md)
+- docs/lunar_analog_report.md (§ 5.3 anchors)
+
+CALIBRATION GATE (do FIRST, before reading the draft): recompute from
+history/20260801_mars_scramble/null_table.csv the two exceedance counts
+of the 200 null rows against the frozen_stats.json frozen_thresholds.
+You must obtain exactly 151 (ridge) and 96 (target box). If you do not,
+STOP and report the mismatch verbatim; do not proceed to review.
+
+NAMED CHECKS (each gets an explicit pass/fail line with evidence):
+C1 Fourth-object guard: the injected argmax (602.95, -6.46) is NEVER
+   equated with the target-box maximum (601.95, -6.67) or "the published
+   pair"; required wording class: injection "moves the global argmax
+   into the published target box".
+C2 alpha = 8 is never presented as a passed literal control anywhere
+   (draft, Table 3 footnotes, S1e, NUMBERS).
+C3 Decoy family fractions: NO numeric family fraction anywhere in draft
+   or NUMBERS (disposition-only); the band-resolved 100%/0% sentence
+   must match the decoy ADJUDICATION wording.
+C4 Scramble wording: "randomly sampled distance assignments from the
+   registered permutation null" (never "any distance assignment"); the
+   only accepted false-alarm numbers are 75.5%/48.0% (and p-forms
+   0.756/0.483 where used).
+C5 Earth standing: every quoted Earth verdict carries the
+   exploratory/deviation-flagged standing (strict frozen reading); NO
+   directional late/early interpretation of Earth offsets; NO
+   decoy-window center times; quoted numbers match
+   analysis/verdicts.csv and REPORT.md sections 4-9 (33 usable of 40
+   selected, M 6.2-7.8, +29.25 s, 66x, FAR^PcP N1 0.000/0.080 and
+   N2 0.000/0.250, two wrong-place certifications at G2, NOT-RECOVERED
+   at both grades).
+C6 Counts: section 3.2 "four documented control weaknesses" and the S1
+   preamble "Four entries ... and one records an adverse control" must
+   match what S1a-S1f actually document — enumerate the entries you
+   count.
+C7 Cross-references: section 5.4 <-> S1e/S1f/Fig. 5/Table 3; section 5.6
+   labels; section 5.3 forward hook; figures-list <-> files on disk; no
+   stale references to section 5.5 as the Visser section.
+C8 Fig. 5/Table 3: every annotated/tabulated number is gated by a
+   check() assert in make_figures.py before rendering; the committed
+   table3_injection_ladder.md content matches what write_table3 emits
+   from the pinned CSV; footnotes match the adjudicated standing.
+C9 UCLA: 43/43, 34/34, 36/37 glitch counts, R_ch values, DIVERGENT-MINOR
+   + EXECUTABLE-OCTAVE wording, attestation reserved
+   (mps_ucla_verified), and "every result in this paper is MPS-only"
+   consistency between section 3.1 and section 5.5.
+C10 NUMBERS discipline: every load-bearing number in the scoped sections
+   has a NUMBERS.md row whose value matches its cited source.
+   Spot-verify at least 12 rows against the history files, including all
+   three Earth rows.
+C11 References: the Garcia erratum note's scope matches
+   GARCIA_ERRATUM_ADJUDICATION.md; Visser DOI and posted date match the
+   archived records.
+C12 Earth paragraph internal consistency: "25.4-35.0 deg" vs REPORT
+   "25.41-34.96"; "1/3 quiet-null criterion" vs REPORT section 9;
+   "grades mirroring the lunar pair" vs PREREG; ANMO naming
+   (IU.ANMO.00.BHZ).
+
+SEVERITY RULES (MarsQuake AGENTS.md, binding): P0/P1 require the
+three-part claim-impact test (named affected claim; concrete causal path
+to altering result/uncertainty/provenance/reproducibility; evidence
+sufficient to reproduce or discriminate). Prose ambiguity alone is NOT
+P1 — it requires two reasonable implementations with materially
+different scientific behavior. Severity ratchet: findings recorded at P2
+in earlier reviews (see history/20260801_earth_ctrl/P2_LOG.md,
+history/20260802_v05_fold/, history/20260801_draft_accuracy_review/)
+cannot be re-raised at higher severity on the same evidence; escalation
+must cite the original record and state new, concrete, previously
+unavailable claim-impact evidence. P2 findings never block and never
+withhold a countersign.
+
+TRIPWIRES (violating any = review invalid; report instead): do not
+modify any file; do not execute anything that writes inside the repo;
+if an authority file is missing, report it rather than substituting a
+different source; give file:line for every finding; do not review
+out-of-scope sections except to trace a scoped cross-reference.
+
+DELIVERABLE (single markdown document): (1) calibration-gate result with
+the recomputed counts; (2) C1-C12, each pass/fail + one-line evidence;
+(3) numbered findings, each with severity, the claim-impact test
+applied, file:line, and evidence; (4) final line exactly
+"VERDICT: COUNTERSIGNED" or "VERDICT: NOT COUNTERSIGNED" (findings that
+are all P2-or-below => COUNTERSIGNED).

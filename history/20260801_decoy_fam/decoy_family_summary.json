@@ -1,0 +1,166 @@
+{
+  "box_counts": {
+    "pkikp": {
+      "contains_ridge_cell": 96,
+      "nan": 0,
+      "overlaps_target_box": 368,
+      "total": 33019
+    },
+    "pkkp": {
+      "nan": 0,
+      "overlaps_pkkp_target_box": 697,
+      "total": 30051
+    }
+  },
+  "card_id": "P0-DECOY-FAM",
+  "controls": {
+    "A1_adverse": {
+      "center": [
+        -70.0,
+        -6.5
+      ],
+      "classification": "frozen_card_control",
+      "expected": "less than 0.7736, or NaN",
+      "n_supported_cells": 8936,
+      "observed_box_max_power": 49.37176439112555,
+      "observed_box_max_power_text": "49.371764391125552",
+      "pass": false
+    },
+    "P1_positive": {
+      "center": [
+        604.0,
+        -6.5
+      ],
+      "classification": "frozen_card_control",
+      "expected_round_4": 0.7736,
+      "n_supported_cells": 9612,
+      "observed_box_max_power": 0.7736156900239739,
+      "observed_box_max_power_text": "0.7736156900239739",
+      "pass": true
+    },
+    "P2_positive": {
+      "center_exact_ridge_cell": [
+        663.8,
+        -3.6363636363636367
+      ],
+      "classification": "frozen_card_control",
+      "exactly_equals_power_ridge": true,
+      "expected_exact_power_ridge": 0.9326603162534909,
+      "expected_round_4": 0.9327,
+      "n_supported_cells": 8811,
+      "observed_box_max_power": 0.9326603162534909,
+      "observed_box_max_power_text": "0.93266031625349088",
+      "pass": true
+    },
+    "S1_supplementary": {
+      "center": [
+        1340.0,
+        -7.0
+      ],
+      "classification": "supplementary_not_frozen_card_control",
+      "comparison": "round(observed, 10) == round(pkkp_threshold, 10)",
+      "n_supported_cells": 16020,
+      "observed_box_max_power": 0.21425338569020153,
+      "observed_box_max_power_text": "0.21425338569020153",
+      "pass": true,
+      "pkkp_threshold": 0.21425338569020153,
+      "pkkp_threshold_text": "0.21425338569020153"
+    }
+  },
+  "csv_sha256": {
+    "decoy_boxes_pkikp.csv": "163f894d22bcb59669cb13800eda3119e990922e09b7626749e048fb97d17a50",
+    "decoy_boxes_pkkp.csv": "88c21aeeafa76080091ead1e796961ab31e5d842d20b84c22afe5201065aeab8"
+  },
+  "family_statistics": {
+    "F_decoy_pkkp_excl": {
+      "denominator": 29354,
+      "fraction": 0.7325407099543504,
+      "numerator": 21503
+    },
+    "F_decoy_pkkp_incl": {
+      "denominator": 30051,
+      "fraction": 0.7297261322418556,
+      "numerator": 21929
+    },
+    "F_decoy_ridge_excl": {
+      "denominator": 32923,
+      "fraction": 0.1771102268930535,
+      "numerator": 5831
+    },
+    "F_decoy_ridge_incl": {
+      "denominator": 33019,
+      "fraction": 0.17659529361882553,
+      "numerator": 5831
+    },
+    "F_decoy_target_excl": {
+      "denominator": 32651,
+      "fraction": 0.2470980980674405,
+      "numerator": 8068
+    },
+    "F_decoy_target_incl": {
+      "denominator": 33019,
+      "fraction": 0.24725158242224174,
+      "numerator": 8164
+    }
+  },
+  "gate": {
+    "expected_tuple": [
+      663.8,
+      -3.6364,
+      0.9327,
+      23
+    ],
+    "expected_tuple_fields": [
+      "round(time_s, 2)",
+      "round(slowness_s_per_deg, 4)",
+      "round(power, 4)",
+      "support_count"
+    ],
+    "observed_exact_cell": {
+      "power": 0.9326603162534909,
+      "slowness_index": 63,
+      "slowness_s_per_deg": -3.6363636363636367,
+      "support_count": 23,
+      "time_index": 15276,
+      "time_s": 663.8
+    },
+    "pass": true,
+    "time_window_closed_s": [
+      550.0,
+      700.0
+    ]
+  },
+  "grid": {
+    "shape": [
+      100,
+      46000
+    ],
+    "slowness_axis_span": [
+      -10.0,
+      0.0
+    ],
+    "time_axis_span_s": [
+      -100.0,
+      2199.95
+    ]
+  },
+  "npz": {
+    "path": "/Users/artuskg/marsquake_runs/20260801_decoy_fam/vesp/paperfaith/envelope/A/nth_root_win20.npz",
+    "sha256": "d38ce0b138ca68337ae17b6dda50a5d97d6b4105ac1f40d866ae1f773e49e37f"
+  },
+  "npz_metadata": {
+    "input_type": "envelope",
+    "minimum_support": 2,
+    "mode": "paperfaith",
+    "norm_variant": "A",
+    "polarization_operator": "montalbetti_kanasewich_1970",
+    "power_window_s": 20.0,
+    "stack_method": "nth_root"
+  },
+  "thresholds": {
+    "pkikp_ridge": 0.9327,
+    "pkikp_target": 0.7736,
+    "pkkp": 0.21425338569020153
+  },
+  "utc_timestamp": "2026-08-01T18:40:03Z"
+}

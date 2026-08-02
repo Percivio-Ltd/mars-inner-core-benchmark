@@ -1,0 +1,115 @@
+UCLA-ON-RAW LANE WIRING (card P0-UCLA-PROD, Amendment 1, round 3)
+
+Workdir: the isolated worktree
+/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree. FIRST ACTION:
+verify `git rev-parse HEAD` prints 98a2160e...; if not, STOP. NEVER write to
+/Users/artuskg/GitRepos/MarsQuake. No commits, no network, no S3, no
+attribution trailers. Preserve all existing evidence dirs (calibration/,
+lead_controls/) untouched.
+
+BINDING AUTHORITY (read first): the canonical
+/Users/artuskg/GitRepos/MarsQuake/docs/research_pipeline.md (read-only),
+card "P0-UCLA-PROD" section "Amendment 1 (registered 2026-08-02...)". The
+worktree copy of that file is stale — the canonical version binds. Also
+read (read-only): history/20260802_ucla_prod/PRODUCTION_ATTEMPT_1.md and
+CENSUS.md in canonical for the evidence base.
+
+Context you can rely on: the runner and controls in this worktree are
+review-accepted; the chained production attempt failed as recorded; the
+census products live at worktree lead_controls/raw_census/<event>/. The
+runner is deterministic: identical input bytes give identical output bytes
+(verified for S0235b across two invocations).
+
+Deliverables (beyond these, change NOTHING):
+
+1. Identity pre-stage in worktree scripts/02_preprocess/deglitch_mps_ucla.py
+   (this is the ONE pre-existing repo file the amendment authorizes you to
+   modify, worktree-only): explicit value `identity` for the seisglitch
+   command (CLI --seisglitch-command identity and the corresponding
+   function parameter): copy the raw input byte-verbatim to the deglitch
+   output path; record metadata transparently with mps status
+   `identity_passthrough` and no MPS/SEISglitch claim of any kind; then the
+   existing UCLA contract must run unchanged on that copy ({input} =
+   identity output). The terminal event status for identity+UCLA-success
+   must be the existing `ucla_unverified` via the existing non-strict path
+   — do not add or change any terminal status enum. HARD CONSTRAINT: no
+   behavior change for any other seisglitch command value ('auto', 'none',
+   explicit commands); default allowed statuses untouched; MPS code paths
+   untouched. Keep the diff minimal and quote it fully in the report.
+2. Verify (do not assume) whether scripts/run_paper0.py needs ANY change to
+   pass --seisglitch-command identity through and to classify the resulting
+   lane (attestation derivation, status gating, preflight). Quote the
+   governing lines. If a change is genuinely required, it must be minimal
+   and justified line-by-line; if none is required, state so with citations.
+3. Subset event table as a NEW file worktree manifest/event_table_ucla22.csv:
+   exactly the 22 census-executable events from Amendment 1 (19 stack:
+   S0105a S0173a S0189a S0235b S0290b S0325a S0474a S0484b S0802a S0820a
+   S0864a S0916d S0918a S1012d S1022a S1039b S1048d S1133c S1157a; 3
+   validation: S1102a S1153a S1415a). First investigate how
+   manifest/event_table.csv encodes stack membership vs validation
+   reservation and how downstream stages (vespagram stack, bootstrap,
+   validation) consume it; preserve those semantics exactly for the 22 rows
+   (copy the original rows verbatim; drop only the 4 excluded events).
+   Quote the loader code lines that prove the 19/3 split is honored.
+4. One NEW targeted test file (follow the repo's existing test layout and
+   naming) covering: identity mode copies bytes exactly and records
+   `identity_passthrough` with no MPS claim; identity+fake-UCLA-success
+   yields overall `ucla_unverified`; a non-identity seisglitch value still
+   takes the pre-existing path. Run the repo's existing tests for
+   deglitch_mps_ucla.py and run_paper0.py and report pass/fail counts
+   before and after your diff — they must be identical-or-better, zero new
+   failures.
+5. RUNBOOK_ucla_raw.md at the worktree root — the lead's exact command
+   sequence, all paths worktree-absolute, derived from source and quoted:
+   a. adv-A: attempt excluded event S1197a through the identity+UCLA lane
+      (single-event invocation) — expected outcome: the recorded
+      `aa(_,2)` crash, terminal failure, lane stops; print expected vs
+      observed.
+   b. UCLA-lane pass: run_paper0.py with --seisglitch-command identity,
+      the existing --ucla-command, --allow-deglitch-status ucla_unverified
+      (sole), --event-table manifest/event_table_ucla22.csv, manifest and
+      all outputs worktree-local. State which stages run and which gates
+      fire, with line citations.
+   c. pos-A: byte-identity command comparing the lane's S0235b UCLA
+      product against
+      lead_controls/raw_census/S0235b/S0235b_raw_ucla.mseed.
+   d. MPS-subset pass: the accepted MPS configuration (real seisglitch
+      command exactly as in RUNBOOK_ucla_prod.md, NO --ucla-command)
+      restricted to the same subset table, with the allow-status spelling
+      the accepted 2026-07-25 run used — derive it from source and the
+      worktree's checked-in accepted manifest (deglitch_attestation block)
+      and quote the derivation. All outputs to a SEPARATE worktree-local
+      output tree so the two lanes never overwrite each other — state the
+      exact directory layout and flags that achieve this separation, or,
+      if the pipeline's output paths are fixed, the exact
+      move/rename sequence between passes with verification hashes.
+   e. pos-B: byte-identity command comparing the MPS-subset pass's S0235b
+      MPS product against canonical
+      /Users/artuskg/GitRepos/MarsQuake/data/deglitched/S0235b.mseed
+      (read-only).
+   f. Readout: the exact command(s)/paths where the three surfaces
+      (global PKiKP argmax; target-box maximum; PKKP endpoint) appear in
+      each lane's outputs, so the lead can build the same-cell comparison
+      table without exploratory poking. Cite the table/manifest fields.
+6. REPORT.md: append "## Round 3" — full diff of deglitch_mps_ucla.py (and
+   run_paper0.py if touched), citations for stack-membership handling, test
+   counts before/after, calibration gate outputs, DEVIATION:/UNVERIFIED:
+   flags.
+
+Calibration gate (STOP and report on failure, do not improvise):
+(i) identity unit run on data/raw/S0235b.mseed WITHOUT ucla command →
+    output byte-identical to input (sha256 both), metadata shows
+    `identity_passthrough`, overall status is the pre-existing mps-only
+    terminal status;
+(ii) identity+UCLA single-event end-to-end on S0235b → overall
+    `ucla_unverified`, and the UCLA product is byte-identical to
+    lead_controls/raw_census/S0235b/S0235b_raw_ucla.mseed;
+(iii) the new targeted test file passes and existing suites show zero new
+    failures.
+
+Do NOT run the 22-event passes, adv-A, pos-B, or any readout — the lead
+executes those. Tripwires: any need to touch a file outside the enumerated
+set; any default-path behavior change; canonical write; gate failure.
+
+Final message: gate (i)/(ii)/(iii) PASS/FAIL + one exact paragraph + report
+path.

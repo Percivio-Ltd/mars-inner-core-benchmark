@@ -1,0 +1,27 @@
+{
+  "allowed_statuses": [
+    "ucla_unverified"
+  ],
+  "created_at": "2026-08-02T06:24:38.336646+00:00",
+  "events": [
+    {
+      "event_id": "S1197a",
+      "metadata_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/lanes/controls/adv_A/output/S1197a.deglitch.json",
+      "mps_status": "identity_passthrough",
+      "output_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/lanes/controls/adv_A/output/S1197a.mseed",
+      "overall_status": "succeeded_mps_only",
+      "samples_modified": false,
+      "ucla_status": "failed"
+    }
+  ],
+  "expected_event_ids": [
+    "S1197a"
+  ],
+  "methods_requested": [
+    "UCLA"
+  ],
+  "run_status": "complete",
+  "status_counts": {
+    "succeeded_mps_only": 1
+  }
+}

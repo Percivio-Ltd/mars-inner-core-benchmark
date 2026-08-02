@@ -1,0 +1,63 @@
+You are the independent Codex reviewer (gpt-5.6-sol, xhigh) countersigning a MarsQuake
+Paper 0 feasibility card, registered card P0-UCLA-FEAS. Review and either reply
+COUNTERSIGNED or return findings. Work read-only: you may read any file cited below;
+do not modify anything, do not run git-mutating commands. You may run non-mutating
+shell commands (ls, shasum, grep, octave via `micromamba run -n octave-ucla ...`,
+/Users/artuskg/micromamba/envs/mars-ic/bin/python) to spot-check claims.
+
+CARD UNDER REVIEW:
+  /Users/artuskg/marsquake_runs/20260801_ucla_feas/FEASIBILITY_CARD.md
+
+CLAIM: The UCLA_v4 MATLAB deglitch package is EXECUTABLE-OCTAVE on this Mac (fresh
+conda-forge Octave 10.3.0 env "octave-ucla" + forge signal/control), demonstrated by
+controls and bounded probes on S0105a, with one shimmed MATLAB incompatibility
+(ifft 'symmetric') whose shim reproduces shipped green fixtures to machine precision;
+the deglitch harness contract in the repo is satisfiable by an Octave runner.
+
+PRIMARY ARTIFACTS (isolated dir /Users/artuskg/marsquake_runs/20260801_ucla_feas/):
+  ucla_v4/UCLA_v4/            extracted archive (read the .m files cited in the card)
+  probe/control1_positive.m + .log   positive controls
+  probe/control2_adverse.m + .log    adverse controls (visible-failure requirement)
+  probe/probe3_s0105a.m + .log       main S0105a BHU probe (detection + fit + mkmseed)
+  probe/probe4_conservative0.m + .log  shipped-default three-branch fit probe
+  probe/MakeGlitch_shim.m            3-line shim copy (original untouched)
+  probe/probe5_makeglitch.log        naive-shim FAILURE evidence (corr ~0.008)
+  probe/probe5b_makeglitch.log       correct-shim machine-precision match
+  probe/S0105a_window.mseed          ObsPy-trimmed probe input
+  probe/XB.ELYSE.02.BHU.2019.073     mkmseed output (ObsPy round-trip verified)
+  probe/probe3_results.mat, probe4_results.mat, probe5_greens.mat
+  octave_env_create.log, octave_pkg_install.log, octave_pkg_install_round2.log,
+  octave_pkg_install_round3.log      env + forge-package build evidence
+
+REPO PATHS (READ-ONLY):
+  /Users/artuskg/GitRepos/MarsQuake/scripts/02_preprocess/deglitch_mps_ucla.py
+    (harness contract; card cites lines 29-51, 207-215, 282-304, 372-460)
+  /Users/artuskg/GitRepos/MarsQuake/external/seisglitch/MATLAB_ALTERNATIVES/UCLA_v4.zip
+  /Users/artuskg/GitRepos/MarsQuake/data/raw/S0105a.mseed
+
+WHAT TO VERIFY (sample as you see fit; the card claims every statement is backed by a
+command run or file:line read):
+ 1. Card claims vs logs: do the quoted numbers (14 candidates, 12 accepted fits,
+    cc=0.9922 / 0.9931, 498/501 samples, 5.6e-16 fixture match, dc.mat 142840,
+    aaout3 43/34/37) appear in the primary logs/artifacts?
+ 2. Harness-contract reading: does the card's description of placeholders, output path
+    pattern, sidecar evidence keys, and status ladder match deglitch_mps_ucla.py?
+ 3. Code-reading claims: fflag dispatch coverage (func.m), workspace coupling
+    (MAIN20SPSJuly26.m needing MAIN2SPS workspace), hardcoded Box Sync path
+    (MakeGlitch.m:2), missing ConvertTo20sps (MAIN2SPS.m:35).
+ 4. Controls adequacy: positive + adverse controls as described, adverse failures
+    visible (no silent no-op).
+ 5. Verdict soundness: does EXECUTABLE-OCTAVE follow from the evidence, with the
+    stated limitation that MAIN20SPSReconcile and a full-event run were not exercised,
+    and that MATLAB-equivalence of the full chain is deferred to the proposed S0235b
+    dc.mat/aaout3.mat comparison?
+
+SEVERITY POLICY (MarsQuake AGENTS.md): a P0/P1 finding must name (1) the affected
+claim, (2) a concrete causal path to a wrong result/uncertainty/provenance, (3)
+evidence to reproduce/discriminate it. P2-class observations (style, hardening,
+hypotheticals without claim impact) can NEVER withhold a countersign. One fix round is
+expected at most; do not open recursive review loops.
+
+RETURN FORMAT: either the single word COUNTERSIGNED (optionally followed by P2 notes),
+or a findings list with severities and the three-part claim-impact test for each
+P0/P1.

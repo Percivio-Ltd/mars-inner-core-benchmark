@@ -1,0 +1,388 @@
+COUNTERSIGN BRIEF — P0-UCLA-EQUIV round 1 (research-cycle countersign)
+
+You are the exact-Codex countersign reviewer for a MarsQuake delegated research
+cycle (AGENTS.md § Delegated cycles). Review the worker memo below for
+scientific validity against the FROZEN card. The classification must follow the
+frozen decision rule mechanically; both directions were registered as valid.
+
+Countersign rules binding on you:
+- A P0 or P1 finding must identify (1) the active scientific claim affected,
+  (2) a concrete causal path by which the defect could alter the result,
+  uncertainty, provenance, or reproducibility, and (3) evidence sufficient to
+  reproduce or discriminate that path.
+- P2-class observations (hardening, wording, telemetry, hypotheticals without
+  demonstrated claim impact) are recorded and can NEVER withhold a countersign.
+- Verdict line required at the top of your output, exactly one of:
+  COUNTERSIGNED / COUNTERSIGNED-WITH-P2S / P0-P1-FOUND (with findings).
+
+Specific questions worth your scrutiny (not exhaustive):
+1. Was the frozen decision rule applied mechanically and correctly to the
+   numbers (counts (43,34,36) vs (43,34,37); R_ch 0.0886/0.0429/0.0833)?
+2. Do the permitted "visual neutralizations" (pause() stub, offscreen plots,
+   no shipped .m modified) stay within the card's allowance? The chain
+   completed with zero caught errors.
+3. Is the R_ch denominator correct per the card (rms(Data - dc_ref), Data =
+   aligned raw counts)?
+4. Is the adverse control implemented faithfully (dc cells rotated U->V->W,
+   aaout3 untouched, as the card names dc.mat cells only) and does its PASS
+   actually validate the comparator's discriminating power?
+5. Is the determinism control (two fresh extractions, two fresh processes,
+   bitwise-exact dc/aaout3) sufficient as registered?
+6. Does the post-hoc localization stay non-decisional (classification already
+   fixed by the frozen comparator before localization ran)?
+
+======================================================================
+FROZEN CARD TEXT (docs/research_pipeline.md @ a4f63483, SHA-256
+9b740f745d62a8e5c0611d6c64e69c25bd669a02593e667ccda2b29392ceea91):
+======================================================================
+### P0-UCLA-EQUIV — UCLA_v4 Octave-vs-MATLAB reference equivalence on S0235b (calibration card)
+
+- Question: does the UCLA_v4 deglitch algorithm, executed under the
+  countersigned Octave route (P0-UCLA-FEAS), numerically reproduce the
+  authors' own shipped MATLAB outputs (`dc.mat`, `aaout3.mat`) on the
+  archive's own sample event `S0235b_VBB.mseed`? This is the
+  feasibility card's registered cheapest discriminator; it gates the
+  recorded lead decision that `mps_ucla_verified` attestation is
+  reserved until MATLAB-reference equivalence is demonstrated, and it
+  exercises the one untested shipped step (`MAIN20SPSReconcile`).
+- Criterion: draft § 3.1 / § 5.4 MPS-only-acceptance honesty clause;
+  § E.4 rows 1–2 confidence under the published deglitch treatment.
+  Progress class 2: a control that materially changes confidence in the
+  deglitch-lane attestation semantics.
+- Inputs: `external/seisglitch/MATLAB_ALTERNATIVES/UCLA_v4.zip`
+  extracted fresh into an isolated run dir; env `octave-ucla`
+  (Octave 10.3.0, signal 1.4.7, control 4.2.3; rebuild recipe recorded
+  in `history/20260801_ucla_feas/FEASIBILITY_CARD.md`); shipped sample,
+  parameter/green fixtures, and reference outputs from the archive
+  only. No Paper 0 event data.
+- Procedure (shipped flow, no free choices): shipped fixtures as-is (no
+  `MakeGlitch` call, so the ifft shim is not on this path); `MAIN2SPS`
+  on all three channels → `MAIN20SPSReconcile` (as shipped) →
+  `MAIN20SPSJuly26` (shipped `Conservative = 0` three-model
+  competition). Only visual neutralizations are permitted (plots off,
+  `pause` removed — the accept/reject logic reads neither). Any other
+  required code change is STOP-AND-REPORT.
+- Frozen alignment precondition: after `funcadjustTimes`, each
+  channel's series must have exactly the reference length
+  142840 samples; any mismatch is STOP-AND-REPORT (timing-handling
+  divergence), never a silent resample or trim.
+- Frozen readouts (per channel U/V/W): N_glitch = `aaout3{ch}` row
+  count vs reference (43/34/37); R_ch = rms(dc_oct − dc_ref) /
+  rms(Data − dc_ref) (port noise relative to the physical correction);
+  max |dc_oct − dc_ref|; descriptive (non-decisional) fit-row matching
+  on the glitch-index column within ±2 samples at 20 sps.
+- Frozen decision rule: EQUIVALENT iff counts are exactly (43, 34, 37)
+  AND R_ch ≤ 0.1 on every channel. DIVERGENT-MINOR iff |ΔN| ≤ 2 per
+  channel AND R_ch ≤ 0.5 on every channel (mismatched glitches
+  localized; strict attestation stays reserved; lead adjudicates).
+  Otherwise NOT-EQUIVALENT → the feasibility verdict downgrades to
+  EXECUTABLE-MATLAB-ONLY for strict attestation purposes.
+- Controls: positive — `rdmseed` on the shipped sample must reproduce
+  the feasibility card's recorded structure (997 blocks; npts
+  143076/143094/142855 at 20 sps) and 11/11 fixture loads.
+  Determinism — the full chain runs twice and `dc`/`aaout3` must agree
+  exactly between repeats. Adverse — the comparison script re-run
+  against a channel-permuted reference (`dc.mat` cells rotated
+  U→V→W) must classify NOT-EQUIVALENT.
+- Outcome-neutral interpretations (registered): EQUIVALENT → the Octave
+  lane is numerically the authors' algorithm on their reference event;
+  a registered production UCLA run and the attestation-policy decision
+  become eligible as a separate future card. DIVERGENT-MINOR or
+  NOT-EQUIVALENT → a reproducible, localizable MATLAB↔Octave divergence
+  in a published deglitch package — a registerable methods finding; the
+  accepted MPS-only lane and its honest caveat stand unchanged. No
+  outcome modifies the current benchmark result; no benchmark rerun is
+  in scope.
+- Structure: delegated research cycle — sub-Fable worker with exact
+  Codex `gpt-5.6-sol` `xhigh` countersign; one fix round max; P2s never
+  block. The worker must arm a bounded monitor on any Codex output file
+  rather than relying on completion notifications (two
+  lost-notification stalls observed 2026-08-01).
+- Stop condition: per-channel comparison table + memo + control
+  outcomes + countersign. No production deglitch of Paper 0 events, no
+  harness wiring, no attestation change, no canonical-path writes.
+- Status: registered 2026-08-01 (lead), dispatching.
+
+======================================================================
+WORKER MEMO (MEMO.md, SHA-256 99b993827bea2f950d2e29ea33b0331e6785637440be2f1e14284005fbadc6ed):
+======================================================================
+# P0-UCLA-EQUIV — UCLA_v4 Octave-vs-MATLAB reference equivalence on S0235b
+
+Date: 2026-08-01. Host: Nimue (macOS arm64, Darwin 24.6.0). Author: sub-Fable worker.
+Run dir: `/Users/artuskg/marsquake_runs/20260801_ucla_equiv/`.
+Canonical repo consulted read-only; no canonical-path, `data/`, or `results/` writes.
+
+Card authority: `docs/research_pipeline.md` § "P0-UCLA-EQUIV" registered at commit
+`a4f63483`, frozen copy `card_text_frozen_a4f63483.md`
+(SHA-256 `9b740f745d62a8e5c0611d6c64e69c25bd669a02593e667ccda2b29392ceea91`);
+verified identical to the current worktree card text. Readouts, decision rule,
+alignment precondition, and controls were fixed there before any outcome existed.
+Lead pre-decisions (LANDING.md, taken before this run): shipped fixtures as-is,
+`MAIN20SPSReconcile` included, `Conservative = 0`, full shipped sample extent.
+
+## CLASSIFICATION: DIVERGENT-MINOR (frozen rule, applied mechanically)
+
+- EQUIVALENT limb fails: counts (43, 34, 36) are not exactly (43, 34, 37) — W
+  is short by one fitted glitch. (All three R_ch would have passed the 0.1
+  bar.)
+- DIVERGENT-MINOR limb holds: |dN| = (0, 0, 1) <= 2 per channel AND
+  R_ch = (0.0886, 0.0429, 0.0833) <= 0.5 on every channel.
+- Card consequences: mismatched glitches localized below; strict
+  `mps_ucla_verified` attestation stays reserved; lead adjudicates. Per the
+  card's registered outcome-neutral interpretation this is a reproducible,
+  localizable MATLAB<->Octave divergence in a published deglitch package; the
+  accepted MPS-only lane and its honest caveat stand unchanged; no benchmark
+  rerun is in scope.
+
+## Question
+
+Does UCLA_v4, executed under the countersigned Octave route (P0-UCLA-FEAS,
+verdict EXECUTABLE-OCTAVE), numerically reproduce the authors' own shipped
+MATLAB outputs (`dc.mat`, `aaout3.mat`) on the archive's own sample event
+`S0235b_VBB.mseed`? This gates whether `mps_ucla_verified` strict attestation
+can ever rest on the Octave lane; both directions are registered as valid
+outcomes.
+
+## Setup
+
+- Environment: micromamba env `octave-ucla` — GNU Octave 10.3.0 (conda-forge,
+  osx-arm64), Octave Forge `signal` 1.4.7 + `control` 4.2.3 (rebuild recipe in
+  `history/20260801_ucla_feas/FEASIBILITY_CARD.md`). Verified live:
+  `octave --version` = 10.3.0; `butter`/`filtfilt` smoke check passed.
+- Inputs: `external/seisglitch/MATLAB_ALTERNATIVES/UCLA_v4.zip`
+  (SHA-256 `2eb91194a45e847e6ad58e94cb6f2f0ffc1f0fb838a12d40087c8f24de2dd2f7`),
+  fresh-extracted three times: `run1/` (pass 1), `run2/` (pass 2, determinism),
+  `ucla_v4/` (read-only precheck). Pristine references extracted separately to
+  `refs/`: `dc.mat`
+  SHA-256 `7cc4f0dadc14c5da533e46532d4090954ea1f07f552792769191c29512798647`,
+  `aaout3.mat`
+  SHA-256 `90c6bf09db4bfbc9ad32b7a276cce83c74394c08b2085e7faa26e4966d122eb7`.
+  Starting state verified byte-identical across all extractions. No Paper 0
+  event data touched.
+- Shipped flow driven by `scripts/ucla_equiv_driver.m`, mirroring `MAIN.m` from
+  its line 24 (`file='S0235b_VBB.mseed'`) onward: `MAIN2SPS` (XseedDataFDS
+  channel selection 02:BHU/BHV/BHW → `funcadjustTimes` → decimate to 2 sps →
+  `stalta` → `funcPeaker` pass 1 at cclim=0.9 → `MAIN20SPSReconcile` as shipped
+  → `funcPeaker` pass 2 at cclim=0.4 → `PlotFinalNew2SPS`) → `pause(3)` →
+  `MAIN20SPSJuly26` (shipped `Conservative=0` three-model competition,
+  `PREP08`/`PREP03`/`PREP39` + `testSpikes` + residual replacement; saves
+  `aaout3`/`dc`; ends with `PlotFinalNew`). `MakeGlitch` NOT called; shipped
+  green/parameter fixtures loaded as-is (verified: cclim=0.9, cclim2=0.8,
+  Nlevel=4, NLIMspike=3, fetch=1, Conservative=0).
+- Visual neutralizations ONLY (card-permitted): `pause()` stubbed to a no-op
+  (`stubs/pause.m`, path-shadowing; verified `pause(2)` elapsed 0.001 s) and
+  plots rendered offscreen (headless; gnuplot fell back to an 'unknown'
+  terminal producing no output — warnings only). No shipped `.m` file was
+  modified; SHA-verified against the archive. The accept/reject logic reads
+  neither pauses nor plot state.
+- Driver error policy (fixed before running): a caught stage error is tolerated
+  only if all computational postconditions hold AND the innermost stack frame
+  is in the purely visual epilogue (`PlotFinalNew2SPS`/`PlotFinalNew`, which
+  only read result variables); anything else is STOP-AND-REPORT.
+- Comparator `scripts/compare_equiv.py` (mars-ic python, scipy 1.13.1) written
+  and frozen BEFORE any chain outcome was inspected; implements the card's
+  frozen readouts/decision rule mechanically.
+
+## Frozen alignment precondition
+
+After `funcadjustTimes`, each channel must have exactly 142840 samples
+(reference length). SATISFIED three times independently: standalone precheck
+(`logs/precheck_control.log`) and the in-run ALIGN-CHECK of both passes
+(`logs/run1_driver.log`, `logs/run2_driver.log`): 142840 / 142840 / 142840.
+No resampling or trimming was performed anywhere.
+
+## Per-channel comparison table
+
+Pass 1 (`run1_results.mat`) vs pristine shipped reference; full precision in
+`comparison_table.csv`; comparator output in `logs/compare_main.log`.
+
+| ch | len oct/ref | N_glitch oct vs ref | dN | R_ch | max abs(dc_oct-dc_ref) [counts] | rms(dc_oct-dc_ref) | rms(Data-dc_ref) | rows matched +/-2 |
+|----|------------------|----|----|--------|-------|------|-------|----|
+| U | 142840 / 142840 | 43 vs 43 | 0 | 0.0886 | 174.5 | 7.88 | 88.98 | 1 of 34 fitted |
+| V | 142840 / 142840 | 34 vs 34 | 0 | 0.0429 | 277.6 | 5.55 | 129.26 | 3 of 30 fitted |
+| W | 142840 / 142840 | 36 vs 37 | -1 | 0.0833 | 223.7 | 6.33 | 76.06 | 0 of 27/28 fitted |
+
+The +/-2-sample fit-row matching (frozen, descriptive, non-decisional) matches
+almost nothing NOT because the fits disagree wildly but because the
+window-start indices carry a systematic +10-sample offset (below). Padding-row
+counts (multi-glitch members) agree exactly per channel (9/9, 4/4, 9/9);
+row-extraction failures 0 everywhere.
+
+## Localization of the divergence (post-hoc descriptive, required by the
+DIVERGENT-MINOR limb; `scripts/localize_posthoc.py`, `logs/localize_posthoc.log`)
+
+1. Systematic window-start offset: pairing fitted rows at wide tolerance,
+   offsets oct-ref concentrate at +10 samples at 20 sps = exactly one 2 sps
+   sample (U: 30 of 33 pairs at +10, 2 at +20, 1 at 0; V: 26/30 at +10;
+   W: 14 at +10 and 13 at +20, i.e. one-to-two 2 sps samples). The Octave
+   2 sps detection stage (decimate -> filtfilt STA/LTA -> findmaxs argmax and
+   offset-median) lands glitch indices one (sometimes two) 2 sps samples later
+   than the authors' MATLAB run. The 20 sps refit re-centers phases within
+   each window, so the corrections still track the reference (R_ch <= 0.089).
+2. Count mismatch localized to ONE glitch: the reference fits a glitch at
+   N1=1200 (window [1200,1700] at 20 sps, t about 66 s, fflag=3) on BOTH U and
+   W; the Octave run fits it on NEITHER. On U the Octave run instead fits an
+   extra glitch at N1=129010 (t about 6456 s, fflag=39) that the reference
+   lacks, leaving N_U = 43 = 43 by cancellation; on W nothing compensates,
+   giving 36 vs 37. V has no unpaired rows.
+3. The waveform disagreement concentrates exactly there: rms(dc_oct-dc_ref)
+   inside +/-1000-sample neighborhoods of the unpaired windows is 34.8 (U) /
+   24.9 (W) counts, versus 4.5 / 5.5 counts everywhere else (V global 5.5).
+   Outside the two mismatched-glitch neighborhoods the port tracks the
+   authors' cleaned waveform at about 5 percent of the correction amplitude.
+
+## Determinism control
+
+PASS - EXACT. Two full chain passes from separate byte-identical fresh
+extractions in fresh Octave processes (`run1/`, `run2/`) produced bitwise
+identical results: dc exact, aaout3 exact (shapes (43,20)/(34,20)/(36,20)),
+Data exact, max|dc1-dc2| = 0 on all channels (`logs/compare_determinism.log`,
+`comparison_table.csv` determinism rows). Elapsed 147.4 s / 155.6 s.
+
+## Positive control
+
+`rdmseed` on the shipped sample, pristine extraction
+(`logs/precheck_control.log`): 997 blocks (expect 997); npts
+143076/143094/142855 @ 20.0 sps (expect exactly these; matches feasibility
+card evidence item 3); fixture loads 11/11 with expected values/dimensions.
+PRECHECK-PASS. Non-decisional smoke: `rdmseed(file,'plot')` (the shipped
+XseedDataFDS call form) works offscreen.
+
+## Adverse control
+
+PASS. The comparison script re-run against the channel-permuted reference
+(`dc.mat` cells rotated U->V->W; slot U <- old W, V <- old U, W <- old V)
+classifies NOT-EQUIVALENT, as the card requires: R_ch = 1.002 / 0.978 / 0.999,
+max|ddc| up to 5359 counts (`logs/compare_adverse.log`). The comparator
+discriminates; no comparator fix round was needed.
+
+## Interpretation and honest caveats
+
+- Interpretation (within the card's registered outcome-neutral frame): the
+  Octave route runs the authors' algorithm deterministically and reproduces
+  the authors' MATLAB cleaned waveforms to about 5-9 percent of the physical
+  correction amplitude, with identical multi-glitch grouping structure, but it
+  is NOT numerically the authors' MATLAB run: a systematic one-2 sps-sample
+  detection offset and two flipped borderline detections (one missed glitch at
+  t about 66 s on U and W; one extra on U at t about 6456 s) survive to the
+  output. Strict `mps_ucla_verified` attestation therefore stays reserved
+  (LANDING.md decision 1); adjudication of any production use of the Octave
+  lane is the lead's.
+- Mechanism evidence status: the +10-sample offset and the flipped detections
+  are DEMONSTRATED (localization above); their root cause (floating-point
+  differences in decimate/filtfilt/inv-based LSQ between MATLAB and
+  Octave/BLAS shifting discrete argmax and threshold crossings at the 2 sps
+  detection stage) is PLAUSIBLE but not isolated to a specific operation.
+  The feasibility card's caveat anticipated exactly this class of divergence
+  (`mylsq.m` uses `inv()` on normal equations; bit-identity not expected).
+- The reference `dc.mat`/`aaout3.mat` are the authors' shipped prior-run
+  outputs, dimension- and provenance-consistent with the shipped sample event
+  (verified 43/34/37 x 20 and 3 x 142840 on load), but the authors' exact
+  MATLAB version and platform are unknown; "MATLAB reference" means "the
+  archive's shipped outputs", exactly as the card defines it.
+- The one tolerated deviation class: pause() stubbed and plots rendered to a
+  no-output terminal. Both stages of both passes completed with stage1_ok =
+  stage2_ok = 1 and NO caught errors, so no error-policy judgment call was
+  ever exercised; the visual epilogues ran to completion offscreen.
+- aaout3 comparison is by row count (frozen readout) and descriptive N1
+  matching; element-wise fit-parameter deltas were not a registered readout
+  and are not claimed.
+- Determinism EXACT here means Octave-on-this-Mac determinism; it does not
+  claim cross-platform Octave determinism.
+
+## Artifacts
+
+All under `/Users/artuskg/marsquake_runs/20260801_ucla_equiv/`, hashed in
+`artifact_hashes.sha256`: this memo; `comparison_table.csv`; frozen card copy;
+scripts (`ucla_equiv_driver.m`, `compare_equiv.py`, `precheck_control.m`,
+`localize_posthoc.py`, `stubs/pause.m`); logs (precheck, run1/run2 drivers,
+compare main/adverse/determinism, localize, pre-outcome script hashes);
+results (`run1_results.mat`, `run2_results.mat`); pristine refs. Countersign
+brief/output/stdout/record added after the countersign round.
+======================================================================
+COMPARISON TABLE (comparison_table.csv):
+======================================================================
+mode,channel,len_oct,len_ref,N_oct,N_ref,dN,R_ch,max_abs_ddc,rms_ddc,rms_correction,rows_matched_pm2,oct_only_n,ref_only_n,pad_rows_oct,pad_rows_ref,extract_fail_oct,extract_fail_ref,classification
+main,U,142840,142840,43,43,0,0.0885897,174.524,7.88264,88.9792,1,33,33,9,9,0,0,DIVERGENT-MINOR
+main,V,142840,142840,34,34,0,0.0429272,277.639,5.54883,129.261,3,27,27,4,4,0,0,DIVERGENT-MINOR
+main,W,142840,142840,36,37,-1,0.083265,223.69,6.33292,76.0574,0,27,28,9,9,0,0,DIVERGENT-MINOR
+adverse,U,142840,142840,43,43,0,1.00182,5359,4528.74,4520.52,1,33,33,9,9,0,0,NOT-EQUIVALENT
+adverse,V,142840,142840,34,34,0,0.978175,1448,434.364,444.056,3,27,27,4,4,0,0,NOT-EQUIVALENT
+adverse,W,142840,142840,36,37,-1,0.998883,5336,4174.67,4179.34,0,27,28,9,9,0,0,NOT-EQUIVALENT
+determinism,U,142840,142840,43,43,0,,0,,,,,,,,,,EXACT
+determinism,V,142840,142840,34,34,0,,0,,,,,,,,,,EXACT
+determinism,W,142840,142840,36,36,0,,0,,,,,,,,,,EXACT
+======================================================================
+CONTROL OUTCOME EVIDENCE (log excerpts):
+======================================================================
+--- precheck_control.log (positive control + alignment, tail) ---
+warning: Invalid UTF-8 byte sequences have been replaced.
+warning: called from
+    scripts/precheck_control.m at line 18 column 2
+rdmseed blocks: 997 (expect 997)
+channels found:
+XB:ELYSE:02:BHU
+XB:ELYSE:02:BHV
+XB:ELYSE:02:BHW
+02:BHU npts 143076 (expect 143076)
+02:BHV npts 143094 (expect 143094)
+02:BHW npts 142855 (expect 142855)
+SampleRate 20.0 (expect 20)
+Conservative = 0 (expect 0)
+cclim = 0.9 (expect 0.9)
+cclim2 = 0.8 (expect 0.8)
+Nlevel = 4 (expect 4)
+NLIMspike = 3 (expect 3)
+fetch = 1 (expect 1)
+green20sps 1x20480 (expect 1x20480)
+green2sps 1x2048 (expect 1x2048)
+greenspike 1x20480 (expect 1x20480)
+dc.mat: 3 cells x 142840 142840 142840 doubles (expect 142840 each)
+aaout3.mat: rows 43/34/37 (expect 43/34/37), cols 20/20/20 (expect 20)
+fixture loads OK: 11/11
+warning: function name 'funcAdjustTimes' does not agree with function filename '/Users/artuskg/marsquake_runs/20260801_ucla_equiv/ucla_v4/UCLA_v4/funcadjustTimes.m'
+warning: called from
+    scripts/precheck_control.m at line 78 column 2
+post-funcadjustTimes data lengths: 142840 142840 142840 (frozen requirement: 142840 each)
+post-funcadjustTimes time lengths: 142840 142840 142840
+will not be reflected in the graphics properties managed by Octave.  For
+rdmseed plot-mode smoke: OK (997 blocks, offscreen)
+PRECHECK-PASS
+--- run1_driver.log (key markers) ---
+ALIGN-CHECK post-funcadjustTimes lengths: 142840 142840 142840 (required 142840 each)
+stage1 complete at 19.2 s; I1P counts 43 35 36
+CHAIN-COMPLETE elapsed 147.4 s; stage1_ok=1 stage2_ok=1; aaout3 rows 43 34 36
+SAVED /Users/artuskg/marsquake_runs/20260801_ucla_equiv/run1_results.mat
+DRIVER-DONE
+octave-exit=0
+--- run2_driver.log (key markers) ---
+ALIGN-CHECK post-funcadjustTimes lengths: 142840 142840 142840 (required 142840 each)
+stage1 complete at 19.1 s; I1P counts 43 35 36
+CHAIN-COMPLETE elapsed 155.6 s; stage1_ok=1 stage2_ok=1; aaout3 rows 43 34 36
+SAVED /Users/artuskg/marsquake_runs/20260801_ucla_equiv/run2_results.mat
+DRIVER-DONE
+octave-exit=0
+--- compare_determinism.log ---
+[determinism] ch U: dc exact=True aaout3 exact=True (shapes (43, 20) vs (43, 20)) Data exact=True max|dc1-dc2|=0
+[determinism] ch V: dc exact=True aaout3 exact=True (shapes (34, 20) vs (34, 20)) Data exact=True max|dc1-dc2|=0
+[determinism] ch W: dc exact=True aaout3 exact=True (shapes (36, 20) vs (36, 20)) Data exact=True max|dc1-dc2|=0
+[determinism] RESULT: EXACT
+--- compare_adverse.log (verdict lines) ---
+[adverse] CLASSIFICATION: NOT-EQUIVALENT
+ADVERSE-CONTROL-PASS
+--- localize_posthoc.log ---
+ch U: 33 paired (tol 60), offset histogram {0: 1, 10: 30, 20: 2}
+ch U: OCT-ONLY row 37: N1=129010 N2=129510 fflag=39 t=6456.5s local rms(ddc[128010:130510])=46.55
+ch U: REF-ONLY row 3: N1=1200 N2=1700 fflag=3 t=66.0s local rms(ddc[200:2700])=15.93
+ch U: rms(ddc) inside unpaired neighborhoods 34.79, outside 4.526, global 7.883
+ch V: 30 paired (tol 60), offset histogram {0: 3, 10: 26, 20: 1}
+ch V: no unpaired rows; global rms(ddc) 5.549
+ch W: 27 paired (tol 60), offset histogram {10: 14, 20: 13}
+ch W: REF-ONLY row 3: N1=1200 N2=1700 fflag=3 t=66.0s local rms(ddc[200:2700])=24.9
+ch W: rms(ddc) inside unpaired neighborhoods 24.9, outside 5.456, global 6.333
+--- pre-outcome script freeze (logs/scripts_frozen_preoutcome.sha256) ---
+a4ccbd74f1fe0154c54d9835e7f47f80a8a2d10cf195a8ae7529441adacd5582  scripts/ucla_equiv_driver.m
+2bd0675cdc03c2d1d443b9ed5f788e9ed52337aa622caee96152fedc8b635655  scripts/compare_equiv.py
+7f963b6f46a2786b5f9844efff56e86a73d6328bc464a0b38ece726c7e3cf4af  scripts/precheck_control.m
+17387a60e7a5d772ac5300427e7376502211d1db0fd0484e8a4c7ed1d7c62947  stubs/pause.m
+2026-08-01T20:11:21Z frozen pre-outcome

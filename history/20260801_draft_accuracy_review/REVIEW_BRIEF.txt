@@ -1,0 +1,79 @@
+TASK: Accuracy review of the Seismica manuscript draft v0.1 against the
+repository's recorded results. You are the single independent reviewer for
+this claim-bearing draft. Repo: /Users/artuskg/GitRepos/MarsQuake (clean at
+commit a5432f3b). READ-ONLY REVIEW: change no files.
+
+OBJECT UNDER REVIEW:
+- papers/Paper0/manuscript/DRAFT_seismica.md (the draft)
+- papers/Paper0/manuscript/NUMBERS.md (its number-provenance map)
+
+AUTHORITIES to check against (the record wins over the draft, always):
+- history/20260726_publication_assessment/sig_statement_reading.json
+- history/20260726_publication_assessment/loo/loo_verdict.json and loo_table.csv
+- history/20260725_scout_pass3/comp_assoc_reading.json
+- history/20260725_scout_pass2/t2read_feature_competition.json
+- history/20260725_research_pipeline_restock/t3power_power_comparison.json
+- history/20260725_research_pipeline_restock/ablpolop_peak_comparison_operator_ablation.csv
+- history/20260725_scout_pass2/taup_phase_prediction_comparison.csv
+- history/20260725_scout_pass3/taup_pkkp_side_reading.csv
+- papers/Paper0/Paper0.md (registered targets/boxes/tolerances/criteria,
+  claims matrix rows ~1221-1223, amendment log)
+- docs/research_pipeline.md card status entries and CONTINUITY-paper0.md
+  Done entries (2026-07-25/26/31)
+- scripts/03_vespagram/detect_peaks.py and
+  history/20260726_publication_assessment/read_sig_statement.py — needed for
+  caution 3 below.
+
+REVIEW CHECKS, in priority order:
+1. NUMBER FIDELITY: every numeral, coordinate, rank, p-value, CI, count, and
+   SHA prefix in the draft must match its recorded artifact. Recompute
+   derived spans from the artifacts (e.g. LOO flip |dt| range 57.5-61.9 s and
+   flip landing band 602.0-606.4 s from loo_table.csv; non-flip max 0.95 s).
+   Report any mismatch with the artifact value.
+2. CLAIM DISCIPLINE: the binding wording is "reproducible non-agreement plus
+   internal fragility - not a refutation". Flag any sentence that overclaims
+   (refutation-flavored wording, phase-identity assertion, detection-negation)
+   or underclaims (weaker than the recorded verdicts). Specifically verify:
+   (a) (601.95, -6.67) is always glossed as target-box maximum, never as
+   "the published PKiKP pair"; (b) bootstrap products described as
+   methods-robustness N=200, never published-equivalent; (c) composition
+   association carries the same-data-calibration clause; (d) TauP statements
+   carry no phase-identity claim; (e) the MPS-only deglitch limitation is
+   stated prominently and correctly.
+3. CAUTION 3 RESOLUTION (this is requested work, not optional): read the two
+   reader implementations and state exactly (i) what the peak-table GLOBAL
+   row semantics are in detect_peaks.py (window? whole grid? which rows the
+   662.0-662.8 band comes from), and (ii) what read_sig_statement.py's global
+   is (which window/support rule produced 663.8). Then state whether the
+   draft's "two registered readers, one feature" sentence is exactly right,
+   and propose the single canonical displacement number + definition the
+   submitted text should use.
+4. INTERNAL CONSISTENCY: abstract vs body vs figure plan; NUMBERS.md rows
+   vs draft statements; anything stated twice with different values.
+5. OMISSIONS: any recorded result that materially strengthens or is needed
+   for honesty and is absent (e.g., controls, the PKKP side, exclusions).
+
+SEVERITY RULES (project policy, binding):
+- P0: a draft statement that misstates a recorded result in a way that would
+  invalidate the claim if published.
+- P1: a concrete mismatch between draft and record, or an overclaim/underclaim
+  a referee or the original authors could demonstrate from our own artifacts.
+- P2: wording, style, structure, emphasis, references, TODO gaps.
+- Findings already recorded as P2 in docs/research_pipeline.md's backlog
+  (target-box gloss; ablation current_provenance_status=not_required;
+  retention items) are under a severity ratchet: acknowledge, do not
+  re-escalate on the same evidence.
+
+HARD CONSTRAINTS: read-only (no file edits, no git state changes); do NOT
+spawn or invoke any other model review; do not fetch anything from the
+network.
+
+OUTPUT: write your full review to
+/private/tmp/claude-501/-Users-artuskg-GitRepos-MarsQuake/88b8de62-ccee-443d-9ca3-0b94a472b4a1/scratchpad/codex_draft_review.md
+with sections: VERDICT (PASS / PASS WITH P2 / BLOCKED with P0-P1 list),
+NUMBER-FIDELITY findings (each: draft text, artifact value, file), CLAIM
+DISCIPLINE findings, CAUTION-3 RESOLUTION (the two definitions, verbatim
+code references, and your recommended canonical number), P2 list, and a
+one-paragraph overall assessment of whether this draft is ready to show a
+potential external collaborator. Final stdout: one line pointing to the file
+plus your verdict.

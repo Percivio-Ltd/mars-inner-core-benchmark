@@ -1,0 +1,17 @@
+null,grade,n,fires,FAR,fired_windows
+N2_decoy,G1,12,0,0.0,
+N2_decoy_PcP,G1,4,0,0.0,
+N2_decoy_PKiKP,G1,4,0,0.0,
+N2_decoy_ScS,G1,4,0,0.0,
+N2_decoy,G2,12,2,0.1667,PKiKP_decoy+150;PcP_decoy+150
+N2_decoy_PcP,G2,4,1,0.25,PcP_decoy+150
+N2_decoy_PKiKP,G2,4,1,0.25,PKiKP_decoy+150
+N2_decoy_ScS,G2,4,0,0.0,
+N1_scramble_PcP,G1,25,0,0.0,
+N1_scramble_PKiKP,G1,25,0,0.0,
+N1_scramble_ScS,G1,25,0,0.0,
+N1_scramble_anyphase,G1,25,0,0.0,
+N1_scramble_PcP,G2,25,2,0.08,0;10
+N1_scramble_PKiKP,G2,25,0,0.0,
+N1_scramble_ScS,G2,25,0,0.0,
+N1_scramble_anyphase,G2,25,2,0.08,0;10

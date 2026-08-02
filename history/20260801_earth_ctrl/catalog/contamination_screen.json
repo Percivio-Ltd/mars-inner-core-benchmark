@@ -1,0 +1,303 @@
+[
+  {
+    "event_id": "usp000juhz",
+    "date": "2026-08-01T18:47:21Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [],
+    "excluded": false
+  },
+  {
+    "event_id": "usp000a7m5",
+    "date": "2026-08-01T18:47:24Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [],
+    "excluded": false
+  },
+  {
+    "event_id": "us60007idc",
+    "date": "2026-08-01T18:47:26Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [],
+    "excluded": false
+  },
+  {
+    "event_id": "usp000jrsw",
+    "date": "2026-08-01T18:47:33Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [],
+    "excluded": false
+  },
+  {
+    "event_id": "us7000pcdl",
+    "date": "2026-08-01T18:47:36Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [],
+    "excluded": false
+  },
+  {
+    "event_id": "us1000c2zy",
+    "date": "2026-08-01T18:47:40Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [],
+    "excluded": false
+  },
+  {
+    "event_id": "usp000gxkj",
+    "date": "2026-08-01T18:47:47Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [],
+    "excluded": false
+  },
+  {
+    "event_id": "usp000jqvm",
+    "date": "2026-08-01T18:47:51Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [
+      "usp000jqvn"
+    ],
+    "excluded": true
+  },
+  {
+    "event_id": "usb000slwn",
+    "date": "2026-08-01T18:47:53Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [],
+    "excluded": false
+  },
+  {
+    "event_id": "us6000f65h",
+    "date": "2026-08-01T18:48:04Z",
+    "global_m6_hits": [
+      "us6000f652"
+    ],
+    "regional_m5_hits": [
+      "us6000f65p"
+    ],
+    "excluded": true
+  },
+  {
+    "event_id": "usp000d63h",
+    "date": "2026-08-01T18:48:07Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [],
+    "excluded": false
+  },
+  {
+    "event_id": "usp000h60h",
+    "date": "2026-08-01T18:48:09Z",
+    "global_m6_hits": [
+      "usp000h60j"
+    ],
+    "regional_m5_hits": [
+      "usp000h60n",
+      "usp000h60k",
+      "usp000h60j"
+    ],
+    "excluded": true
+  },
+  {
+    "event_id": "us6000rsy1",
+    "date": "2026-08-01T18:48:12Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [
+      "ak2025xzwrbu",
+      "us6000rsy4"
+    ],
+    "excluded": true
+  },
+  {
+    "event_id": "us10007c4w",
+    "date": "2026-08-01T18:48:14Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [
+      "us10007eb4"
+    ],
+    "excluded": true
+  },
+  {
+    "event_id": "ak00489udzds",
+    "date": "2026-08-01T18:48:16Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [],
+    "excluded": false
+  },
+  {
+    "event_id": "usp000daqt",
+    "date": "2026-08-01T18:48:19Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [],
+    "excluded": false
+  },
+  {
+    "event_id": "us20009p1a",
+    "date": "2026-08-01T18:48:22Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [],
+    "excluded": false
+  },
+  {
+    "event_id": "us7000nr0v",
+    "date": "2026-08-01T18:48:30Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [],
+    "excluded": false
+  },
+  {
+    "event_id": "usp000fdyv",
+    "date": "2026-08-01T18:48:32Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [],
+    "excluded": false
+  },
+  {
+    "event_id": "usp000a9jv",
+    "date": "2026-08-01T18:48:36Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [],
+    "excluded": false
+  },
+  {
+    "event_id": "usp000dubj",
+    "date": "2026-08-01T18:48:39Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [
+      "usp000dubk"
+    ],
+    "excluded": true
+  },
+  {
+    "event_id": "usc000t4iq",
+    "date": "2026-08-01T18:48:42Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [],
+    "excluded": false
+  },
+  {
+    "event_id": "us70003t2n",
+    "date": "2026-08-01T18:48:44Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [],
+    "excluded": false
+  },
+  {
+    "event_id": "us6000hf75",
+    "date": "2026-08-01T18:48:46Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [],
+    "excluded": false
+  },
+  {
+    "event_id": "usp000b923",
+    "date": "2026-08-01T18:48:49Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [],
+    "excluded": false
+  },
+  {
+    "event_id": "usp000bnx3",
+    "date": "2026-08-01T18:48:51Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [],
+    "excluded": false
+  },
+  {
+    "event_id": "usp000cfzw",
+    "date": "2026-08-01T18:48:53Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [],
+    "excluded": false
+  },
+  {
+    "event_id": "usp000jucg",
+    "date": "2026-08-01T18:48:55Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [],
+    "excluded": false
+  },
+  {
+    "event_id": "usc000hrnr",
+    "date": "2026-08-01T18:48:57Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [],
+    "excluded": false
+  },
+  {
+    "event_id": "us2000bmhe",
+    "date": "2026-08-01T18:49:00Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [
+      "us2000bsxm"
+    ],
+    "excluded": true
+  },
+  {
+    "event_id": "us7000fdds",
+    "date": "2026-08-01T18:49:02Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [],
+    "excluded": false
+  },
+  {
+    "event_id": "usp0009wwb",
+    "date": "2026-08-01T18:49:04Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [],
+    "excluded": false
+  },
+  {
+    "event_id": "usp000b68d",
+    "date": "2026-08-01T18:49:07Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [],
+    "excluded": false
+  },
+  {
+    "event_id": "usp000c89d",
+    "date": "2026-08-01T18:49:09Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [],
+    "excluded": false
+  },
+  {
+    "event_id": "usp000d8tf",
+    "date": "2026-08-01T18:49:12Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [],
+    "excluded": false
+  },
+  {
+    "event_id": "usp000d8uu",
+    "date": "2026-08-01T18:49:14Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [],
+    "excluded": false
+  },
+  {
+    "event_id": "usp000dwju",
+    "date": "2026-08-01T18:49:16Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [],
+    "excluded": false
+  },
+  {
+    "event_id": "usp000gp1c",
+    "date": "2026-08-01T18:49:19Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [],
+    "excluded": false
+  },
+  {
+    "event_id": "us7000fskw",
+    "date": "2026-08-01T18:49:21Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [],
+    "excluded": false
+  },
+  {
+    "event_id": "usp000a9ts",
+    "date": "2026-08-01T18:49:23Z",
+    "global_m6_hits": [],
+    "regional_m5_hits": [],
+    "excluded": false
+  }
+]

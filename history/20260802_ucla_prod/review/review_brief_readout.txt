@@ -1,0 +1,93 @@
+UCLA-ON-RAW LANE — BOUNDED SCIENTIFIC REVIEW (card P0-UCLA-PROD, Amendment 1,
+lead-execution + registered readout)
+
+You are the single independent reviewer for this bounded check. Scope is the
+LEAD EXECUTION of the pre-reviewed runbook and the REGISTERED SAME-CELL
+READOUT record. The implementation itself (round-3/round-4 worker code) was
+already reviewed and finally accepted — it is NOT in scope and may not be
+re-reviewed.
+
+Workdir: /Users/artuskg/marsquake_runs/20260802_ucla_prod. Write EXACTLY ONE
+file: REVIEW_readout.md at this directory's root. Everything else on disk is
+READ-ONLY for you, including worktree/, lanes archives, and the canonical
+checkout /Users/artuskg/GitRepos/MarsQuake. No commits, no network.
+
+AUTHORITIES (pinned; read these, in this order):
+1. Registered card + Amendment 1: /Users/artuskg/GitRepos/MarsQuake/docs/research_pipeline.md
+   (P0-UCLA-PROD entry; registered before any readout surface was inspected).
+2. Runbook: /Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/RUNBOOK_ucla_raw.md
+   — §4 (pass-1 gates + pos-A), §5 (pass-2 gates + pos-B), §7 (registered
+   readout, lead-only script).
+3. Execution record under review: /Users/artuskg/GitRepos/MarsQuake/CONTINUITY-paper0.md
+   — the 2026-08-02 entries (pass-1 completion + lanes/ucla_raw archive;
+   pass-2 completion + lanes/mps_subset archive; REGISTERED SAME-CELL READOUT
+   table; Interpretation). Commits 581819c2 and ab9ae0ca.
+4. Policy: /Users/artuskg/GitRepos/MarsQuake/AGENTS.md — review policy,
+   P0/P1 three-part claim-impact test, severity ratchet, P2 handling.
+
+ARCHIVED EVIDENCE (read-only):
+- worktree/lanes/ucla_raw/ — pass-1 (UCLA-on-raw) product tree, 3179 files,
+  SHA256SUMS.tsv whose own sha256 must be
+  b808d834f50b99bcea44ad350df5e2e35a8033c53da51f1fd525ab6987c39498.
+- worktree/lanes/mps_subset/ — pass-2 (MPS subset) product tree, 1503 files,
+  SHA256SUMS.tsv sha256
+  a4ffa6fc7ea5df84e9b7f377e1cd2f83afbb6687c283fcb0402f4a2937dd9870.
+- Controls already executed and recorded: pos-A (pass-1 S0235b byte-identical
+  to census product, both
+  e9fe30fb25701c6ce9bd8b94824f94549063bbcc358ac0167e858c1dfc72d4db); pos-B
+  (pass-2 S0235b byte-identical to canonical accepted product, both
+  73410b11b144b944872c7a1acfce9cb5d1141ea4e35bbde95880a56180207cff); adv-A
+  (S1197a identity+UCLA registered aa(_,2) crash, byte restore, lane
+  allow-list rejection) — recorded in the ledger.
+
+RECORDED P2 BASELINE (severity ratchet: these cannot be re-raised at higher
+severity without new, concrete, demonstrated claim-impact evidence, citing
+the original record): (1) bootstrap_type1 bare cwd-relative --table default;
+(2) succeeded_mps_only enum reuse for identity-without-UCLA terminals;
+(3) reproducibility packages must pin the gnuplot terminal (GNUTERM=dumb
+runner sensitivity); (4) parameters_sha256 self-hash supersession
+98382efd… → e79c60d7… on the runner edit.
+
+REVIEW TASKS (all bounded to execution + readout):
+T1. Verify both archive manifests self-consistently: recompute the sha256 of
+    each lane's SHA256SUMS.tsv and compare to the two pinned digests above;
+    spot-verify at least 5 listed files per lane against their recorded
+    hashes (read-only).
+T2. Independently re-run the runbook §7 readout script VERBATIM (it is
+    read-only; interpreter /Users/artuskg/micromamba/envs/mars-ic/bin/python).
+    Confirm every assert passes and the printed six-cell table matches the
+    ledger's recorded table cell-for-cell (time_s, slowness_sdeg, power,
+    status, current_provenance_status).
+F3. Check the §4/§5 gate claims against the archived manifests and summaries
+    (execution_status, status, validation_status, deglitch_attestation
+    counts/level/partial-lane flag, 22-event terminal counts) — quote the
+    JSON fields you checked.
+T4. Registration discipline: from the record ordering (card registration
+    102264e4 before any surface inspection; gates → controls → archive seal →
+    readout), state whether any outcome-sensitive choice was made after
+    inspecting an affected outcome. The readout selectors and the three
+    surfaces must match the registered card cells exactly.
+T5. Interpretation audit: does the ledger Interpretation over-reach the six
+    registered cells? Specifically scrutinize: (a) the claim that the
+    published-box displacement 601.95 → 584.00 is an event-set effect (both
+    lanes agree at 19 events); (b) the branch-fragility framing of the global
+    argmax flip citing P0-LOO-INFLUENCE; (c) the net statement that the
+    displaced-ridge disagreement persists unchanged under UCLA provenance,
+    with the two target surfaces deglitch-robust. Each of these must be
+    supported by the readout cells and already-recorded results alone.
+T6. Confirm nothing outside the registered readout was inspected (bootstrap
+    values remain uninspected per the record) and that lane work wrote
+    nothing into the canonical checkout (the canonical data/deglitched and
+    results/ are untouched by this card's execution).
+
+SEVERITY RULES: a P0/P1 must identify (1) the active claim affected, (2) a
+concrete causal path to altering result/uncertainty/provenance/
+reproducibility, and (3) evidence to reproduce or discriminate it. Prose
+ambiguity alone is not P1. P2 observations are recorded in your report and
+NEVER withhold a countersign.
+
+DELIVERABLE: REVIEW_readout.md containing: verdict line
+(COUNTERSIGN or FINDINGS-P0/P1 with the three-part test), per-task T1–T6
+results with the exact commands you ran and their outputs (hashes, table),
+any P2 observations, and one closing paragraph. Final message: verdict +
+one-paragraph summary + report path.

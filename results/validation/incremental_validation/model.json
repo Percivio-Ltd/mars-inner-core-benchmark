@@ -1,0 +1,16 @@
+{
+  "check": "model",
+  "summary_fragment": {
+    "model": {
+      "check": {
+        "detail": "generated model has liquid outer core and non-decreasing depths",
+        "status": "pass"
+      },
+      "depth_monotonic": true,
+      "figure": "/Users/artuskg/GitRepos/MarsQuake/results/validation/figures/model_profile_validation.png",
+      "generated_model": "/Users/artuskg/GitRepos/MarsQuake/data/models/paper0_ref_1800.00-5.00-5.80-600.00-0.300.nd",
+      "generated_npz_exists": true,
+      "outer_core_vs_zero": true
+    }
+  }
+}

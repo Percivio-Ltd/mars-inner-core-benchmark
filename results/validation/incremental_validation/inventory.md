@@ -1,0 +1,3 @@
+# Validation Check
+
+- inventory: recorded

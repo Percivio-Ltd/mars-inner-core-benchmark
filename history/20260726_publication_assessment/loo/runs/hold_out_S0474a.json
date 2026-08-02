@@ -1,0 +1,25 @@
+{
+  "branch": "602-family",
+  "global_argmax": {
+    "power": 0.9342616120675286,
+    "slowness_sdeg": 0.0,
+    "status": "ok",
+    "support_count": 22,
+    "time_s": 606.35
+  },
+  "held_out_event": "S0474a",
+  "lane": {
+    "input_type": "envelope",
+    "mode": "paperfaith",
+    "norm_variant": "A",
+    "polarization_operator": "montalbetti_kanasewich_1970",
+    "power_window_s": 20.0,
+    "stack_method": "nth_root"
+  },
+  "minimum_support": 2,
+  "peak_result_status": "ok",
+  "peak_window_s": [
+    550.0,
+    700.0
+  ]
+}

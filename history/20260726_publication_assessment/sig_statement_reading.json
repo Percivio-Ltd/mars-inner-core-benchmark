@@ -1,0 +1,40 @@
+{
+  "adverse_gate_fails_on_corruption": true,
+  "card": "P0-SIG-STATEMENT",
+  "headline": "In the registered primary public lane, the published PKiKP pair is a within-uncertainty-folded-tolerance local maximum at target-box rank 6938 and background quantile 0.7141, while the unexplained displaced ridge carries 1.21x its stack power.",
+  "lane": {
+    "input_type": "envelope",
+    "mode": "paperfaith",
+    "norm_variant": "A",
+    "polarization_operator": "montalbetti_kanasewich_1970",
+    "power_window_s": "20.0",
+    "stack_method": "nth_root"
+  },
+  "pkikp": {
+    "S3_power_ratio_global_over_published_target": 1.205586091751304,
+    "global": {
+      "power": 0.9326603162534909,
+      "slowness_sdeg": -3.6363636363636367,
+      "time_s": 663.8
+    },
+    "published_target": {
+      "S1_target_box_rank": 6938,
+      "S2_background_quantile": 0.7141084208008754,
+      "S4_within_published_tolerance": "False",
+      "S4_within_uncertainty_folded_tolerance": "True",
+      "power": 0.7736156900239739,
+      "slowness_sdeg": -6.666666666666666,
+      "time_s": 601.95
+    }
+  },
+  "pkkp_mirror": {
+    "paper_target": {
+      "background_quantile_NEW": 0.39273932943310547,
+      "slowness_sdeg": -6.96969696969697,
+      "target_box_rank": 13395,
+      "time_s": 1341.0,
+      "within_uncertainty_folded_tolerance": "True"
+    }
+  },
+  "table_sha256": "8df5f5c85473460e19e10021db52c997945f3bee6f4f8aac461251a5a0bf07ce"
+}

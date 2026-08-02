@@ -1,0 +1,21 @@
+{
+  "check": "deglitch",
+  "summary_fragment": {
+    "deglitch": {
+      "accepted_partial_lane_by_design": true,
+      "attestation_level": "succeeded_mps_only",
+      "detail": "deglitch run summary is missing verified MPS+UCLA status for every event; unverified statuses: succeeded_mps_only",
+      "n_events": 26,
+      "status": "fail",
+      "status_counts": {
+        "succeeded_mps_only": 26
+      },
+      "summary_path": "/Users/artuskg/GitRepos/MarsQuake/data/deglitched/deglitch_run_summary.json",
+      "summary_sha256": "f97b77e2e4e247b44f8d446c6fd540e5ee13567f44cbc653ed9327e69a19c568",
+      "unverified_statuses": [
+        "succeeded_mps_only"
+      ],
+      "verified_only_gate": "mps_ucla_verified"
+    }
+  }
+}

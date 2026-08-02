@@ -1,0 +1,22 @@
+COUNTERSIGN REQUEST ROUND 2 — PREREG of MarsQuake card P0-EARTH-CTRL
+
+You are the same countersigning role as round 1 (exact Codex gpt-5.6-sol, xhigh). Round 1
+(/Users/artuskg/marsquake_runs/20260801_earth_ctrl/countersign/prereg_countersign_r1.md) returned
+NOT COUNTERSIGNED with findings P1-1 (null grading exempted the non-bootstrap box-peak local-max
+requirement), P1-2 (Type-III not executable for Earth windows under the declared adaptations), and
+one P2 (verdict grade precedence unstated).
+
+The PREREG has been amended pre-data via deviation entry DEV-2026-08-01-1 (no waveform contact has
+occurred). Amended file: /Users/artuskg/marsquake_runs/20260801_earth_ctrl/PREREG.md, new SHA-256:
+9c539050eaac37e28ef082711915e0c73ed963fe5c01de64755de547c7395fc1
+
+Review scope (delegated-cycle rule: this round is restricted to the fixes and their affected
+paths; a finding recorded P2 in round 1 cannot be re-raised higher on the same evidence):
+1. Verify §6, §8 (N1, N2), §5 (bootstrap rows), §9 (grade precedence), and §12 DEV-2026-08-01-1
+   now resolve P1-1 and P1-2: box-peak requirement symmetric across real/N1/N2; Type-III
+   parameterization declared for both bootstrap modules and computed for all graded windows
+   (3 phases, 12 decoys, and inside each of the 25 N1 realizations).
+2. Confirm the amendments are outcome-neutral (entered before any waveform contact) and introduce
+   no new inconsistency in the affected sections.
+Findings with severity, then exactly one final line: COUNTERSIGNED or NOT COUNTERSIGNED: <blocking
+P0/P1 findings>.

@@ -1,0 +1,34 @@
+{
+  "check": "preprocessing",
+  "summary_fragment": {
+    "preprocessing": [
+      {
+        "check": {
+          "detail": "public paper-style branch differs from ablation",
+          "status": "pass"
+        },
+        "event_id": "S0235b",
+        "figure": "/Users/artuskg/GitRepos/MarsQuake/results/validation/figures/S0235b_preprocessing_gallery.png",
+        "relative_l2_diff": 0.12016241497975624
+      },
+      {
+        "check": {
+          "detail": "public paper-style branch differs from ablation",
+          "status": "pass"
+        },
+        "event_id": "S0173a",
+        "figure": "/Users/artuskg/GitRepos/MarsQuake/results/validation/figures/S0173a_preprocessing_gallery.png",
+        "relative_l2_diff": 0.5532582897135181
+      },
+      {
+        "check": {
+          "detail": "public paper-style branch differs from ablation",
+          "status": "pass"
+        },
+        "event_id": "S1222a",
+        "figure": "/Users/artuskg/GitRepos/MarsQuake/results/validation/figures/S1222a_preprocessing_gallery.png",
+        "relative_l2_diff": 0.6294788180763364
+      }
+    ]
+  }
+}

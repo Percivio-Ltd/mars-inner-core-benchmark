@@ -1,0 +1,106 @@
+UCLA-ON-RAW LANE — FIX ROUND (card P0-UCLA-PROD, Amendment 1, round 4)
+
+Workdir: /Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree. FIRST
+ACTION: `git rev-parse HEAD` must print 98a2160e...; else STOP. NEVER write
+to /Users/artuskg/GitRepos/MarsQuake (read-only references are fine). No
+commits, no network. Preserve calibration/, lead_controls/, and all
+attempt-1 outputs (data/deglitched/*, results/validation/*) untouched.
+
+LEAD REVIEW VERDICT on round 3 (context, binding): deliverables 1-4 are
+ACCEPTED as-is — do NOT modify scripts/02_preprocess/deglitch_mps_ucla.py,
+scripts/run_paper0.py, manifest/event_table_ucla22.csv, or
+tests/test_ucla_raw_identity.py in this round. Gate (ii) failed because
+YOUR invocation used a /tmp output root; the runner's write-target guard
+(worktree-only writes) is review-accepted and binding on every invocation.
+That was an invocation error, not a code defect. This is the single
+permitted fix round. If anything below reveals a genuine code defect, STOP
+and report — do not change code unilaterally.
+
+Tasks:
+
+F1. Rerun calibration gate (ii) with a worktree-local root
+    calibration/identity_gate_r4/ (subdirs as needed). Drive the REAL lane
+    path: the deglitch CLI (mars-ic interpreter
+    /Users/artuskg/micromamba/envs/mars-ic/bin/python) on a one-file input
+    dir containing a copy of data/raw/S0235b.mseed, with
+    --seisglitch-command identity, the real UCLA runner string exactly as
+    in RUNBOOK_ucla_prod.md
+    ('<worktree>/scripts/02_preprocess/ucla/run_ucla_octave.sh {input}
+    {output} {work_dir}'), the worktree inventory file, and allow-status
+    ucla_unverified. Quote the exact command. Required outcome: per-event
+    overall_status ucla_unverified; UCLA product byte-identical to
+    lead_controls/raw_census/S0235b/S0235b_raw_ucla.mseed, whose sha256 is
+    e9fe30fb25701c6ce9bd8b94824f94549063bbcc358ac0167e858c1dfc72d4db.
+    Print both hashes.
+
+F2. Run the post-diff existing suites
+    (tests/test_preprocess_contracts.py tests/test_pipeline_invariants.py
+    tests/test_paper0_input_audit.py) plus tests/test_ucla_raw_identity.py
+    with the mars-ic interpreter's pytest. Report counts; required: zero
+    failures and existing-suite count >= the round-3 baseline (98 passed).
+
+F3. Author RUNBOOK_ucla_raw.md (worktree root) per round-3 item 5(a-f),
+    with these lead decisions now binding:
+    - Staged subset input dir data/raw_ucla22/ containing copies of the 22
+      event files from data/raw (the Amendment 1 events; the 4 excluded
+      events are realized as absent files because the deglitch stage globs
+      --in-dir/*.mseed). Provide the staging commands with per-file sha256
+      verification against manifest/data_manifest.json (path key
+      data/raw/<event>.mseed) and a printed verification table.
+    - BOTH production passes use --event-table
+      manifest/event_table_ucla22.csv and --raw-dir data/raw_ucla22 so the
+      single factor differing between passes is the deglitch method:
+      pass 1 (UCLA lane): --seisglitch-command identity, the real
+      --ucla-command, --allow-deglitch-status ucla_unverified (sole);
+      pass 2 (MPS subset): the real seisglitch command exactly as in
+      RUNBOOK_ucla_prod.md, NO --ucla-command, --allow-deglitch-status
+      succeeded_mps_only. Independently derive that succeeded_mps_only is
+      the spelling the accepted 2026-07-25 run must have used: quote
+      run_paper0.py lines 54 and 1260-1261 (default allow-list is the
+      verified status), line 612 (explicit non-default list downgrades the
+      verified-gate failure to warning), and the accepted manifest's
+      deglitch_attestation (all 26 succeeded_mps_only,
+      accepted_partial_lane_by_design true) — the worktree's checked-in
+      copy is `git show HEAD:results/validation/paper0_run_manifest.json`.
+      State the remaining flags by adapting the RUNBOOK_ucla_prod.md
+      production command (manifest, data-manifest, mqs-catalog, model
+      dirs, inventory, bootstrap fidelity, cwd).
+    - Sequencing with archival (no deletions without archival, everything
+      under the worktree): before pass 1, move the attempt-1 chained
+      outputs (data/deglitched/, data/processed/deglitch_work/, the fresh
+      results/validation/ contents) into lanes/chained_attempt1/ with a
+      sha256 manifest file; after pass 1 archive its full product tree
+      into lanes/ucla_raw/; then run pass 2 and archive into
+      lanes/mps_subset/. Enumerate exactly which directories move, which
+      are recreated, and the verification hashes to record at each step.
+      State explicitly that git-tracked deletions in the worktree stay
+      uncommitted working-state.
+    - adv-A: single-event identity+UCLA invocation for S1197a from a
+      one-file dir (same CLI shape as F1), expected observable: UCLA
+      crash containing `aa(_,2): out of bound`, restore-from-backup,
+      per-event overall_status succeeded_mps_only — i.e. the lane's
+      allow-list would reject it. Quote the harness lines (the nonzero-
+      return restore path) that make this the expected terminal.
+    - pos-A: byte-identity command, pass-1 S0235b UCLA product vs
+      lead_controls/raw_census/S0235b/S0235b_raw_ucla.mseed.
+    - pos-B: byte-identity command, pass-2 S0235b MPS product vs canonical
+      /Users/artuskg/GitRepos/MarsQuake/data/deglitched/S0235b.mseed
+      (read-only).
+    - Readout: exact files/fields in each pass's product tree where the
+      three registered surfaces appear (global PKiKP argmax, target-box
+      maximum, PKKP endpoint), with code/manifest citations, so the lead
+      builds the same-cell comparison table without exploratory poking.
+    - State which stages run and which gates fire for each pass, with
+      run_paper0.py line citations (stage list, allow-status propagation,
+      verified-gate warning path, subset acceptance checks).
+
+F4. REPORT.md: append "## Round 4" — F1 command+hashes, F2 counts, F3
+    rationale citations, updated DEVIATION:/UNVERIFIED: list.
+
+Do NOT run the 22-event passes, adv-A, pos-B, or any readout — the lead
+executes those. Tripwires (STOP and report): any code change needed; any
+write outside the worktree; F1 or F2 required outcome not met; any
+ambiguity that would force a semantic choice not fixed above.
+
+Final message: F1 PASS/FAIL (both hashes), F2 counts, F3 done/not, one
+exact paragraph, report path.

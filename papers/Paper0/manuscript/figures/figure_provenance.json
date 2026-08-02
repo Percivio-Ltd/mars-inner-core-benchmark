@@ -1,0 +1,70 @@
+{
+  "controls": {
+    "adverse_shifted_box_differs": true,
+    "fwe_flip_overlap_reproduced": [
+      "S0474a",
+      "S1012d",
+      "S1022a",
+      "S1039b"
+    ],
+    "global_argmax_reproduced": [
+      663.8,
+      -3.6363636363636367,
+      0.9326603162534909
+    ],
+    "histogram_f662_matches_t2read": 0.635,
+    "injection_alpha_star": 0.25,
+    "injection_ladder_reproduced": true,
+    "loo_flip_set_reproduced": [
+      "S0325a",
+      "S0474a",
+      "S0864a",
+      "S1012d",
+      "S1022a",
+      "S1039b"
+    ],
+    "scramble_identity_row_reproduced": true,
+    "scramble_null_recount_reproduced": [
+      151,
+      96
+    ],
+    "target_box_max_reproduced": [
+      601.95,
+      -6.666666666666666,
+      0.7736156900239739
+    ]
+  },
+  "generator": "papers/Paper0/manuscript/make_figures.py",
+  "inputs_sha256": {
+    "history/20260725_research_pipeline_restock/ablpolop_peak_comparison_operator_ablation.csv": "0f927fd408b4a9390b0a91fcd3b3692991cf24d37b788e02d2f4b3dcf851c344",
+    "history/20260725_research_pipeline_restock/t3power_power_comparison.json": "798268b094a3adb7dc954c26e12f6308f1b12c698915b12937121c1fa2ba34ad",
+    "history/20260725_scout_pass2/t2read_feature_competition.json": "53793b24c34956257dc32ccd92ba1d7eabcc312e3a59aeb2bfa430f01778bb91",
+    "history/20260725_scout_pass2/taup_phase_prediction_comparison.csv": "e7e8cfee29fff46b84f0e767137d2b646765ed875b7bdded21a9d4ab73dc8c7a",
+    "history/20260725_scout_pass3/comp_assoc_reading.json": "d8140daf2141a1ff5f66010d0ced5d356cd4f4f74d64be7013c256308042842f",
+    "history/20260726_publication_assessment/loo/loo_table.csv": "abf357fd0cc525450ff19c5e568a36f62ee312a4951f04b052132e8f5058ae3b",
+    "history/20260726_publication_assessment/sig_statement_reading.json": "4af7b025e990254fc39dc1219dca163b5e4a3638b206d0cba4fe944c6f6bea0d",
+    "history/20260801_inject_recov/recovery_table.csv": "0b7a66a46e3f2e3f588676f54235366b95a5440d689d69dcff3f9a53719cd517",
+    "history/20260801_mars_scramble/frozen_stats.json": "0330244276493fa7470ad685feefe0115cf5577ce428ef1eaa3d16124eb134c4",
+    "history/20260801_mars_scramble/null_table.csv": "12aa226d7e755b9bc691de9d7d1872b25041ee73993f3829c25eb5849fbe06c6",
+    "results/bootstrap/type1_pkikp_occupancy.npz": "f4b22d095bbd00e8ebb6fdcf16d7f9f11a49d9c03256abb1d579eb77d841e3c5",
+    "results/manuscript_inputs/full_set.npz": "f4b3a03af9bff68d6fa2750e9eaaa28511e638de32f569c34e40152483c9c280",
+    "results/tables/peak_comparison.csv": "8df5f5c85473460e19e10021db52c997945f3bee6f4f8aac461251a5a0bf07ce"
+  },
+  "matplotlib": "3.9.2",
+  "numpy": "1.26.4",
+  "outputs_sha256": {
+    "papers/Paper0/manuscript/figures/fig1_vespagram.pdf": "58b927a4788cb6d55c3d0e3eaa98e127cfe479e38b644fb93ef6986153fb16bd",
+    "papers/Paper0/manuscript/figures/fig1_vespagram.png": "1935675c2f53413d31e269b353f963e54c4bb0bd2bbea7f812c23f4e31dfe115",
+    "papers/Paper0/manuscript/figures/fig2_loo.pdf": "bd433830da38bdb74c53f245bd0bc3143f2b8b775405f84f8ae2210f0f4ec575",
+    "papers/Paper0/manuscript/figures/fig2_loo.png": "06137e88e89f8a68f30a78d1c315ea77d3a6024e7c16190cb75de6edcbac7a62",
+    "papers/Paper0/manuscript/figures/fig3_occupancy.pdf": "9b4a0d6163e7c3442725c9e42dc6fa44c939f507720310389dcb1c840f13fad3",
+    "papers/Paper0/manuscript/figures/fig3_occupancy.png": "f9c701a032dc53561e662c879e1dbd075a1ac423065bcf34cb7e0868f874dba7",
+    "papers/Paper0/manuscript/figures/fig4_ablation_jitter.pdf": "e5f1b854afb2e9ce006cde22e72517b16314575ad5ff3785361055e6ff839ed8",
+    "papers/Paper0/manuscript/figures/fig4_ablation_jitter.png": "082291f5642d0b1f47bf37597024c3b068342df413c1868ca6c2e3fc3ffcafee",
+    "papers/Paper0/manuscript/figures/fig5_scramble_null.pdf": "025fc5c118e21ffd62e0d9dcf34515f526cee62c94be4060dcc9beea8fba226b",
+    "papers/Paper0/manuscript/figures/fig5_scramble_null.png": "4f13e7eae8ed34aa008ea7ddd1600b111c952e0fcf331488340843d0b11c0e39",
+    "papers/Paper0/manuscript/tables/table1_peak_extract.md": "772c742a62d049bb8efb5db6613e455a30cf0b37ac76ced986c728a3f9c80c59",
+    "papers/Paper0/manuscript/tables/table2_flip_events.md": "21a69ac907b45bd9f8dc3085c9c080f21e84e8ecbfed951e8988022e166b086a",
+    "papers/Paper0/manuscript/tables/table3_injection_ladder.md": "9ae7ab631b5f06b02da02f7c94f66715568a405f662746915dee3cc79dae3063"
+  }
+}

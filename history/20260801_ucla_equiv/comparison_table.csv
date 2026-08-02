@@ -1,0 +1,10 @@
+mode,channel,len_oct,len_ref,N_oct,N_ref,dN,R_ch,max_abs_ddc,rms_ddc,rms_correction,rows_matched_pm2,oct_only_n,ref_only_n,pad_rows_oct,pad_rows_ref,extract_fail_oct,extract_fail_ref,classification
+main,U,142840,142840,43,43,0,0.0885897,174.524,7.88264,88.9792,1,33,33,9,9,0,0,DIVERGENT-MINOR
+main,V,142840,142840,34,34,0,0.0429272,277.639,5.54883,129.261,3,27,27,4,4,0,0,DIVERGENT-MINOR
+main,W,142840,142840,36,37,-1,0.083265,223.69,6.33292,76.0574,0,27,28,9,9,0,0,DIVERGENT-MINOR
+adverse,U,142840,142840,43,43,0,1.00182,5359,4528.74,4520.52,1,33,33,9,9,0,0,NOT-EQUIVALENT
+adverse,V,142840,142840,34,34,0,0.978175,1448,434.364,444.056,3,27,27,4,4,0,0,NOT-EQUIVALENT
+adverse,W,142840,142840,36,37,-1,0.998883,5336,4174.67,4179.34,0,27,28,9,9,0,0,NOT-EQUIVALENT
+determinism,U,142840,142840,43,43,0,,0,,,,,,,,,,EXACT
+determinism,V,142840,142840,34,34,0,,0,,,,,,,,,,EXACT
+determinism,W,142840,142840,36,36,0,,0,,,,,,,,,,EXACT

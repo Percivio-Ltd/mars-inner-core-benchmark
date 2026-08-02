@@ -1,0 +1,1019 @@
+{
+  "inventory": {
+    "rows": [
+      {
+        "ablation_normalization_current": true,
+        "ablation_normalization_status": "current",
+        "aligned_duration_s": 2300.0,
+        "aligned_npts": 46000,
+        "catalog_time_delta_s": 205.9018919467926,
+        "complete_processing": true,
+        "distance_deg": "27.5",
+        "event_id": "S1015f",
+        "matched_by_id": true,
+        "origin_time": "2021-10-04T04:55:55.150429Z",
+        "p_pick_utc": "2021-10-04T04:56:00.605894",
+        "paperstyle_normalization_current": true,
+        "paperstyle_normalization_status": "current",
+        "paperstyle_polarization_current": true,
+        "paperstyle_polarization_status": "current",
+        "raw_sha256": "e12f465e2848609dde86b0be30792cec1a8d415d6646f0aaa15eb97a03037a52",
+        "sampling_rate_hz": 20.0,
+        "set": "vespagram"
+      },
+      {
+        "ablation_normalization_current": true,
+        "ablation_normalization_status": "current",
+        "aligned_duration_s": 2300.0,
+        "aligned_npts": 46000,
+        "catalog_time_delta_s": 189.12536025047302,
+        "complete_processing": true,
+        "distance_deg": "27.8",
+        "event_id": "S0918a",
+        "matched_by_id": true,
+        "origin_time": "2021-06-27T05:35:04.667245Z",
+        "p_pick_utc": "2021-06-27T05:35:24.641985",
+        "paperstyle_normalization_current": true,
+        "paperstyle_normalization_status": "current",
+        "paperstyle_polarization_current": true,
+        "paperstyle_polarization_status": "current",
+        "raw_sha256": "84a5fe149f671ced00deff642cdc5e1afe7e26944b0100f18e7d6425e3b1e16f",
+        "sampling_rate_hz": 20.0,
+        "set": "vespagram"
+      },
+      {
+        "ablation_normalization_current": true,
+        "ablation_normalization_status": "current",
+        "aligned_duration_s": 2300.0,
+        "aligned_npts": 46000,
+        "catalog_time_delta_s": 218.24276208877563,
+        "complete_processing": true,
+        "distance_deg": "28.7",
+        "event_id": "S0235b",
+        "matched_by_id": true,
+        "origin_time": "2019-07-26T12:19:16.991001Z",
+        "p_pick_utc": "2019-07-26T12:19:18.032523",
+        "paperstyle_normalization_current": true,
+        "paperstyle_normalization_status": "current",
+        "paperstyle_polarization_current": true,
+        "paperstyle_polarization_status": "current",
+        "raw_sha256": "3ecde9902877ddd77cc4ecd4858cf0c85815744af80cf954acc3e85d8ea7ab89",
+        "sampling_rate_hz": 20.0,
+        "set": "vespagram"
+      },
+      {
+        "ablation_normalization_current": true,
+        "ablation_normalization_status": "current",
+        "aligned_duration_s": 2300.0,
+        "aligned_npts": 46000,
+        "catalog_time_delta_s": 210.18923211097717,
+        "complete_processing": true,
+        "distance_deg": "28.7",
+        "event_id": "S0864a",
+        "matched_by_id": true,
+        "origin_time": "2021-05-02T01:01:05.534422Z",
+        "p_pick_utc": "2021-05-02T01:01:17.223068",
+        "paperstyle_normalization_current": true,
+        "paperstyle_normalization_status": "current",
+        "paperstyle_polarization_current": true,
+        "paperstyle_polarization_status": "current",
+        "raw_sha256": "53f136f5e77efaeb14ab3f07e90178ea4d881e60eb67a327ad9d6c827157ae4a",
+        "sampling_rate_hz": 20.0,
+        "set": "vespagram"
+      },
+      {
+        "ablation_normalization_current": true,
+        "ablation_normalization_status": "current",
+        "aligned_duration_s": 2300.0,
+        "aligned_npts": 46000,
+        "catalog_time_delta_s": 88.98837876319885,
+        "complete_processing": true,
+        "distance_deg": "29.1",
+        "event_id": "S0474a",
+        "matched_by_id": true,
+        "origin_time": "2020-03-28T00:34:17.978182Z",
+        "p_pick_utc": "2020-03-28T00:35:20.557371",
+        "paperstyle_normalization_current": true,
+        "paperstyle_normalization_status": "current",
+        "paperstyle_polarization_current": true,
+        "paperstyle_polarization_status": "current",
+        "raw_sha256": "474518969b80ac38ad9ff96c3939ce58ca1ad706a4c8f1e3c65fb84027582805",
+        "sampling_rate_hz": 20.0,
+        "set": "vespagram"
+      },
+      {
+        "ablation_normalization_current": true,
+        "ablation_normalization_status": "current",
+        "aligned_duration_s": 2300.0,
+        "aligned_npts": 46000,
+        "catalog_time_delta_s": 209.49527883529663,
+        "complete_processing": true,
+        "distance_deg": "29.3",
+        "event_id": "S0916d",
+        "matched_by_id": true,
+        "origin_time": "2021-06-25T05:17:12.455430Z",
+        "p_pick_utc": "2021-06-25T05:17:32.429620",
+        "paperstyle_normalization_current": true,
+        "paperstyle_normalization_status": "current",
+        "paperstyle_polarization_current": true,
+        "paperstyle_polarization_status": "current",
+        "raw_sha256": "d67d8e9586352908212bd07fa778ee3518370a77fb80631b89877fd95fbc91f2",
+        "sampling_rate_hz": 20.0,
+        "set": "vespagram"
+      },
+      {
+        "ablation_normalization_current": true,
+        "ablation_normalization_status": "current",
+        "aligned_duration_s": 2300.0,
+        "aligned_npts": 46000,
+        "catalog_time_delta_s": 224.16038012504578,
+        "complete_processing": true,
+        "distance_deg": "30.0",
+        "event_id": "S0802a",
+        "matched_by_id": true,
+        "origin_time": "2021-02-28T06:11:05.701380Z",
+        "p_pick_utc": "2021-02-28T06:11:10.703162",
+        "paperstyle_normalization_current": true,
+        "paperstyle_normalization_status": "current",
+        "paperstyle_polarization_current": true,
+        "paperstyle_polarization_status": "current",
+        "raw_sha256": "9617e0f5cf487c273c918c5acee59cb6a906102107ab7a485f26ef003beeec88",
+        "sampling_rate_hz": 20.0,
+        "set": "vespagram"
+      },
+      {
+        "ablation_normalization_current": true,
+        "ablation_normalization_status": "current",
+        "aligned_duration_s": 2300.0,
+        "aligned_npts": 46000,
+        "catalog_time_delta_s": 228.1908187866211,
+        "complete_processing": true,
+        "distance_deg": "30.0",
+        "event_id": "S0173a",
+        "matched_by_id": true,
+        "origin_time": "2019-05-23T02:22:58.043698Z",
+        "p_pick_utc": "2019-05-23T02:22:59.069095",
+        "paperstyle_normalization_current": true,
+        "paperstyle_normalization_status": "current",
+        "paperstyle_polarization_current": true,
+        "paperstyle_polarization_status": "current",
+        "raw_sha256": "a4dd5cd1718ae40f7f3c4f94fd2afca83cd6a3d5589f74f1640bab274d5cfe19",
+        "sampling_rate_hz": 20.0,
+        "set": "vespagram"
+      },
+      {
+        "ablation_normalization_current": true,
+        "ablation_normalization_status": "current",
+        "aligned_duration_s": 2300.0,
+        "aligned_npts": 46000,
+        "catalog_time_delta_s": 165.96585202217102,
+        "complete_processing": true,
+        "distance_deg": "30.2",
+        "event_id": "S0820a",
+        "matched_by_id": true,
+        "origin_time": "2021-03-18T14:54:19.835741Z",
+        "p_pick_utc": "2021-03-18T14:55:23.391411",
+        "paperstyle_normalization_current": true,
+        "paperstyle_normalization_status": "current",
+        "paperstyle_polarization_current": true,
+        "paperstyle_polarization_status": "current",
+        "raw_sha256": "d07eed87cb4da9acb7f9e3afabaea92d43eea4fcc5d2852a9a3f2297777980b3",
+        "sampling_rate_hz": 20.0,
+        "set": "vespagram"
+      },
+      {
+        "ablation_normalization_current": true,
+        "ablation_normalization_status": "current",
+        "aligned_duration_s": 2300.0,
+        "aligned_npts": 46000,
+        "catalog_time_delta_s": 229.15476202964783,
+        "complete_processing": true,
+        "distance_deg": "30.2",
+        "event_id": "S1048d",
+        "matched_by_id": true,
+        "origin_time": "2021-11-07T22:04:04.408860Z",
+        "p_pick_utc": "2021-11-07T22:04:05.355199",
+        "paperstyle_normalization_current": true,
+        "paperstyle_normalization_status": "current",
+        "paperstyle_polarization_current": true,
+        "paperstyle_polarization_status": "current",
+        "raw_sha256": "ba8228acc15ed4753db95bd3c60252a64137118b58ee298695a945631dc08803",
+        "sampling_rate_hz": 20.0,
+        "set": "vespagram"
+      },
+      {
+        "ablation_normalization_current": true,
+        "ablation_normalization_status": "current",
+        "aligned_duration_s": 2300.0,
+        "aligned_npts": 46000,
+        "catalog_time_delta_s": 227.14503073692322,
+        "complete_processing": true,
+        "distance_deg": "30.2",
+        "event_id": "S1133c",
+        "matched_by_id": true,
+        "origin_time": "2022-02-03T08:08:25.290742Z",
+        "p_pick_utc": "2022-02-03T08:08:27.938504",
+        "paperstyle_normalization_current": true,
+        "paperstyle_normalization_status": "current",
+        "paperstyle_polarization_current": true,
+        "paperstyle_polarization_status": "current",
+        "raw_sha256": "8f45b11eb24fb5ff2f20415b2725e558c2cb375ab824a3dd1a67f3bebd48eea9",
+        "sampling_rate_hz": 20.0,
+        "set": "vespagram"
+      },
+      {
+        "ablation_normalization_current": true,
+        "ablation_normalization_status": "current",
+        "aligned_duration_s": 2300.0,
+        "aligned_npts": 46000,
+        "catalog_time_delta_s": 231.98238110542297,
+        "complete_processing": true,
+        "distance_deg": "30.4",
+        "event_id": "S0290b",
+        "matched_by_id": true,
+        "origin_time": "2019-09-21T03:19:05.310837Z",
+        "p_pick_utc": "2019-09-21T03:19:09.490618",
+        "paperstyle_normalization_current": true,
+        "paperstyle_normalization_status": "current",
+        "paperstyle_polarization_current": true,
+        "paperstyle_polarization_status": "current",
+        "raw_sha256": "3347ddc4b1109af234282844b5888e58f07415fdb12f50c0d223cbf346cd902a",
+        "sampling_rate_hz": 20.0,
+        "set": "vespagram"
+      },
+      {
+        "ablation_normalization_current": true,
+        "ablation_normalization_status": "current",
+        "aligned_duration_s": 2300.0,
+        "aligned_npts": 46000,
+        "catalog_time_delta_s": 90.84350371360779,
+        "complete_processing": true,
+        "distance_deg": "30.4",
+        "event_id": "S1039b",
+        "matched_by_id": true,
+        "origin_time": "2021-10-29T16:15:56.296678Z",
+        "p_pick_utc": "2021-10-29T16:16:56.477198",
+        "paperstyle_normalization_current": true,
+        "paperstyle_normalization_status": "current",
+        "paperstyle_polarization_current": true,
+        "paperstyle_polarization_status": "current",
+        "raw_sha256": "8db285b3a9ea22753fa46228ef7ab0f5b6205751f01d6b9118e3fc4a9f70e802",
+        "sampling_rate_hz": 20.0,
+        "set": "vespagram"
+      },
+      {
+        "ablation_normalization_current": true,
+        "ablation_normalization_status": "current",
+        "aligned_duration_s": 2300.0,
+        "aligned_npts": 46000,
+        "catalog_time_delta_s": 230.89933896064758,
+        "complete_processing": true,
+        "distance_deg": "30.7",
+        "event_id": "S1022a",
+        "matched_by_id": true,
+        "origin_time": "2021-10-11T23:18:20.004721Z",
+        "p_pick_utc": "2021-10-11T23:18:25.025302",
+        "paperstyle_normalization_current": true,
+        "paperstyle_normalization_status": "current",
+        "paperstyle_polarization_current": true,
+        "paperstyle_polarization_status": "current",
+        "raw_sha256": "df9c3583c6c347998b5fc684e0be6ad61bb938ef1cce6dd7e69d72b05911cfcd",
+        "sampling_rate_hz": 20.0,
+        "set": "vespagram"
+      },
+      {
+        "ablation_normalization_current": true,
+        "ablation_normalization_status": "current",
+        "aligned_duration_s": 2300.0,
+        "aligned_npts": 46000,
+        "catalog_time_delta_s": 224.99393892288208,
+        "complete_processing": true,
+        "distance_deg": "31.8",
+        "event_id": "S0484b",
+        "matched_by_id": true,
+        "origin_time": "2020-04-07T08:52:05.561869Z",
+        "p_pick_utc": "2020-04-07T08:52:24.077440",
+        "paperstyle_normalization_current": true,
+        "paperstyle_normalization_status": "current",
+        "paperstyle_polarization_current": true,
+        "paperstyle_polarization_status": "current",
+        "raw_sha256": "d66e8a81f055963a016b57243b1419630d2c9c7d324693c3282c479aa8215ae5",
+        "sampling_rate_hz": 20.0,
+        "set": "vespagram"
+      },
+      {
+        "ablation_normalization_current": true,
+        "ablation_normalization_status": "current",
+        "aligned_duration_s": 2300.0,
+        "aligned_npts": 46000,
+        "catalog_time_delta_s": 221.3366801738739,
+        "complete_processing": true,
+        "distance_deg": "32.0",
+        "event_id": "S1197a",
+        "matched_by_id": true,
+        "origin_time": "2022-04-09T22:09:33.753550Z",
+        "p_pick_utc": "2022-04-09T22:09:55.523977",
+        "paperstyle_normalization_current": true,
+        "paperstyle_normalization_status": "current",
+        "paperstyle_polarization_current": true,
+        "paperstyle_polarization_status": "current",
+        "raw_sha256": "b544f3d99c5d71e5272841a8586393f3e70ae2732668324382d26f622c58fea7",
+        "sampling_rate_hz": 20.0,
+        "set": "vespagram"
+      },
+      {
+        "ablation_normalization_current": true,
+        "ablation_normalization_status": "current",
+        "aligned_duration_s": 2300.0,
+        "aligned_npts": 46000,
+        "catalog_time_delta_s": 247.07229208946228,
+        "complete_processing": true,
+        "distance_deg": "32.5",
+        "event_id": "S0105a",
+        "matched_by_id": true,
+        "origin_time": "2019-03-14T21:03:28.123118Z",
+        "p_pick_utc": "2019-03-14T21:03:31.110886",
+        "paperstyle_normalization_current": true,
+        "paperstyle_normalization_status": "current",
+        "paperstyle_polarization_current": true,
+        "paperstyle_polarization_status": "current",
+        "raw_sha256": "ffaac66830175871cb1284824082e8f618332930c24f53c1b4be3977259765e6",
+        "sampling_rate_hz": 20.0,
+        "set": "vespagram"
+      },
+      {
+        "ablation_normalization_current": true,
+        "ablation_normalization_status": "current",
+        "aligned_duration_s": 2300.0,
+        "aligned_npts": 46000,
+        "catalog_time_delta_s": 249.98220586776733,
+        "complete_processing": true,
+        "distance_deg": "33.4",
+        "event_id": "S0189a",
+        "matched_by_id": true,
+        "origin_time": "2019-06-09T05:40:05.486385Z",
+        "p_pick_utc": "2019-06-09T05:40:05.564239",
+        "paperstyle_normalization_current": true,
+        "paperstyle_normalization_status": "current",
+        "paperstyle_polarization_current": true,
+        "paperstyle_polarization_status": "current",
+        "raw_sha256": "d14a3159f775eaa623ed9eabe714a656ba8604703edfcdc3eb304af3b7e682ac",
+        "sampling_rate_hz": 20.0,
+        "set": "vespagram"
+      },
+      {
+        "ablation_normalization_current": true,
+        "ablation_normalization_status": "current",
+        "aligned_duration_s": 2300.0,
+        "aligned_npts": 46000,
+        "catalog_time_delta_s": 253.86354207992554,
+        "complete_processing": true,
+        "distance_deg": "34.5",
+        "event_id": "S0784a",
+        "matched_by_id": true,
+        "origin_time": "2021-02-09T12:15:46.472278Z",
+        "p_pick_utc": "2021-02-09T12:15:56.546674",
+        "paperstyle_normalization_current": true,
+        "paperstyle_normalization_status": "current",
+        "paperstyle_polarization_current": true,
+        "paperstyle_polarization_status": "current",
+        "raw_sha256": "79d3bac47675802f34fdafe9f0f097cc3401ec0f77f4ebbac74fc22d3b593aea",
+        "sampling_rate_hz": 20.0,
+        "set": "vespagram"
+      },
+      {
+        "ablation_normalization_current": true,
+        "ablation_normalization_status": "current",
+        "aligned_duration_s": 2300.0,
+        "aligned_npts": 46000,
+        "catalog_time_delta_s": 265.75892877578735,
+        "complete_processing": true,
+        "distance_deg": "35.6",
+        "event_id": "S1157a",
+        "matched_by_id": true,
+        "origin_time": "2022-02-27T01:07:02.379242Z",
+        "p_pick_utc": "2022-02-27T01:07:07.386079",
+        "paperstyle_normalization_current": true,
+        "paperstyle_normalization_status": "current",
+        "paperstyle_polarization_current": true,
+        "paperstyle_polarization_status": "current",
+        "raw_sha256": "4d73b79500b8682ab9bda4a0835b06d957c4a3be516cdb2c88637ea0e91b70c9",
+        "sampling_rate_hz": 20.0,
+        "set": "vespagram"
+      },
+      {
+        "ablation_normalization_current": true,
+        "ablation_normalization_status": "current",
+        "aligned_duration_s": 2300.0,
+        "aligned_npts": 46000,
+        "catalog_time_delta_s": 277.47450613975525,
+        "complete_processing": true,
+        "distance_deg": "37.0",
+        "event_id": "S1222a",
+        "matched_by_id": true,
+        "origin_time": "2022-05-04T23:27:45.331451Z",
+        "p_pick_utc": "2022-05-04T23:27:45.836925",
+        "paperstyle_normalization_current": true,
+        "paperstyle_normalization_status": "current",
+        "paperstyle_polarization_current": true,
+        "paperstyle_polarization_status": "current",
+        "raw_sha256": "5344fda5261c0a588565f9328ea53c6e38b6fdc24fbcb9f8e0ad70f9365f2dc5",
+        "sampling_rate_hz": 20.0,
+        "set": "vespagram"
+      },
+      {
+        "ablation_normalization_current": true,
+        "ablation_normalization_status": "current",
+        "aligned_duration_s": 2300.0,
+        "aligned_npts": 46000,
+        "catalog_time_delta_s": 275.78571820259094,
+        "complete_processing": true,
+        "distance_deg": "38.3",
+        "event_id": "S1012d",
+        "matched_by_id": true,
+        "origin_time": "2021-10-02T00:34:03.626131Z",
+        "p_pick_utc": "2021-10-02T00:34:13.600173",
+        "paperstyle_normalization_current": true,
+        "paperstyle_normalization_status": "current",
+        "paperstyle_polarization_current": true,
+        "paperstyle_polarization_status": "current",
+        "raw_sha256": "7cca30eeb7b413897520033905958e893e78c0ccbe5e4f09a196261cd44d78d3",
+        "sampling_rate_hz": 20.0,
+        "set": "vespagram"
+      },
+      {
+        "ablation_normalization_current": true,
+        "ablation_normalization_status": "current",
+        "aligned_duration_s": 2300.0,
+        "aligned_npts": 46000,
+        "catalog_time_delta_s": 290.21744203567505,
+        "complete_processing": true,
+        "distance_deg": "39.7",
+        "event_id": "S0325a",
+        "matched_by_id": true,
+        "origin_time": "2019-10-26T06:58:55.171919Z",
+        "p_pick_utc": "2019-10-26T06:58:57.000523",
+        "paperstyle_normalization_current": true,
+        "paperstyle_normalization_status": "current",
+        "paperstyle_polarization_current": true,
+        "paperstyle_polarization_status": "current",
+        "raw_sha256": "659c5d5ac1be53176b150770f6d7479b431ca2a6ab80039cb184880ca6d5c539",
+        "sampling_rate_hz": 20.0,
+        "set": "vespagram"
+      },
+      {
+        "ablation_normalization_current": true,
+        "ablation_normalization_status": "current",
+        "aligned_duration_s": 2300.0,
+        "aligned_npts": 46000,
+        "catalog_time_delta_s": 498.7510108947754,
+        "complete_processing": true,
+        "distance_deg": "73.3",
+        "event_id": "S1102a",
+        "matched_by_id": true,
+        "origin_time": "2022-01-02T04:35:28.844688Z",
+        "p_pick_utc": "2022-01-02T04:35:30.847431",
+        "paperstyle_normalization_current": true,
+        "paperstyle_normalization_status": "current",
+        "paperstyle_polarization_current": true,
+        "paperstyle_polarization_status": "current",
+        "raw_sha256": "bf0bf57dee0d7eca09e8ba13602c29b691a8d61e4c72c406b27648a11d320829",
+        "sampling_rate_hz": 20.0,
+        "set": "validation"
+      },
+      {
+        "ablation_normalization_current": true,
+        "ablation_normalization_status": "current",
+        "aligned_duration_s": 2300.0,
+        "aligned_npts": 46000,
+        "catalog_time_delta_s": 541.1979939937592,
+        "complete_processing": true,
+        "distance_deg": "84.8",
+        "event_id": "S1153a",
+        "matched_by_id": true,
+        "origin_time": "2022-02-23T21:09:33.746256Z",
+        "p_pick_utc": "2022-02-23T21:09:45.253968",
+        "paperstyle_normalization_current": true,
+        "paperstyle_normalization_status": "current",
+        "paperstyle_polarization_current": true,
+        "paperstyle_polarization_status": "current",
+        "raw_sha256": "d1d2a7e404fb8e91bafb759516217ecb3b9e9c10035d7dd48f36c713456b530d",
+        "sampling_rate_hz": 20.0,
+        "set": "validation"
+      },
+      {
+        "ablation_normalization_current": true,
+        "ablation_normalization_status": "current",
+        "aligned_duration_s": 2300.0,
+        "aligned_npts": 46000,
+        "catalog_time_delta_s": 135.1193459033966,
+        "complete_processing": true,
+        "distance_deg": "88.2",
+        "event_id": "S1415a",
+        "matched_by_id": true,
+        "origin_time": "2022-11-19T21:55:49.119346Z",
+        "p_pick_utc": "2022-11-19T21:56:13.594137",
+        "paperstyle_normalization_current": true,
+        "paperstyle_normalization_status": "current",
+        "paperstyle_polarization_current": true,
+        "paperstyle_polarization_status": "current",
+        "raw_sha256": "a3cf6692bc188b25ee52eaa2f7068970d1d3396b9002cf7f949f86bfc64625dc",
+        "sampling_rate_hz": 20.0,
+        "set": "validation"
+      }
+    ],
+    "summary": {
+      "checks": {
+        "all_events_complete": {
+          "detail": "ok",
+          "status": "pass"
+        },
+        "catalog_matches_explainable": {
+          "detail": "26 events required event-id fallback",
+          "status": "warn"
+        }
+      },
+      "n_complete": 26,
+      "n_events": 26,
+      "n_large_catalog_time_delta": 26,
+      "output_csv": "/Users/artuskg/GitRepos/MarsQuake/results/validation/tables/event_inventory.csv"
+    }
+  },
+  "preprocessing": [
+    {
+      "check": {
+        "detail": "public paper-style branch differs from ablation",
+        "status": "pass"
+      },
+      "event_id": "S0235b",
+      "figure": "/Users/artuskg/GitRepos/MarsQuake/results/validation/figures/S0235b_preprocessing_gallery.png",
+      "relative_l2_diff": 0.12016241497975624
+    },
+    {
+      "check": {
+        "detail": "public paper-style branch differs from ablation",
+        "status": "pass"
+      },
+      "event_id": "S0173a",
+      "figure": "/Users/artuskg/GitRepos/MarsQuake/results/validation/figures/S0173a_preprocessing_gallery.png",
+      "relative_l2_diff": 0.5532582897135181
+    },
+    {
+      "check": {
+        "detail": "public paper-style branch differs from ablation",
+        "status": "pass"
+      },
+      "event_id": "S1222a",
+      "figure": "/Users/artuskg/GitRepos/MarsQuake/results/validation/figures/S1222a_preprocessing_gallery.png",
+      "relative_l2_diff": 0.6294788180763364
+    }
+  ],
+  "alignment": {
+    "ablation_waveform": {
+      "check": {
+        "detail": "23 events, lengths=[46000]",
+        "status": "pass"
+      },
+      "figure": "/Users/artuskg/GitRepos/MarsQuake/results/validation/figures/alignment_ablation_waveform_C.png",
+      "finite": true,
+      "input_type": "waveform",
+      "mode": "ablation",
+      "n_events": 23,
+      "uniform_length": true
+    },
+    "paperfaith_envelope": {
+      "check": {
+        "detail": "23 events, lengths=[46000]",
+        "status": "pass"
+      },
+      "figure": "/Users/artuskg/GitRepos/MarsQuake/results/validation/figures/alignment_paperfaith_envelope_C.png",
+      "finite": true,
+      "input_type": "envelope",
+      "mode": "paperfaith",
+      "n_events": 23,
+      "uniform_length": true
+    },
+    "paperfaith_waveform": {
+      "check": {
+        "detail": "23 events, lengths=[46000]",
+        "status": "pass"
+      },
+      "figure": "/Users/artuskg/GitRepos/MarsQuake/results/validation/figures/alignment_paperfaith_waveform_C.png",
+      "finite": true,
+      "input_type": "waveform",
+      "mode": "paperfaith",
+      "n_events": 23,
+      "uniform_length": true
+    }
+  },
+  "benchmark": {
+    "check": {
+      "detail": "current-run audit does not gate on the historical pre-current-run baseline; published-target replication gates remain separate",
+      "status": "pass"
+    },
+    "current_provenance_status": "current",
+    "deltas_vs_recorded": {
+      "pkikp_ds_sdeg": 0.40363636363636335,
+      "pkikp_dt_s": -2.3500000000000227,
+      "pkkp_target_ds_sdeg": 0.0003030303030300274,
+      "pkkp_target_dt_s": -0.049999999999954525
+    },
+    "figure": "/Users/artuskg/GitRepos/MarsQuake/results/validation/figures/benchmark_vespagram_validation.png",
+    "historical_pre_current_baseline": {
+      "pkikp_global": {
+        "slowness_sdeg": -4.04,
+        "time_s": 666.15
+      },
+      "pkkp_paper_target": {
+        "slowness_sdeg": -6.97,
+        "time_s": 1341.05
+      }
+    },
+    "named_endpoint_rows": [
+      {
+        "display_label": "published_PKIKP_box",
+        "endpoint_label": "published_PKIKP_box",
+        "peak_label": "published_target",
+        "phase": "PKiKP",
+        "power": 0.7736156900239739,
+        "primary_lane_variant": "A",
+        "registered_key": "pkikp_published_target",
+        "role": "published PKiKP target-box maximum",
+        "slowness_sdeg": -6.666666666666666,
+        "time_s": 601.95,
+        "window": "584-624s"
+      },
+      {
+        "display_label": "displaced_ridge",
+        "endpoint_label": "displaced_ridge",
+        "peak_label": "global",
+        "phase": "PKiKP",
+        "power": 0.9326603162534909,
+        "primary_lane_variant": "A",
+        "registered_key": "pkikp_global",
+        "role": "current broad-window PKiKP maximum",
+        "slowness_sdeg": -3.6363636363636367,
+        "time_s": 663.8,
+        "window": "550-700s"
+      },
+      {
+        "display_label": "PKKP_target",
+        "endpoint_label": "PKKP_target",
+        "peak_label": "paper_target",
+        "phase": "PKKP",
+        "power": 0.21425338569020153,
+        "primary_lane_variant": "A",
+        "registered_key": "pkkp_paper_target",
+        "role": "published PKKP target-box maximum",
+        "slowness_sdeg": -6.96969696969697,
+        "time_s": 1341.0,
+        "window": "1320-1360s"
+      }
+    ],
+    "peaks": {
+      "PKKP_target": {
+        "display_label": "PKKP_target",
+        "endpoint_label": "PKKP_target",
+        "peak_label": "paper_target",
+        "phase": "PKKP",
+        "power": 0.21425338569020153,
+        "primary_lane_variant": "A",
+        "registered_key": "pkkp_paper_target",
+        "role": "published PKKP target-box maximum",
+        "slowness_sdeg": -6.96969696969697,
+        "time_s": 1341.0,
+        "window": "1320-1360s"
+      },
+      "_current_provenance_status": "current",
+      "displaced_ridge": {
+        "display_label": "displaced_ridge",
+        "endpoint_label": "displaced_ridge",
+        "peak_label": "global",
+        "phase": "PKiKP",
+        "power": 0.9326603162534909,
+        "primary_lane_variant": "A",
+        "registered_key": "pkikp_global",
+        "role": "current broad-window PKiKP maximum",
+        "slowness_sdeg": -3.6363636363636367,
+        "time_s": 663.8,
+        "window": "550-700s"
+      },
+      "pkikp_global": {
+        "display_label": "displaced_ridge",
+        "endpoint_label": "displaced_ridge",
+        "peak_label": "global",
+        "phase": "PKiKP",
+        "power": 0.9326603162534909,
+        "primary_lane_variant": "A",
+        "registered_key": "pkikp_global",
+        "role": "current broad-window PKiKP maximum",
+        "slowness_sdeg": -3.6363636363636367,
+        "time_s": 663.8,
+        "window": "550-700s"
+      },
+      "pkikp_published_target": {
+        "display_label": "published_PKIKP_box",
+        "endpoint_label": "published_PKIKP_box",
+        "peak_label": "published_target",
+        "phase": "PKiKP",
+        "power": 0.7736156900239739,
+        "primary_lane_variant": "A",
+        "registered_key": "pkikp_published_target",
+        "role": "published PKiKP target-box maximum",
+        "slowness_sdeg": -6.666666666666666,
+        "time_s": 601.95,
+        "window": "584-624s"
+      },
+      "pkkp_paper_target": {
+        "display_label": "PKKP_target",
+        "endpoint_label": "PKKP_target",
+        "peak_label": "paper_target",
+        "phase": "PKKP",
+        "power": 0.21425338569020153,
+        "primary_lane_variant": "A",
+        "registered_key": "pkkp_paper_target",
+        "role": "published PKKP target-box maximum",
+        "slowness_sdeg": -6.96969696969697,
+        "time_s": 1341.0,
+        "window": "1320-1360s"
+      },
+      "pkkp_peak_1": {
+        "display_label": "pkkp_peak_1",
+        "endpoint_label": "",
+        "peak_label": "peak_1",
+        "phase": "PKKP",
+        "power": 0.2776812601080983,
+        "primary_lane_variant": "A",
+        "registered_key": "pkkp_peak_1",
+        "role": "",
+        "slowness_sdeg": -5.959595959595959,
+        "time_s": 1235.35,
+        "window": ""
+      },
+      "pkkp_peak_2": {
+        "display_label": "pkkp_peak_2",
+        "endpoint_label": "",
+        "peak_label": "peak_2",
+        "phase": "PKKP",
+        "power": 0.2432370776291997,
+        "primary_lane_variant": "A",
+        "registered_key": "pkkp_peak_2",
+        "role": "",
+        "slowness_sdeg": -4.747474747474747,
+        "time_s": 1291.7,
+        "window": ""
+      },
+      "published_PKIKP_box": {
+        "display_label": "published_PKIKP_box",
+        "endpoint_label": "published_PKIKP_box",
+        "peak_label": "published_target",
+        "phase": "PKiKP",
+        "power": 0.7736156900239739,
+        "primary_lane_variant": "A",
+        "registered_key": "pkikp_published_target",
+        "role": "published PKiKP target-box maximum",
+        "slowness_sdeg": -6.666666666666666,
+        "time_s": 601.95,
+        "window": "584-624s"
+      }
+    },
+    "validation_mode": "current-run"
+  },
+  "bootstrap": {
+    "bootstrap_85": {
+      "pkikp": {
+        "bootstrap_fidelity_level": "methods_robustness_200",
+        "bootstrap_published_equivalent": "False",
+        "bootstrap_type": "type1",
+        "declared_published_n_bootstrap": "10000",
+        "degenerate_fit": "True",
+        "fit_fallback_used": "True",
+        "fit_quality_reasons": "slowness:residual_rms_fraction|tri_estimator_inconsistency",
+        "high_occupancy_component_count": "6",
+        "mean_slowness_sdeg": "-0.00358113047202732",
+        "mean_time_s": "630.3412219882591",
+        "n_bootstrap": "200",
+        "occupancy_argmax_slowness_sdeg": "-3.7373738288879395",
+        "occupancy_argmax_time_s": "664.0",
+        "occupancy_argmax_value": "0.4749999940395355",
+        "occupied_cell_count": "85986",
+        "phase": "pkikp",
+        "sigma_slowness_sdeg": "0.4135851428833738",
+        "sigma_time_s": "43.00446876874065",
+        "slowness_fit_converged": "False",
+        "slowness_fit_residual_rms": "18.85574722290039",
+        "slowness_projection_nonzero_bins": "100",
+        "threshold_pct": "85",
+        "time_fit_converged": "True",
+        "time_fit_residual_rms": "0.42974527984151156",
+        "time_projection_nonzero_bins": "2609",
+        "weighted_median_slowness_sdeg": "-3.535353422164917",
+        "weighted_median_time_s": "638.6"
+      },
+      "pkkp": {
+        "bootstrap_fidelity_level": "methods_robustness_200",
+        "bootstrap_published_equivalent": "False",
+        "bootstrap_type": "type1",
+        "declared_published_n_bootstrap": "10000",
+        "degenerate_fit": "True",
+        "fit_fallback_used": "True",
+        "fit_quality_reasons": "slowness:residual_rms_fraction",
+        "high_occupancy_component_count": "1",
+        "mean_slowness_sdeg": "-6.1471474043085745",
+        "mean_time_s": "1265.2648405213813",
+        "n_bootstrap": "200",
+        "occupancy_argmax_slowness_sdeg": "-5.959596157073975",
+        "occupancy_argmax_time_s": "1234.9",
+        "occupancy_argmax_value": "0.6800000071525574",
+        "occupied_cell_count": "120569",
+        "phase": "pkkp",
+        "sigma_slowness_sdeg": "0.8434567383850019",
+        "sigma_time_s": "49.34652788289295",
+        "slowness_fit_converged": "False",
+        "slowness_fit_residual_rms": "13.41807746887207",
+        "slowness_projection_nonzero_bins": "100",
+        "threshold_pct": "85",
+        "time_fit_converged": "True",
+        "time_fit_residual_rms": "0.6540037986916378",
+        "time_projection_nonzero_bins": "4180",
+        "weighted_median_slowness_sdeg": "-6.161616325378418",
+        "weighted_median_time_s": "1288.9"
+      }
+    },
+    "checks": {
+      "pkikp": {
+        "detail": "85% bootstrap robust estimators vs paper target: occupancy argmax \u0394t=60.00s \u0394s=2.76s/deg; weighted median \u0394t=34.60s \u0394s=2.96s/deg; gaussian fit degenerate_fit=True (slowness:residual_rms_fraction|tri_estimator_inconsistency)",
+        "status": "warn"
+      },
+      "pkkp": {
+        "detail": "85% bootstrap robust estimators vs paper target: occupancy argmax \u0394t=-106.10s \u0394s=1.04s/deg; weighted median \u0394t=-52.10s \u0394s=0.84s/deg; gaussian fit degenerate_fit=True (slowness:residual_rms_fraction)",
+        "status": "warn"
+      }
+    },
+    "fidelity": {
+      "detail": "methods_robustness_200 with N=200; published-equivalent=False",
+      "level": "methods_robustness_200",
+      "n_bootstrap": 200,
+      "phases": {
+        "pkikp": {
+          "level": "methods_robustness_200",
+          "n_bootstrap": 200,
+          "published_equivalent": false,
+          "published_n_bootstrap": 10000
+        },
+        "pkkp": {
+          "level": "methods_robustness_200",
+          "n_bootstrap": 200,
+          "published_equivalent": false,
+          "published_n_bootstrap": 10000
+        }
+      },
+      "published_equivalent": false,
+      "published_n_bootstrap": 10000,
+      "status": "pass"
+    },
+    "figures": {
+      "pkikp": "/Users/artuskg/GitRepos/MarsQuake/results/validation/figures/bootstrap_pkikp_diagnostic.png",
+      "pkkp": "/Users/artuskg/GitRepos/MarsQuake/results/validation/figures/bootstrap_pkkp_diagnostic.png"
+    }
+  },
+  "bootstrap_fidelity": {
+    "detail": "methods_robustness_200 with N=200; published-equivalent=False",
+    "level": "methods_robustness_200",
+    "n_bootstrap": 200,
+    "phases": {
+      "pkikp": {
+        "level": "methods_robustness_200",
+        "n_bootstrap": 200,
+        "published_equivalent": false,
+        "published_n_bootstrap": 10000
+      },
+      "pkkp": {
+        "level": "methods_robustness_200",
+        "n_bootstrap": 200,
+        "published_equivalent": false,
+        "published_n_bootstrap": 10000
+      }
+    },
+    "published_equivalent": false,
+    "published_n_bootstrap": 10000,
+    "status": "pass"
+  },
+  "type2_distance_stratified": {
+    "detail": "Type II distance-stratified artifacts are present and structurally valid",
+    "phases": {
+      "pkikp": {
+        "bootstrap_fidelity_level": "methods_robustness_200",
+        "input_type": "envelope",
+        "mode": "paperfaith",
+        "n_bootstrap": 200,
+        "n_events": 23,
+        "path": "/Users/artuskg/GitRepos/MarsQuake/results/bootstrap/type2_pkikp_distance_stratified_occupancy.npz",
+        "published_equivalent": false,
+        "status": "pass",
+        "variant": "A"
+      },
+      "pkkp": {
+        "bootstrap_fidelity_level": "methods_robustness_200",
+        "input_type": "envelope",
+        "mode": "paperfaith",
+        "n_bootstrap": 200,
+        "n_events": 23,
+        "path": "/Users/artuskg/GitRepos/MarsQuake/results/bootstrap/type2_pkkp_distance_stratified_occupancy.npz",
+        "published_equivalent": false,
+        "status": "pass",
+        "variant": "A"
+      }
+    },
+    "status": "pass"
+  },
+  "type3_alignment_jitter": {
+    "detail": "Type III jitter artifacts are present and structurally valid",
+    "phases": {
+      "pkikp": {
+        "base_peak_slowness_sdeg": -3.6363637447357178,
+        "base_peak_time_s": 663.7999877929688,
+        "bootstrap_fidelity_level": "methods_robustness_200",
+        "input_type": "envelope",
+        "jitter_limit_s": 10.0,
+        "mode": "paperfaith",
+        "n_bootstrap": 200,
+        "n_events": 23,
+        "path": "/Users/artuskg/GitRepos/MarsQuake/results/bootstrap/type3_pkikp_p_pick_jitter.npz",
+        "published_equivalent": false,
+        "status": "pass",
+        "variant": "A"
+      },
+      "pkkp": {
+        "base_peak_slowness_sdeg": -5.959596157073975,
+        "base_peak_time_s": 1235.3499755859375,
+        "bootstrap_fidelity_level": "methods_robustness_200",
+        "input_type": "envelope",
+        "jitter_limit_s": 10.0,
+        "mode": "paperfaith",
+        "n_bootstrap": 200,
+        "n_events": 23,
+        "path": "/Users/artuskg/GitRepos/MarsQuake/results/bootstrap/type3_pkkp_p_pick_jitter.npz",
+        "published_equivalent": false,
+        "status": "pass",
+        "variant": "A"
+      }
+    },
+    "status": "pass"
+  },
+  "deglitch": {
+    "accepted_partial_lane_by_design": true,
+    "attestation_level": "succeeded_mps_only",
+    "detail": "deglitch run summary is missing verified MPS+UCLA status for every event; unverified statuses: succeeded_mps_only",
+    "n_events": 26,
+    "status": "fail",
+    "status_counts": {
+      "succeeded_mps_only": 26
+    },
+    "summary_path": "/Users/artuskg/GitRepos/MarsQuake/data/deglitched/deglitch_run_summary.json",
+    "summary_sha256": "f97b77e2e4e247b44f8d446c6fd540e5ee13567f44cbc653ed9327e69a19c568",
+    "unverified_statuses": [
+      "succeeded_mps_only"
+    ],
+    "verified_only_gate": "mps_ucla_verified"
+  },
+  "model": {
+    "check": {
+      "detail": "generated model has liquid outer core and non-decreasing depths",
+      "status": "pass"
+    },
+    "depth_monotonic": true,
+    "figure": "/Users/artuskg/GitRepos/MarsQuake/results/validation/figures/model_profile_validation.png",
+    "generated_model": "/Users/artuskg/GitRepos/MarsQuake/data/models/paper0_ref_1800.00-5.00-5.80-600.00-0.300.nd",
+    "generated_npz_exists": true,
+    "outer_core_vs_zero": true
+  },
+  "validation_mode": "current-run",
+  "require_current_provenance": true,
+  "current_provenance_enforcement": {
+    "requested": true,
+    "enforced": true,
+    "status": "current"
+  },
+  "branch_registry": {
+    "status": "not_requested",
+    "detail": "branch registry validation was not requested",
+    "path": "",
+    "row_count": 0,
+    "endpoints": []
+  },
+  "validation_status": {
+    "status": "failed",
+    "failures": [
+      "deglitch: deglitch run summary is missing verified MPS+UCLA status for every event; unverified statuses: succeeded_mps_only"
+    ],
+    "paper_ready": false
+  },
+  "validation": {
+    "status": "failed",
+    "failures": [
+      "deglitch: deglitch run summary is missing verified MPS+UCLA status for every event; unverified statuses: succeeded_mps_only"
+    ],
+    "paper_ready": false
+  }
+}

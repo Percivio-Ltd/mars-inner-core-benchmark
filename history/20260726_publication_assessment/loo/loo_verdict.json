@@ -1,0 +1,35 @@
+{
+  "branch_boundary_s": 632.0,
+  "card": "P0-LOO-INFLUENCE",
+  "determinism_control": {
+    "held_out_event": "S1015f",
+    "json_sha256_identical": true,
+    "npz_sha256_identical": true
+  },
+  "full_set": {
+    "branch": "662-family",
+    "global_argmax": {
+      "power": 0.9326603162534909,
+      "slowness_sdeg": -3.6363636363636367,
+      "status": "ok",
+      "support_count": 23,
+      "time_s": 663.8
+    },
+    "json_sha256": "087badd0157ee3ce7f07b85fb542ae4dfe2b6baacd3a302ce3b9069e6264bfc0",
+    "npz_sha256": "f4b3a03af9bff68d6fa2750e9eaaa28511e638de32f569c34e40152483c9c280",
+    "s3_json_uri": "s3://marsquake/paper0_evidence/20260726_loo_influence/full_set.json",
+    "s3_npz_uri": "s3://marsquake/paper0_evidence/20260726_loo_influence/full_set.npz"
+  },
+  "m1_flip_count": 6,
+  "m1_flipping_events": [
+    "S0325a",
+    "S0474a",
+    "S0864a",
+    "S1012d",
+    "S1022a",
+    "S1039b"
+  ],
+  "m1_material": true,
+  "n_hold_out_runs": 23,
+  "positive_control_full_set_reproduced": true
+}

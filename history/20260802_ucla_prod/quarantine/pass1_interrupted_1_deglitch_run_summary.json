@@ -1,0 +1,237 @@
+{
+  "allowed_statuses": [
+    "ucla_unverified"
+  ],
+  "created_at": "2026-08-02T06:31:41.116477+00:00",
+  "events": [
+    {
+      "event_id": "S0105a",
+      "metadata_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S0105a.deglitch.json",
+      "mps_status": "identity_passthrough",
+      "output_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S0105a.mseed",
+      "overall_status": "ucla_unverified",
+      "samples_modified": true,
+      "ucla_status": "external_ucla_command_wrote_file_unverified"
+    },
+    {
+      "event_id": "S0173a",
+      "metadata_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S0173a.deglitch.json",
+      "mps_status": "identity_passthrough",
+      "output_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S0173a.mseed",
+      "overall_status": "ucla_unverified",
+      "samples_modified": true,
+      "ucla_status": "external_ucla_command_wrote_file_unverified"
+    },
+    {
+      "event_id": "S0189a",
+      "metadata_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S0189a.deglitch.json",
+      "mps_status": "identity_passthrough",
+      "output_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S0189a.mseed",
+      "overall_status": "ucla_unverified",
+      "samples_modified": true,
+      "ucla_status": "external_ucla_command_wrote_file_unverified"
+    },
+    {
+      "event_id": "S0235b",
+      "metadata_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S0235b.deglitch.json",
+      "mps_status": "identity_passthrough",
+      "output_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S0235b.mseed",
+      "overall_status": "ucla_unverified",
+      "samples_modified": true,
+      "ucla_status": "external_ucla_command_wrote_file_unverified"
+    },
+    {
+      "event_id": "S0290b",
+      "metadata_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S0290b.deglitch.json",
+      "mps_status": "identity_passthrough",
+      "output_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S0290b.mseed",
+      "overall_status": "ucla_unverified",
+      "samples_modified": true,
+      "ucla_status": "external_ucla_command_wrote_file_unverified"
+    },
+    {
+      "event_id": "S0325a",
+      "metadata_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S0325a.deglitch.json",
+      "mps_status": "identity_passthrough",
+      "output_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S0325a.mseed",
+      "overall_status": "ucla_unverified",
+      "samples_modified": true,
+      "ucla_status": "external_ucla_command_wrote_file_unverified"
+    },
+    {
+      "event_id": "S0474a",
+      "metadata_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S0474a.deglitch.json",
+      "mps_status": "identity_passthrough",
+      "output_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S0474a.mseed",
+      "overall_status": "ucla_unverified",
+      "samples_modified": true,
+      "ucla_status": "external_ucla_command_wrote_file_unverified"
+    },
+    {
+      "event_id": "S0484b",
+      "metadata_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S0484b.deglitch.json",
+      "mps_status": "identity_passthrough",
+      "output_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S0484b.mseed",
+      "overall_status": "ucla_unverified",
+      "samples_modified": true,
+      "ucla_status": "external_ucla_command_wrote_file_unverified"
+    },
+    {
+      "event_id": "S0802a",
+      "metadata_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S0802a.deglitch.json",
+      "mps_status": "identity_passthrough",
+      "output_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S0802a.mseed",
+      "overall_status": "ucla_unverified",
+      "samples_modified": true,
+      "ucla_status": "external_ucla_command_wrote_file_unverified"
+    },
+    {
+      "event_id": "S0820a",
+      "metadata_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S0820a.deglitch.json",
+      "mps_status": "identity_passthrough",
+      "output_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S0820a.mseed",
+      "overall_status": "ucla_unverified",
+      "samples_modified": true,
+      "ucla_status": "external_ucla_command_wrote_file_unverified"
+    },
+    {
+      "event_id": "S0864a",
+      "metadata_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S0864a.deglitch.json",
+      "mps_status": "identity_passthrough",
+      "output_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S0864a.mseed",
+      "overall_status": "ucla_unverified",
+      "samples_modified": true,
+      "ucla_status": "external_ucla_command_wrote_file_unverified"
+    },
+    {
+      "event_id": "S0916d",
+      "metadata_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S0916d.deglitch.json",
+      "mps_status": "identity_passthrough",
+      "output_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S0916d.mseed",
+      "overall_status": "ucla_unverified",
+      "samples_modified": true,
+      "ucla_status": "external_ucla_command_wrote_file_unverified"
+    },
+    {
+      "event_id": "S0918a",
+      "metadata_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S0918a.deglitch.json",
+      "mps_status": "identity_passthrough",
+      "output_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S0918a.mseed",
+      "overall_status": "ucla_unverified",
+      "samples_modified": true,
+      "ucla_status": "external_ucla_command_wrote_file_unverified"
+    },
+    {
+      "event_id": "S1012d",
+      "metadata_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S1012d.deglitch.json",
+      "mps_status": "identity_passthrough",
+      "output_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S1012d.mseed",
+      "overall_status": "ucla_unverified",
+      "samples_modified": true,
+      "ucla_status": "external_ucla_command_wrote_file_unverified"
+    },
+    {
+      "event_id": "S1022a",
+      "metadata_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S1022a.deglitch.json",
+      "mps_status": "identity_passthrough",
+      "output_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S1022a.mseed",
+      "overall_status": "ucla_unverified",
+      "samples_modified": true,
+      "ucla_status": "external_ucla_command_wrote_file_unverified"
+    },
+    {
+      "event_id": "S1039b",
+      "metadata_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S1039b.deglitch.json",
+      "mps_status": "identity_passthrough",
+      "output_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S1039b.mseed",
+      "overall_status": "ucla_unverified",
+      "samples_modified": true,
+      "ucla_status": "external_ucla_command_wrote_file_unverified"
+    },
+    {
+      "event_id": "S1048d",
+      "metadata_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S1048d.deglitch.json",
+      "mps_status": "identity_passthrough",
+      "output_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S1048d.mseed",
+      "overall_status": "ucla_unverified",
+      "samples_modified": true,
+      "ucla_status": "external_ucla_command_wrote_file_unverified"
+    },
+    {
+      "event_id": "S1102a",
+      "metadata_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S1102a.deglitch.json",
+      "mps_status": "identity_passthrough",
+      "output_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S1102a.mseed",
+      "overall_status": "ucla_unverified",
+      "samples_modified": true,
+      "ucla_status": "external_ucla_command_wrote_file_unverified"
+    },
+    {
+      "event_id": "S1133c",
+      "metadata_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S1133c.deglitch.json",
+      "mps_status": "identity_passthrough",
+      "output_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S1133c.mseed",
+      "overall_status": "ucla_unverified",
+      "samples_modified": true,
+      "ucla_status": "external_ucla_command_wrote_file_unverified"
+    },
+    {
+      "event_id": "S1153a",
+      "metadata_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S1153a.deglitch.json",
+      "mps_status": "identity_passthrough",
+      "output_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S1153a.mseed",
+      "overall_status": "ucla_unverified",
+      "samples_modified": true,
+      "ucla_status": "external_ucla_command_wrote_file_unverified"
+    },
+    {
+      "event_id": "S1157a",
+      "metadata_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S1157a.deglitch.json",
+      "mps_status": "identity_passthrough",
+      "output_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S1157a.mseed",
+      "overall_status": "ucla_unverified",
+      "samples_modified": true,
+      "ucla_status": "external_ucla_command_wrote_file_unverified"
+    },
+    {
+      "event_id": "S1415a",
+      "metadata_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S1415a.deglitch.json",
+      "mps_status": "identity_passthrough",
+      "output_path": "/Users/artuskg/marsquake_runs/20260802_ucla_prod/worktree/data/deglitched/S1415a.mseed",
+      "overall_status": "ucla_unverified",
+      "samples_modified": true,
+      "ucla_status": "external_ucla_command_wrote_file_unverified"
+    }
+  ],
+  "expected_event_ids": [
+    "S0105a",
+    "S0173a",
+    "S0189a",
+    "S0235b",
+    "S0290b",
+    "S0325a",
+    "S0474a",
+    "S0484b",
+    "S0802a",
+    "S0820a",
+    "S0864a",
+    "S0916d",
+    "S0918a",
+    "S1012d",
+    "S1022a",
+    "S1039b",
+    "S1048d",
+    "S1102a",
+    "S1133c",
+    "S1153a",
+    "S1157a",
+    "S1415a"
+  ],
+  "methods_requested": [
+    "UCLA"
+  ],
+  "run_status": "complete",
+  "status_counts": {
+    "ucla_unverified": 22
+  }
+}

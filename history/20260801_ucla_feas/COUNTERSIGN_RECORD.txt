@@ -1,0 +1,37 @@
+P0-UCLA-FEAS countersign record
+================================
+
+Card under review : /Users/artuskg/marsquake_runs/20260801_ucla_feas/FEASIBILITY_CARD.md
+Card sha256       : 0168fdd0233156dfe83cb4a0def65bd8d704d11bff668f00851601384d7ac8ec
+Card verdict      : EXECUTABLE-OCTAVE
+
+Round 1 (only round; no P0/P1 raised, so no fix round was required)
+-------------------------------------------------------------------
+Reviewer   : exact Codex gpt-5.6-sol at xhigh reasoning (per AGENTS.md research cycle)
+Invocation : /Users/artuskg/.local/bin/codex exec --skip-git-repo-check
+             -c model="gpt-5.6-sol" -c model_reasoning_effort="xhigh"
+             -c features.plugins=false -c features.goals=false -c features.apps=false
+             -o countersign_round1.md - < countersign_brief_round1.txt
+Banner     : VERIFIED from countersign_round1_stdout.log:
+             "model: gpt-5.6-sol" / "reasoning effort: xhigh"
+             (Codex v0.146.0, session id 019fbe6c-6fc1-7f02-8bd8-8480d3df049c)
+Exit code  : 0 (codex-exit=0 recorded at end of countersign_round1_stdout.log)
+Verdict    : COUNTERSIGNED
+Output     : countersign_round1.md
+             sha256 985a365961da4f7a6164d6421a287385796c27547d0a656895c19a055501d57a
+Brief      : countersign_brief_round1.txt
+             sha256 fc28153702edc3c0898464650d9cb982209efe63770863ba09a7f0a20b2c6d34
+
+Recorded P2 (non-blocking per policy; card left as countersigned, correction
+captured here so the countersigned artifact and its hash stay authoritative):
+  "The verdict prose conflates two successful probes: the MiniSEED round-trip used
+   probe3's fflag=8 result (cc=0.9922, 498/501), while probe4's shipped-default
+   fflag=3 result (cc=0.9931, 499/501) was saved only to MAT. This traceability
+   wording does not affect the bounded EXECUTABLE-OCTAVE conclusion."
+Clarification for the record: the written MiniSEED artifact
+  probe/XB.ELYSE.02.BHU.2019.073 and the ObsPy round-trip check are from probe3
+  (fflag=8 fit, cc=0.9922, 498/501 samples). Probe4's shipped-default best-of-three
+  result (fflag=3, cc=0.9931, 499/501) exists only in probe/probe4_results.mat and
+  was not written to MiniSEED. Both probes succeeded; the verdict is unaffected.
+
+Artifact hash manifest: artifact_hashes.sha256 (same directory).

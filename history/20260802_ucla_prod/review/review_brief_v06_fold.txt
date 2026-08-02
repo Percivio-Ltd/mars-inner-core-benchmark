@@ -1,0 +1,84 @@
+PAPER 0 DRAFT v0.6 — BOUNDED ACCURACY REVIEW OF THE UCLA-PRODUCTION FOLD
+(card P0-UCLA-PROD-FOLD, registered 2026-08-02 in docs/research_pipeline.md)
+
+You are the single bounded accuracy reviewer. Scope is ONLY the new v0.6
+fold material listed below. Everything else in the draft is out of scope
+and already carries countersigned review standing; the severity ratchet
+applies (previously recorded P2s cannot be re-raised higher on the same
+evidence).
+
+Workdir: /Users/artuskg/marsquake_runs/20260802_ucla_prod. Write EXACTLY
+ONE file: REVIEW_v06_fold.md at this directory's root. Everything else is
+READ-ONLY, including the canonical checkout
+/Users/artuskg/GitRepos/MarsQuake. No commits, no network.
+
+MATERIAL UNDER REVIEW (in /Users/artuskg/GitRepos/MarsQuake/papers/Paper0/manuscript/):
+1. DRAFT_seismica.md § 3.1 Deglitching bullet — the new dated production
+   addition (begins "A registered production card (2026-08-02, dated
+   addition) subsequently executed the UCLA stage end-to-end").
+2. DRAFT_seismica.md § 5.5 Limitations — the replacement block from "The
+   registered feasibility and single-event equivalence cards" through
+   "coordinate-level robustness holds only where stated cell-exactly
+   above.", including the three-row same-cell table.
+3. DRAFT_seismica.md § 6 Conclusions — the new item "(vi)".
+4. NUMBERS.md — the two new rows "§ 3.1 UCLA production pass (dated
+   addition)" and "§ 5.5 same-cell table + § 6 (vi)".
+
+BINDING AUTHORITIES (read-only):
+- Registered card: docs/research_pipeline.md § "P0-UCLA-PROD-FOLD" (fixes
+  scope, binding source, controls, review structure) and the P0-UCLA-PROD
+  card + Amendment 1 above it.
+- Landed evidence: /Users/artuskg/GitRepos/MarsQuake/history/20260802_ucla_prod/
+  — LANDING.md, CENSUS.md, readout/readout_table.tsv,
+  lanes/{ucla_raw,mps_subset}/{peak_comparison.csv,validation_summary.json,
+  paper0_run_manifest.json,deglitch_run_summary.json,SHA256SUMS.tsv},
+  review/REVIEW_readout.md (its T5 precision formulations are BINDING on
+  the fold's wording), controls/, quarantine/.
+- Wording cautions: NUMBERS.md "Wording cautions" items (especially 1, 3,
+  4, 5) and the three-feature taxonomy.
+
+REVIEW TASKS:
+A1. Verify EVERY numeral in the four material items against the landed
+    artifacts (readout_table.tsv and lanes CSV/JSON), including the
+    rounded forms (576.15/−10.0/0.9003; 662.85/0.0/1.0140;
+    584.00/−7.07/0.7547; 584.00/−7.07/0.7356; 1341.25/−6.97/0.3049;
+    1340.95/−6.97/0.2422; accepted-context 663.80/−3.64/0.9327,
+    601.95/−6.67/0.7736, 1341.00/−6.97/0.2143). Recompute the derived
+    quantities: box powers 2.6% apart, PKKP powers 25.9% apart (both MPS
+    denominator), 0.30 s PKKP offset, 601.95 → 584.00 s displacement.
+    Verify the § 3.1 crash-class attribution (S1197a/S1222a aa(_,2);
+    S0784a zero subscript; S1015f filtfilt) against CENSUS.md, and the
+    partition arithmetic (26 = 22 + 4; 22 = 19 stack + 3 validation).
+A2. Verify the fold's formulations comply with REVIEW_readout.md T5: the
+    text must NOT claim "persists unchanged", "bistable", "deglitch-robust
+    at the registered cells" as a blanket, or any coordinate-level
+    persistence beyond the exact same-cell box result; the PKKP power
+    difference must be disclosed; the branch statement must be
+    "branch-fragile to both event removal and deglitch method".
+A3. Verify the registered adverse-control content is present in substance:
+    (a) ucla_unverified terminal + strict mps_ucla_verified still
+    reserved, (b) 19-event sub-stack (not 23) with a-priori exclusion,
+    (c) persistence stated qualitatively only.
+A4. Verify cross-references and list consistency: § 3.1 ↔ § 5.5 pointers;
+    the leave-one-out reference must be § 4.3; the conclusions list reads
+    (i)–(vi) coherently; the § 6 (vi) sentence agrees with § 5.5; no new
+    text contradicts wording cautions 1/3/4/5 (e.g., never call 601.95 the
+    "published pair"; never merge the third branch into the LOO
+    two-family taxonomy — it must remain a distinct, new location).
+A5. Verify the two NUMBERS.md rows trace correctly: file names, hash
+    prefixes (e9fe30fb…, 73410b11…, 265153e6…, dc9e579a…), and evidence
+    pointers exist and match the landed record.
+A6. Check the § 3.1 claim "every headline result in this paper is
+    MPS-only" remains true after the fold (the § 5.5 comparison must not
+    be presented as a headline-result replacement).
+
+SEVERITY: P0/P1 require the three-part claim-impact test (claim affected;
+concrete causal path; reproducible evidence). Wording/prose issues without
+two materially different reasonable readings are P2. P2s are recorded and
+NEVER block. There will be exactly one fix round after your report; write
+findings so they are mechanically applicable.
+
+DELIVERABLE: REVIEW_v06_fold.md with verdict line (COUNTERSIGN or
+FINDINGS-P0/P1), per-task A1–A6 results with exact commands/values
+checked, P2 list, closing paragraph. Final message: verdict + counts +
+report path.

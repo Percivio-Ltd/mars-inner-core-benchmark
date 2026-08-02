@@ -1,0 +1,39 @@
+{
+  "check": "type3_alignment_jitter",
+  "summary_fragment": {
+    "type3_alignment_jitter": {
+      "detail": "Type III jitter artifacts are present and structurally valid",
+      "phases": {
+        "pkikp": {
+          "base_peak_slowness_sdeg": -3.6363637447357178,
+          "base_peak_time_s": 663.7999877929688,
+          "bootstrap_fidelity_level": "methods_robustness_200",
+          "input_type": "envelope",
+          "jitter_limit_s": 10.0,
+          "mode": "paperfaith",
+          "n_bootstrap": 200,
+          "n_events": 23,
+          "path": "/Users/artuskg/GitRepos/MarsQuake/results/bootstrap/type3_pkikp_p_pick_jitter.npz",
+          "published_equivalent": false,
+          "status": "pass",
+          "variant": "A"
+        },
+        "pkkp": {
+          "base_peak_slowness_sdeg": -5.959596157073975,
+          "base_peak_time_s": 1235.3499755859375,
+          "bootstrap_fidelity_level": "methods_robustness_200",
+          "input_type": "envelope",
+          "jitter_limit_s": 10.0,
+          "mode": "paperfaith",
+          "n_bootstrap": 200,
+          "n_events": 23,
+          "path": "/Users/artuskg/GitRepos/MarsQuake/results/bootstrap/type3_pkkp_p_pick_jitter.npz",
+          "published_equivalent": false,
+          "status": "pass",
+          "variant": "A"
+        }
+      },
+      "status": "pass"
+    }
+  }
+}
