@@ -160,11 +160,18 @@ requested from the corresponding author.
 
 ## Citing
 
-See `CITATION.cff`. The v0.6 state of this repository is archived at
+See `CITATION.cff`. The manuscript is posted as an EarthArXiv preprint —
+cite [doi:10.31223/X59R49](https://doi.org/10.31223/X59R49) for the
+scientific content. The production-format preprint PDF is shipped
+verbatim at `papers/Paper0/submission/SUBMISSION_Paper0_EarthArXiv.pdf`
+(sha256
+`36ca37342155b124b544996d29cb6d72757b6558e1df3d5a47842f9c398018d6`,
+byte-identical to the EarthArXiv deposit; coversheet + production
+build). The v0.6 state of this repository is archived at
 [doi:10.5281/zenodo.21762439](https://doi.org/10.5281/zenodo.21762439)
-(deterministic `git archive` of tag `v0.6`, commit `b3752bf2`). Until
-the preprint is posted, `papers/Paper0/manuscript/DRAFT_seismica.md` is
-the manuscript source of record.
+(deterministic `git archive` of tag `v0.6`, commit `b3752bf2`).
+`papers/Paper0/manuscript/DRAFT_seismica.md` remains the manuscript
+source of record inside this repository.
 
 ## License
 

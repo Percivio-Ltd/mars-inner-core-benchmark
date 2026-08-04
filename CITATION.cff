@@ -17,6 +17,9 @@ identifiers:
   - type: doi
     value: "10.5281/zenodo.21762439"
     description: "Zenodo archive of the v0.6 release tarball"
+  - type: doi
+    value: "10.31223/X59R49"
+    description: "EarthArXiv preprint of the associated manuscript"
 keywords:
   - Mars
   - InSight
